@@ -11,7 +11,9 @@
 + [Serverless Functionality](#SER)
 + [Clusters](#CLU)
 + [Billing and Benchmarking](#BB)
-
++ [Getting Support](#SUP)
++ [Additional Training](#TR)
++ 
 ## **Getting Started** <a name="GS"></a>
 All the tutorials you need to learn a lot of what is possible on GCP can be found in the [GCP Getting Started Page](https://cloud.google.com/getting-started). There you can find links to [documentation](https://cloud.google.com/docs) for common GCP tools and resources, [quick start tutorials](https://cloud.google.com/gcp/getting-started) for a lot of basic tools, and short videos on various subjects called [cloud minute](https://www.youtube.com/playlist?list=PLIivdWyY5sqIij_cgINUHZDMnGjVx3rxi).
 
@@ -92,3 +94,13 @@ One great thing about the cloud is its ability to scale with demand. When you su
 Many Cloud Lab users are interested in understanding how to estimate the price of a large scale project using a reduced sample size. Generally, you should be able to benchmark with a few representative samples to get an idea of time and cost required for a larger scale project. In terms of cost, the best way to estimate costs is to use the [GCP cost calculator](https://cloud.google.com/products/calculator#id=b64e9c4f-c637-432f-8e2c-4a7238dde0f2) for an initial figure. Then, you can run some benchmarks and double check that everything is acting as you expect. For example, if you know that your analysis on your local cluster (Biowulf for example) takes 4 hours to run for a single sample with 12 CPUs, and that each sample needs about 30 GB of storage to run a workflow, then you can extrapolate out how much everything may cost using the calculator (e.g. compute engine + cloud storage). 
 
 To get a more precise estimate, you can actually create a bucket, spin up a VM, and run your workflow on a sample or two. Then go to `Billing` on the Hamburger Menu, then `Reports`, then filter on the right for the date range and services you want to benchmark. For example, if you ran your benchmark on 5/5/22, then you could filter for 5/5/22 to 5/5/22, and under services you could fiter for `Compute Engine`, or `Cloud Storage` (you can select multiple services), and then it will show the costs incurred for that date range. At the time of writing, Cloud Life Sciences API was not yet an option, but pricing should be similar to `Compute Engine` for a ballpark figure.
+
+## **Getting Support** <a name="SUP"></a>
+
+## **Additional Training** <a name="TR"></a>
+STRIDES Training
+Please visit the STRIDES Training page at cloud.nih.gov/training/ to view available cloud training opportunities.
+
+STRIDES Initiative
+Please visit the NIH STRIDES website at cloud.nih.gov or contact the NIH STRIDES team at STRIDES@nih.gov for more information.
+
