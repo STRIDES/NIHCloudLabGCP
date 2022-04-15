@@ -1,4 +1,4 @@
-# GCPCloudLab
+# NIH Cloud Lab for Google Cloud Platform
 
 ***This repo is in active development. Expect frequent changes until April 28th!***
 
