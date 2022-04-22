@@ -22,7 +22,7 @@ Use this repository to learn about how to use GCP by exploring the linked resour
 + [Additional Training](#TR)
 + 
 ## **Getting Started** <a name="GS"></a>
-All the tutorials you need to learn a lot of what is possible on GCP can be found in the [GCP Getting Started Page](https://cloud.google.com/getting-started). There you can find links to [documentation](https://cloud.google.com/docs) for common GCP tools and resources, [quick start tutorials](https://cloud.google.com/gcp/getting-started) for a lot of basic tools, and short videos on various subjects called [cloud minute](https://www.youtube.com/playlist?list=PLIivdWyY5sqIij_cgINUHZDMnGjVx3rxi).
+You can learn a lot of what is possible on GCP in the [GCP Getting Started Page](https://cloud.google.com/getting-started). There you can find links to [documentation](https://cloud.google.com/docs) for common GCP tools and resources, [quick start tutorials](https://cloud.google.com/gcp/getting-started) for a lot of basic tools, and short videos on various subjects called [cloud minute](https://www.youtube.com/playlist?list=PLIivdWyY5sqIij_cgINUHZDMnGjVx3rxi).
 
 Even with these resources, we know it can be hard to know where to start on learning how to use the cloud. To help you, we thought through some of the most common tasks you will encounter doing cloud-enabled research, and gathered tutorials and guides specific to those topics. We hope the following materials are helpful as you explore migrating your research to the cloud.
 
