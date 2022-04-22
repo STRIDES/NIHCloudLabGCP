@@ -1,0 +1,56 @@
+# GCP Tutorial Resources
+
+_We have pulled together a variety of tutorials here from disparate sources. Some use Compute Engine, others use Vertex AI notebooks and others use only managed services. Tutorials are organized by research method, but we try to designate what GCP services are used as well to help you navigate._
+---------------------------------
+## Overview of Page Contents
+
++ [Biomedical Workflows on AWS](#Bio)
++ [Variant Calling](#VC)
++ [VCF Query](#VCF)
++ [GWAS](#GWAS)
++ [Proteomics](#PRO)
++ [Medical Imaging](#IM)
++ [RNAseq](#RNA)
++ [scRNAseq](#sc)
++ [Long Read Sequencing Analysis](#Long)
++ [AI/ML Pipeline](#AI)
+
+## **Biomedical Workflows on GCP** <a name="VC"></a>
+
+There are a lot of ways to run workflows on GCP. Here we list a few posibilities each of which may work for different research aims. As you walk through the various tutorials below, think about how you could possibly run that workflow more efficiently using a one of the other methods listed here.
+
+- The most simple method is probably to spin up a Compute Engine instance, and run your command interactively, or using `screen` or, as a [startup script](https://cloud.google.com/compute/docs/instances/startup-scripts/linux) attached as metadata.
+- You could also run your pipeline via a Vertex AI notebook, either by splitting out each command as a different block, or by running a workflow manager (Nextflow etc.). See [here](https://codelabs.developers.google.com/vertex_notebook_executor#0) about scheduling a notebook to let it run longer.
+You can find a nice tutorial for using managed notebooks [here](https://codelabs.developers.google.com/vertex_notebook_executor#0). Note that there is now a difference between `managed notebooks` and `user managed notebooks`. The `managed notebooks` have more features and can be scheduled. 
+- You can interact with `Google Life Sciences API` using a workflow manager like [Nextflow](https://cloud.google.com/life-sciences/docs/tutorials/nextflow), [Snakemake](https://snakemake.readthedocs.io/en/stable/executing/cloud.html), or [Cromwell](https://github.com/GoogleCloudPlatform/rad-lab/tree/main/modules/genomics_cromwell).
+
+## **Variant Calling** <a name="VC"></a>
+- This [Google tutorial](https://cloud.google.com/life-sciences/docs/tutorials/gatk) shows you how to run GATK Best Practices using the Life Sciences API. You could also run GATK using any of the workflow managers and submitting to the API as described in the links one section above.
+- One tutorial specific to somatic variant calling comes from the Sheffield Bioinformatics Core [here](https://sbc.shef.ac.uk/somatic-variants/index.nb.html). It runs on Galaxy, but can be adapted to run in GCP. The datasets may prove useful to you.
+
+## **Query a VCF file in Big Query** <a name="VCF"></a>
+- Learn how to use Big Query to run queries against large VCF files from Gnomad data using [this notebook](https://github.com/GoogleCloudPlatform/rad-lab/blob/main/modules/data_science/scripts/build/notebooks/Exploring_gnomad_on_BigQuery.ipynb).
+
+## **Genome Wide Association Studies** <a name="GWAS"></a>
+- This [NIH CFDE written tutorial](https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/GWAS-in-the-cloud
+) walks you through running a simple GWAS using AWS. However, you could consider using one of the other approaches we listed above for something a bit more cloud native. 
+- Terra has a [GWAS workspace](https://app.terra.bio/#workspaces/amp-t2d-op/2019_ASHG_Reproducible_GWAS-V2) that walks through a few tutorials and has links to public data for testing GWAS. Since it uses notebooks it should be easy enough to adapt to Vertex AI.
+
+## **Proteomics** <a name="PRO"></a>
+-Use Big Query to run a Kruskal Wallis Test on Proteomics data using [these notebook](https://github.com/isb-cgc/Community-Notebooks/tree/master/FeaturedNotebooks). Clone the repo into Vertex AI, or just drag them into a Vertex AI Workbench instance. 
+
+## **Medical Imaging** <a name="IM"></a>
+- Most medical imaging analyses are done in notebooks, so we would recommend downloading the Jupyter Notebook from [here](https://github.com/kyleoconnell/cloud-lab-training/tree/main/Tutorials/AWS_tutorials/BrainTumorSegmentation) and then importing or cloning it into Sagemaker. The tutorial walks through brain image segmentation.
+- Download NVIDIA's example [Medical Imaging Notebook](https://developer.nvidia.com/run-jupyter-notebooks). Note that there are other interesting notebooks on that site, but be warned that most of the NVIDIA notebooks require a GPU, so plan accordingly.
+
+## **RNAseq** <a name="RNA"></a>
+- You can run this [Nextflow tutorial](https://nf-co.re/rnaseq/usage) for RNAseq a variety of ways on GCP. Following the instructions outlined above, you could use Compute Engine, Life Sciences API, or in Vertex AI.
+- For a notebook version of a complete RNAseq pipeline from Fastq to Salmon quantification from [the University of Maine INBRE](https://github.com/MaineINBRE/rnaseq-myco-tutorial) use this [Notebook](rnaseq-myco-tutorial-main). 
+- There is also this NIH-written tutorial to use [kids first data on Cavatica](https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1/). Note that you will need to pre-register for both kids first data and Cavatica access.
+
+## **Single Cell RNAseq** <a name="sc"></a>
+-  This [NVIDIA blog](https://developer.nvidia.com/blog/accelerating-single-cell-genomic-analysis-using-rapids/) details how to run an accelerated scRNAseq pipeline using RAPIDS. You can find a link to the github that has lots of example notebooks [here](https://github.com/clara-parabricks/rapids-single-cell-examples). For each example use case they show some nice benchmarking data with time and cost for each machine type. You will see that most runs cost less than $1.00 with GPU machines. 
+
+## **Long Read Sequence Analysis** <a name="Long"></a>
+Oxford Nanopore has a pretty complete offering of notebook tutorials for handling long read data to do a variety of things including variant calling, RNAseq, Sars-Cov-2 analysis and much more. Access the notebooks [here](https://labs.epi2me.io/nbindex/).
+

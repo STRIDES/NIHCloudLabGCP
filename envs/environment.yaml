@@ -1,0 +1,49 @@
+name: genomics
+channels:
+  - bioconda
+  - anaconda
+  - conda-forge
+  - defaults
+  - bih-cubi
+  - dranew
+  - hcc
+  
+dependencies:
+  - bwa
+  - bowtie2
+  - star
+  - spades
+  - velvet
+  - trinity
+  - samtools
+  - trimmomatic
+  - trim-galore
+  - cutadapt
+  - picard
+  - fastqc
+  - multiqc
+  - gatk4
+  - muse
+  - lofreq
+  - somatic-sniper
+  - openjdk
+  - rtg-tools
+  - salmon
+  - pigz
+  - vcftools
+  - snakemake
+  - snakemake-wrapper-utils
+  - nextflow
+  - wdltool
+  - cwltool
+  - cromwell
+  - shapeit
+  - impute2
+  - gemma
+  - plink2
+  - asset
+  - admixture
+  - rfmix
+  - blast
+  - scanpy
+  - sra-tools
