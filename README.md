@@ -20,7 +20,7 @@ Use this repository to learn about how to use GCP by exploring the linked resour
 + [Billing and Benchmarking](#BB)
 + [Getting Support](#SUP)
 + [Additional Training](#TR)
-+ 
+
 ## **Getting Started** <a name="GS"></a>
 You can learn a lot of what is possible on GCP in the [GCP Getting Started Page](https://cloud.google.com/getting-started). There you can find links to [documentation](https://cloud.google.com/docs) for common GCP tools and resources, [quick start tutorials](https://cloud.google.com/gcp/getting-started) for a lot of basic tools, and short videos on various subjects called [cloud minute](https://www.youtube.com/playlist?list=PLIivdWyY5sqIij_cgINUHZDMnGjVx3rxi).
 
