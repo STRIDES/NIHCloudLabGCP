@@ -83,7 +83,7 @@ conda info --envs
 ```
 Now create the conda environment with all of your desired packages. Note that the file name doesn't matter if you have the name designation at the top of the yaml file. If you don't name the environment in the yaml, then it will be named whatever your file is named. Or you can add a -n flag to name the environment (`mamba env create -f environment.yaml -n your_name_of_choice`).
 ```
-mamba env create -f environment.yaml
+mamba env create -f envs/environment.yaml
 ```
 Now list your environments again to find the path of your new environment.
 ```
