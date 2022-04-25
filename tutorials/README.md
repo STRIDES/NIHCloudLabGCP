@@ -16,7 +16,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 
 ## **Biomedical Workflows on GCP** <a name="VC"></a>
 
-There are a lot of ways to run workflows on GCP. Here we list a few posibilities each of which may work for different research aims. As you walk through the various tutorials below, think about how you could possibly run that workflow more efficiently using a one of the other methods listed here.
+There are a lot of ways to run workflows on GCP. Here we list a few posibilities each of which may work for different research aims. As you walk through the various tutorials below, think about how you could possibly run that workflow more efficiently using one of the other methods listed here.
 
 - The most simple method is probably to spin up a Compute Engine instance, and run your command interactively, or using `screen` or, as a [startup script](https://cloud.google.com/compute/docs/instances/startup-scripts/linux) attached as metadata.
 - You could also run your pipeline via a Vertex AI notebook, either by splitting out each command as a different block, or by running a workflow manager (Nextflow etc.). See [here](https://codelabs.developers.google.com/vertex_notebook_executor#0) about scheduling a notebook to let it run longer.
