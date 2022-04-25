@@ -34,24 +34,23 @@ You can find a nice tutorial for using managed notebooks [here](https://codelabs
 
 ## **Genome Wide Association Studies** <a name="GWAS"></a>
 - This [NIH CFDE written tutorial](https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/GWAS-in-the-cloud
-) walks you through running a simple GWAS using AWS. However, you could consider using one of the other approaches we listed above for something a bit more cloud native. 
+) walks you through running a simple GWAS using AWS, thus we have rewritten it as a notebook to work on GCP [here](/tutorials/notebooks/GWAS_coat_color).
 - Terra has a [GWAS workspace](https://app.terra.bio/#workspaces/amp-t2d-op/2019_ASHG_Reproducible_GWAS-V2) that walks through a few tutorials and has links to public data for testing GWAS. Since it uses notebooks it should be easy enough to adapt to Vertex AI.
 
 ## **Proteomics** <a name="PRO"></a>
--Use Big Query to run a Kruskal Wallis Test on Proteomics data using [these notebook](https://github.com/isb-cgc/Community-Notebooks/tree/master/FeaturedNotebooks). Clone the repo into Vertex AI, or just drag them into a Vertex AI Workbench instance. 
+- Use Big Query to run a Kruskal Wallis Test on Proteomics data using [these notebooks](https://github.com/isb-cgc/Community-Notebooks/tree/master/FeaturedNotebooks). Clone the repo into Vertex AI, or just drag the notebooks into a Vertex AI Workbench instance. 
 
 ## **Medical Imaging** <a name="IM"></a>
-- Most medical imaging analyses are done in notebooks, so we would recommend downloading the Jupyter Notebook from [here](https://github.com/kyleoconnell/cloud-lab-training/tree/main/Tutorials/AWS_tutorials/BrainTumorSegmentation) and then importing or cloning it into Sagemaker. The tutorial walks through brain image segmentation.
-- Download NVIDIA's example [Medical Imaging Notebook](https://developer.nvidia.com/run-jupyter-notebooks). Note that there are other interesting notebooks on that site, but be warned that most of the NVIDIA notebooks require a GPU, so plan accordingly.
+- Most medical imaging analyses are done in notebooks, so we would recommend downloading the Jupyter Notebook from [here](/tutorials/notebooks/BrainTumorSegmentation) and then importing or cloning it into Sagemaker. The tutorial walks through brain image segmentation.
+- Download NVIDIA's example [Medical Imaging Notebook](https://developer.nvidia.com/run-jupyter-notebooks). Note that there are other interesting notebooks on that site, but be warned that most of the NVIDIA notebooks require a GPU, so be careful about spinning up expensive resources and not shutting them down!
 
 ## **RNAseq** <a name="RNA"></a>
-- You can run this [Nextflow tutorial](https://nf-co.re/rnaseq/usage) for RNAseq a variety of ways on GCP. Following the instructions outlined above, you could use Compute Engine, Life Sciences API, or in Vertex AI.
-- For a notebook version of a complete RNAseq pipeline from Fastq to Salmon quantification from [the University of Maine INBRE](https://github.com/MaineINBRE/rnaseq-myco-tutorial) use this [Notebook](rnaseq-myco-tutorial-main). 
-- There is also this NIH-written tutorial to use [kids first data on Cavatica](https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1/). Note that you will need to pre-register for both kids first data and Cavatica access.
+- You can run this [Nextflow tutorial](https://nf-co.re/rnaseq/usage) for RNAseq a variety of ways on GCP. Following the instructions outlined above, you could use Compute Engine, Life Sciences API, or in Vertex AI notebook.
+- For a notebook version of a complete RNAseq pipeline from Fastq to Salmon quantification from [The University of Maine INBRE](https://github.com/MaineINBRE/rnaseq-myco-tutorial) use this [Notebook](/tutorials/notebooks/rnaseq-myco-tutorial-main). 
+- There is also this NIH-written tutorial to use [Kids First data on Cavatica](https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1/). Note that you will need to pre-register for both Kids First data and Cavatica access.
 
 ## **Single Cell RNAseq** <a name="sc"></a>
--  This [NVIDIA blog](https://developer.nvidia.com/blog/accelerating-single-cell-genomic-analysis-using-rapids/) details how to run an accelerated scRNAseq pipeline using RAPIDS. You can find a link to the github that has lots of example notebooks [here](https://github.com/clara-parabricks/rapids-single-cell-examples). For each example use case they show some nice benchmarking data with time and cost for each machine type. You will see that most runs cost less than $1.00 with GPU machines. 
+-  This [NVIDIA blog](https://developer.nvidia.com/blog/accelerating-single-cell-genomic-analysis-using-rapids/) details how to run an accelerated scRNAseq pipeline using RAPIDS. You can find a link to the github that has lots of example notebooks [here](https://github.com/clara-parabricks/rapids-single-cell-examples). For each example use case they show some nice benchmarking data with time and cost for each machine type. You will see that most runs cost less than $1.00 with GPU machines. Pay careful attention to the environment setup as there are a lot of dependencies for these notebooks. Create a conda environment in the terminal, then run the notebook.
 
 ## **Long Read Sequence Analysis** <a name="Long"></a>
-Oxford Nanopore has a pretty complete offering of notebook tutorials for handling long read data to do a variety of things including variant calling, RNAseq, Sars-Cov-2 analysis and much more. Access the notebooks [here](https://labs.epi2me.io/nbindex/).
-
+Oxford Nanopore has a pretty complete offering of notebook tutorials for handling long read data to do a variety of things including variant calling, RNAseq, Sars-Cov-2 analysis and much more. Access the notebooks [here](https://labs.epi2me.io/nbindex/). Note that these notebooks expect you are running locally and accessing the epi2me notebook server. To run them in Cloud Lab, skip the first cell that connects to the server and then the rest of the notebook should run correctly, with a few tweaks. If you are just looking to try out notebooks, don't start with these. If you are interested in long read sequence analysis, then some troubleshooting may be needed to adapt these to the Cloud Lab environment. You may even need to rewrite them in a fresh notebook by adapting the commands.
