@@ -44,7 +44,7 @@ You can find a nice tutorial for using managed notebooks [here](https://codelabs
 - Download NVIDIA's example [Medical Imaging Notebook](https://developer.nvidia.com/run-jupyter-notebooks). Note that there are other interesting notebooks on that site, but be warned that most of the NVIDIA notebooks require a GPU, so be careful about spinning up expensive resources and not shutting them down!
 
 ## **RNAseq** <a name="RNA"></a>
-- You can run this [Nextflow tutorial](https://nf-co.re/rnaseq/usage) for RNAseq a variety of ways on GCP. Following the instructions outlined above, you could use Compute Engine, Life Sciences API, or in Vertex AI notebook.
+- You can run this [Nextflow tutorial](https://nf-co.re/rnaseq/usage) for RNAseq a variety of ways on GCP. Following the instructions outlined above, you could use Compute Engine, [Life Sciences API](https://cloud.google.com/life-sciences/docs/tutorials/nextflow), or in Vertex AI notebook.
 - For a notebook version of a complete RNAseq pipeline from Fastq to Salmon quantification from [The University of Maine INBRE](https://github.com/MaineINBRE/rnaseq-myco-tutorial) use this [Notebook](/tutorials/notebooks/rnaseq-myco-tutorial-main). 
 - There is also this NIH-written tutorial to use [Kids First data on Cavatica](https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/RNAseq-on-Cavatica/rna_seq_1/). Note that you will need to pre-register for both Kids First data and Cavatica access.
 
