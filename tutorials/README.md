@@ -23,6 +23,7 @@ There are a lot of ways to run workflows on GCP. Here we list a few posibilities
 - You could also run your pipeline via a Vertex AI notebook, either by splitting out each command as a different block, or by running a workflow manager (Nextflow etc.). See [here](https://codelabs.developers.google.com/vertex_notebook_executor#0) about scheduling a notebook to let it run longer.
 You can find a nice tutorial for using managed notebooks [here](https://codelabs.developers.google.com/vertex_notebook_executor#0). Note that there is now a difference between `managed notebooks` and `user managed notebooks`. The `managed notebooks` have more features and can be scheduled. 
 - You can interact with `Google Life Sciences API` using a workflow manager like [Nextflow](https://cloud.google.com/life-sciences/docs/tutorials/nextflow), [Snakemake](https://snakemake.readthedocs.io/en/stable/executing/cloud.html), or [Cromwell](https://github.com/GoogleCloudPlatform/rad-lab/tree/main/modules/genomics_cromwell).
+- You may find other API better suite your needs such as the [Google Cloud Healthcare Data Engine](https://cloud.google.com/healthcare).
 
 ## **Variant Calling** <a name="VC"></a>
 - This [Google tutorial](https://cloud.google.com/life-sciences/docs/tutorials/gatk) shows you how to run GATK Best Practices using the Life Sciences API. You could also run GATK using any of the workflow managers and submitting to the API as described in the links one section above.
