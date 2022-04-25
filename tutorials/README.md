@@ -40,7 +40,7 @@ You can find a nice tutorial for using managed notebooks [here](https://codelabs
 - Use Big Query to run a Kruskal Wallis Test on Proteomics data using [these notebooks](https://github.com/isb-cgc/Community-Notebooks/tree/master/FeaturedNotebooks). Clone the repo into Vertex AI, or just drag the notebooks into a Vertex AI Workbench instance. 
 
 ## **Medical Imaging** <a name="IM"></a>
-- Most medical imaging analyses are done in notebooks, so we would recommend downloading the Jupyter Notebook from [here](/tutorials/notebooks/BrainTumorSegmentation) and then importing or cloning it into Sagemaker. The tutorial walks through brain image segmentation.
+- Most medical imaging analyses are done in notebooks, so we would recommend downloading the Jupyter Notebook from [here](/tutorials/notebooks/SpleenLiverSegmentation) and then importing or cloning it into VertexAI. The tutorial walks through image segmentation using the Monai framework.
 - Download NVIDIA's example [Medical Imaging Notebook](https://developer.nvidia.com/run-jupyter-notebooks). Note that there are other interesting notebooks on that site, but be warned that most of the NVIDIA notebooks require a GPU, so be careful about spinning up expensive resources and not shutting them down!
 
 ## **RNAseq** <a name="RNA"></a>
