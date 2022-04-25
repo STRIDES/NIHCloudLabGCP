@@ -13,7 +13,6 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [RNAseq](#RNA)
 + [scRNAseq](#sc)
 + [Long Read Sequencing Analysis](#Long)
-+ [AI/ML Pipeline](#AI)
 
 ## **Biomedical Workflows on GCP** <a name="VC"></a>
 
