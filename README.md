@@ -1,4 +1,4 @@
-Jumpstart for NIH Cloud Lab on GCP
+GCP 101
 ---------------------------------
 
 _This repo is in active development. Expect frequent changes until April 28th!_
