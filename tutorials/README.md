@@ -33,7 +33,7 @@ You can find a nice tutorial for using managed notebooks [here](https://codelabs
 
 ## **Genome Wide Association Studies** <a name="GWAS"></a>
 - This [NIH CFDE written tutorial](https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/GWAS-in-the-cloud
-) walks you through running a simple GWAS using AWS, thus we have rewritten it as a notebook to work on GCP [here](/tutorials/notebooks/GWASCoatColor).
+) walks you through running a simple GWAS using AWS, thus we have rewritten it as a notebook to work on GCP [here](/tutorials/notebooks/GWASCoatColor). Make sure you select R as your kernel when you spin up your notebook so that you can switch between R and Python.
 - Terra has a [GWAS workspace](https://app.terra.bio/#workspaces/amp-t2d-op/2019_ASHG_Reproducible_GWAS-V2) that walks through a few tutorials and has links to public data for testing GWAS. Since it uses notebooks it should be easy enough to adapt to Vertex AI.
 
 ## **Proteomics** <a name="PRO"></a>
