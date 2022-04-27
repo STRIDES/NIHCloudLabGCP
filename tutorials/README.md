@@ -13,6 +13,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [RNAseq](#RNA)
 + [scRNAseq](#sc)
 + [Long Read Sequencing Analysis](#Long)
++ [Public Data Sets](#Pub)
 
 ## **Biomedical Workflows on GCP** <a name="VC"></a>
 
@@ -53,3 +54,6 @@ You can find a nice tutorial for using managed notebooks [here](https://codelabs
 
 ## **Long Read Sequence Analysis** <a name="Long"></a>
 Oxford Nanopore has a pretty complete offering of notebook tutorials for handling long read data to do a variety of things including variant calling, RNAseq, Sars-Cov-2 analysis and much more. Access the notebooks [here](https://labs.epi2me.io/nbindex/). Note that these notebooks expect you are running locally and accessing the epi2me notebook server. To run them in Cloud Lab, skip the first cell that connects to the server and then the rest of the notebook should run correctly, with a few tweaks. If you are just looking to try out notebooks, don't start with these. If you are interested in long read sequence analysis, then some troubleshooting may be needed to adapt these to the Cloud Lab environment. You may even need to rewrite them in a fresh notebook by adapting the commands.
+
+## **Public Data Sets** <a name="Pub"></a>
+
