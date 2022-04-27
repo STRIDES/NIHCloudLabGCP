@@ -1,9 +1,7 @@
 GCP 101
 ---------------------------------
 
-_This repo is in active development. Expect frequent changes until April 28th!_
-
-There are a LOT of resources available to learn more about GCP, which can be overwhelming. NIH Cloud Lab’s goal is to make cloud very easy and accessible for you, so that you can stop wasting time on administrative tasks and focus on your research.
+There are a lot of resources available to learn about GCP, which can be overwhelming. NIH Cloud Lab’s goal is to make cloud very easy and accessible for you, so that you can stop wasting time on administrative tasks and focus on your research.
 
 Use this repository to learn about how to use GCP by exploring the linked resources and walking through the tutorials. If you are a beginner, we suggest you begin with this Jumpstart section. If you already have foundational knowledge of GCP and cloud, feel free to skip ahead to the [tutorials](/tutorials/) section for in-depth examples of how to run specific workflows such as genomic variant calling and medical image analyis.
 
@@ -35,7 +33,6 @@ There is some strategy to managing storage costs as well. When you have spun up 
 
 
 ## **Launch a Jupyter Notebook** <a name="JUP"></a>
-
 On GCP, Notebooks are launched through the Vertex AI platform. Here we are going to launch a JuptyerLab environment on GCP, and then import a custom notebook from this repo to walk through running commands in Vertex AI. Vertex AI is where Google is moving with Machine Learning and Artificial Intelligence workflows. You can read more about Vertex AI [here](https://cloud.google.com/vertex-ai) and [here](https://cloud.google.com/vertex-ai/docs). 
 
 To begin, click on the `hamburger menu` (the three horizontal lines in the top left of your console). Go to `Artificial Intelligence > Vertex AI > Workbench`. Click `New Notebook` and select `R 4.1` for the kernel, although note that you can use a variety of environments including Python, R, PyTorch, TensorFlow and others. This can also be changed later. Name your notebook a globally unique name. Note that in GCP you can only use dash not underscore. For region select the region closest to where you live, or else the region where your cloud storage bucket is.
@@ -107,7 +104,6 @@ Many Cloud Lab users are interested in understanding how to estimate the price o
 To get a more precise estimate, you can actually create a bucket, spin up a VM, and run your workflow on a sample or two. Then go to `Billing` on the Hamburger Menu, then `Reports`, then filter on the right for the date range and services you want to benchmark. For example, if you ran your benchmark on 5/5/22, then you could filter for 5/5/22 to 5/5/22, and under services you could fiter for `Compute Engine`, or `Cloud Storage` (you can select multiple services), and then it will show the costs incurred for that date range. At the time of writing, Cloud Life Sciences API was not yet an option, but pricing should be very similar to `Compute Engine` for a ballpark figure.
 
 ## **Cost Optimization** <a name="COST"></a>
-
 As you go through all the tutorials, you can keep costs down by deleting resources (e.g. VMs or Buckets) you no longer need. Another strategy is to ensure that you are using all the compute resources you have provisioned. If you spin up a VM with 16 CPUs, you can see if they are all being utilized using [Cloud Monitoring](https://cloud.google.com/monitoring#section-1). If you are only really using 8 CPUs for example, then just change your machine size to fit the analysis. Finally, you can play with [Spot](https://cloud.google.com/spot-vms) instances for running workflows and end up saving a lot of money. 
 
 ## **Getting Support** <a name="SUP"></a>
