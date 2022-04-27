@@ -4,7 +4,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 ---------------------------------
 ## Overview of Page Contents
 
-+ [Biomedical Workflows on AWS](#Bio)
++ [Biomedical Workflows on GCP](#Bio)
 + [Variant Calling](#VC)
 + [VCF Query](#VCF)
 + [GWAS](#GWAS)
