@@ -33,7 +33,6 @@ We also wanted to give you a few other tips that may be helpful when it comes to
 
 Another important aspect of managing data storage costs is to be strategic about storing data in GCP vs. on your instances. When you have spun up a VM, you have already paid for the storage on the VM since you are paying for the size of the disk, whereas bucket storage is charged based on how much data you put in GS. This is something to think about when copying results files back to GCS for example. If they are not files you will need later, then leave them on the VM's EBS and save your money on more important data to put in GCS. Just make sure you are always either backing up by creating a machine image, or keeping data you can't live without in cloud storage.
 
-
 ## **Launch a Jupyter Notebook** <a name="JUP"></a>
 On GCP, Notebooks are launched through the Vertex AI platform. Here we are going to launch a JuptyerLab environment on GCP, and then import a custom notebook from this repo to walk through running commands in Vertex AI. Vertex AI is where Google is moving with Machine Learning and Artificial Intelligence workflows. You can read more about a [Vertex AI Overview](https://cloud.google.com/vertex-ai) and [technical documentation and tutorials](https://cloud.google.com/vertex-ai/docs). 
 
@@ -52,7 +51,7 @@ Once you have opened your notebook instance, note that on the left side of the p
 ```
 git clone https://github.com/STRIDES/NIHCloudLabGCP.git
 ```
-Now you have the NIHCloudLabGCP directory available. Navigate to NIHCloudLabGCP > tutorials > notebooks > pangolin > pangolin_pipeline.ipynb.
+Now you have the NIHCloudLabGCP directory available. Navigate to NIHCloudLabGCP > tutorials > notebooks > GWASCoatColor > GWAS_coat_color.ipynb.
 Explore this notebook and see how data moves in and out of the VertexAI environment. You can also manually add files, whether notebooks or data using the up arrow in the top left navigation menu. We can easily switch between different kernels in the top right. If you had selected Python3 when starting the instance, you would only have access to Python, but would need a different instance to open or create an R notebook, but if you start with R, then can switch between R and Python. After finishing this notebook, move onto the SRA_and_BigQuery notebook to learn about some key GCP skills like importing (SRA) data, making a cloud storage bucket and moving data in and out of the bucket, and finally how to query VCF files with BigQuery.
 
 Here's a few tips if you are new to notebooks. The navigation menu in the top left controls the control panel that is the equivalent to your directory structure. The panel above the notebook itself controls the notebook options. Most of these are obvious, but a few you will use often are:
