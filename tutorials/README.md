@@ -26,7 +26,7 @@ You can find a nice tutorial for using managed notebooks [here](https://codelabs
 - You may find other APIs better suite your needs such as the [Google Cloud Healthcare Data Engine](https://cloud.google.com/healthcare).
 
 ## **Variant Calling** <a name="VC"></a>
-- This [Google tutorial](https://cloud.google.com/life-sciences/docs/tutorials/gatk) shows you how to run GATK Best Practices using the Life Sciences API. You could also run GATK using any of the workflow managers and submitting to the API as described in the links one section above.
+- This [Google tutorial](https://cloud.google.com/life-sciences/docs/tutorials/gatk) shows you how to run GATK Best Practices using the Life Sciences API. There is a section about increasing your account quotas, you can skip that. You could also run GATK using any of the workflow managers and submitting to the API as described in the links one section above.
 - One tutorial specific to somatic variant calling comes from the Sheffield Bioinformatics Core [here](https://sbc.shef.ac.uk/somatic-variants/index.nb.html). It runs on Galaxy, but can be adapted to run in GCP. At the very least, the [data](https://drive.google.com/drive/folders/1RhrmfW3vMhPwAiBGdFIKfINWMsdvIG6E) may prove useful to you.
 
 ## **Query a VCF file in Big Query** <a name="VCF"></a>
