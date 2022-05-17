@@ -9,6 +9,8 @@ Use this repository to learn about how to use GCP by exploring the linked resour
 ## Overview of Page Contents
 
 + [Getting Started](#GS)
++ [Overview](#OV)
++ [Command Line Tools](#CLI)
 + [Ingest and Store Data](#STO)
 + [Jupyter Notebooks](#JUP)
 + [Virtual Machines](#VM)
@@ -23,6 +25,11 @@ Use this repository to learn about how to use GCP by exploring the linked resour
 You can learn a lot of what is possible on GCP in the [GCP Getting Started Page](https://cloud.google.com/getting-started). There you can find links to [documentation](https://cloud.google.com/docs) for common GCP tools and resources, and short videos on various subjects called [cloud minute](https://www.youtube.com/playlist?list=PLIivdWyY5sqIij_cgINUHZDMnGjVx3rxi).
 
 Even with a wealth of resources it can be difficult to know where to start on learning how to use the cloud. To help you, we thought through some of the most common tasks you will encounter doing cloud-enabled research, and gathered tutorials and guides specific to those topics. We hope the following materials are helpful as you explore migrating your research to the cloud.
+
+## **Overview** <a name="OV"></a>
+There are three primary ways you can run analyses using GCP: using virtual machines, Jupyter Notebook instances, and Serverless services. We give a breif overview of each of these here and go into more detail in the sections below. [Virtual machines](https://cloud.google.com/compute) are like your desktop computers, but you access them through the cloud console and you get to decide what resources are on that computer such as CPU and memory. In GCP, the platform that hosts these virtual machines is called Compute Engine. Jupyter Notebook instances are virtual machines with Juptyer Lab preloaded onto them. On GCP these are run through [VertexAI](https://cloud.google.com/vertex-ai). You decide what kind of virtual machine you want to 'spin up' and then you can run Juptyer notebooks on that virtual machine. Finally, serverless services are services allow you to run things, an analysis, an app, a website, and not have to deal with your own servers (VMs). There are still servers running somewhere, you just don't have to manage them. All you have to do is call a command that runs your analysis in the background, and copies the output files to a storage bucket. The most common serverless feature you will work with here is the Life Sciences API
+
+## **Command Line Tools** <a name="CLI"></a>
 
 One other task that will enable all that comes below is installing and configuring the GCP SDK command line tools, which will allow you to interact with instances or gs buckets from your local terminal. Instructions for the CLI can be found [here](https://cloud.google.com/sdk/docs/install). Along the same lines, it is important to familiarize yourself with the two main CLI commands: [gcloud](https://cloud.google.com/sdk/docs/cheatsheet) and [gsutil](https://cloud.google.com/storage/docs/quickstart-gsutil). There are also other commands you may come across in some circumstances like [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/).
 
