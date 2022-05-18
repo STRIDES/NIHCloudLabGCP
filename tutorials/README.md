@@ -50,7 +50,7 @@ Medical imaging analysis requires the analysis of large image files and often re
 
 ## **RNAseq** <a name="RNA"></a>
 RNAseq is a technique for quantifying gene levels of gene expression across the genome. Workflows are typically run using workflow managers, and final results can often be visualized in notebooks.
-- You can run this [Nextflow tutorial](https://nf-co.re/rnaseq/usage) for RNAseq a variety of ways on GCP. Following the instructions outlined above, you could use Compute Engine, [Life Sciences API](https://cloud.google.com/life-sciences/docs/tutorials/nextflow), or in Vertex AI notebook.
+- You can run this [Nextflow tutorial](https://nf-co.re/rnaseq/3.7) for RNAseq a variety of ways on GCP. Following the instructions outlined above, you could use Compute Engine, [Life Sciences API](https://cloud.google.com/life-sciences/docs/tutorials/nextflow), or in Vertex AI notebook.
 - For a notebook version of a complete RNAseq pipeline from Fastq to Salmon quantification from [The University of Maine INBRE](https://github.com/MaineINBRE/rnaseq-myco-tutorial) use this [Notebook](/tutorials/notebooks/rnaseq-myco-tutorial-main). 
 
 ## **Single Cell RNAseq** <a name="sc"></a>
