@@ -24,6 +24,7 @@ There are a lot of ways to run workflows on GCP. Here we list a few posibilities
 You can find a nice tutorial for using managed notebooks [here](https://codelabs.developers.google.com/vertex_notebook_executor#0). Note that there is now a difference between `managed notebooks` and `user managed notebooks`. The `managed notebooks` have more features and can be scheduled. 
 - You can interact with `Google Life Sciences API` using a workflow manager like [Nextflow](https://cloud.google.com/life-sciences/docs/tutorials/nextflow), [Snakemake](https://snakemake.readthedocs.io/en/stable/executing/cloud.html), or [Cromwell](https://github.com/GoogleCloudPlatform/rad-lab/tree/main/modules/genomics_cromwell). If you are running the Nextflow tutorial, please first reference our [docs](/docs/nextflow.md) for how to get Nextflow running in Cloud Lab.
 - You may find other APIs better suite your needs such as the [Google Cloud Healthcare Data Engine](https://cloud.google.com/healthcare).
+- Most of the notebooks below require just a few CPUs. Start small (maybe 4 CPUs), then scale up as needed. Likewise, when you need a GPU, start with an older GPU (e.g. T4) for testing, then switch to a newer GPU (A100/V100) once you know things will work. 
 
 ## **Variant Calling** <a name="VC"></a>
 Variation in our DNA sequence to large extent determines a person's traits. Genomic variant calling is the quantification of this DNA sequence variation for a given individual.
