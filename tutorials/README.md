@@ -48,7 +48,7 @@ Proteomics is the study of the proteome, which is the complement of a person's p
 ## **Medical Imaging** <a name="IM"></a>
 Medical imaging analysis requires the analysis of large image files and often requires elastic storage and accelerated computing.
 - Most medical imaging analyses are done in notebooks, so we would recommend downloading the Jupyter Notebook from [here](/tutorials/notebooks/SpleenLiverSegmentation) and then importing or cloning it into VertexAI. The tutorial walks through image segmentation using the Monai framework.
-- Download NVIDIA's example [Medical Imaging Notebook](https://developer.nvidia.com/run-jupyter-notebooks). Note that there are other interesting notebooks on that site. Remember to shut down any GPU instances after use so as to not exhaust your cloud lab budget.
+- Download NVIDIA's example [Medical Imaging Notebook](https://developer.nvidia.com/run-jupyter-notebooks). The link for the data download in the notebook is broken, so download the data from [here](https://www.kaggle.com/datasets/aryashah2k/brain-tumor-segmentation-brats-2019?resource=download). Note that there are other interesting notebooks on that site. Remember to shut down any GPU instances after use so as to not exhaust your cloud lab budget.
 
 ## **RNAseq** <a name="RNA"></a>
 RNAseq is a technique for quantifying gene levels of gene expression across the genome. Workflows are typically run using workflow managers, and final results can often be visualized in notebooks.
