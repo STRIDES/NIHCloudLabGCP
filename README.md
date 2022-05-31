@@ -1,4 +1,4 @@
-GCP 101
+# NIH Cloud Lab for GCP
 ---------------------------------
 
 There are a lot of resources available to learn about GCP, which can be overwhelming. NIH Cloud Lab’s goal is to make cloud very easy and accessible for you, so that you can stop wasting time on administrative tasks and focus on your research.
