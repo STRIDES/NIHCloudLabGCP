@@ -12,6 +12,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [Medical Imaging](#IM)
 + [RNAseq](#RNA)
 + [scRNAseq](#sc)
++ [BLAST](#bl)
 + [Long Read Sequencing Analysis](#Long)
 + [Public Data Sets](#Pub)
 
@@ -59,6 +60,9 @@ Single Cell RNAseq (scRNAseq) analyses allow for gene expression profiling at th
 -  This [NVIDIA blog](https://developer.nvidia.com/blog/accelerating-single-cell-genomic-analysis-using-rapids/) details how to run an accelerated scRNAseq pipeline using RAPIDS. You can find a link to the GitHub repository that has lots of example notebooks [here](https://github.com/clara-parabricks/rapids-single-cell-examples). For each example use case they show some nice benchmarking data with time and cost for each machine type. You will see that most runs cost less than $1.00 with GPU machines. Pay careful attention to the environment setup as there are a lot of dependencies for these notebooks and it can be a big challengin to get set up. 
 -  The [Scanpy tutorials](https://scanpy.readthedocs.io/en/stable/tutorials.html) page has a lot of good CPU-based examples you could run in Vertex AI. Clone this [GitHub repo](https://github.com/scverse/scanpy-tutorials) to get the notebooks directly.
 -  Alternatively, here is a [GitHub repository](https://github.com/mdozmorov/scRNA-seq_notes) with a curated list of scRNAseq resources and tutorials. We did not test these in cloud lab, but wanted to make them available in case you needed additional resources. 
+
+## **BLAST** <a name="bl"></a>
+- This [Common Data Fund](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction-to-GCP/gcp3/) tutorial explains how to use basic BLAST on GCP.
 
 ## **Long Read Sequence Analysis** <a name="Long"></a>
 Long read DNA sequence analysis involves analyzing sequencing reads typically longer than 10 thousand base pairs (bp) in length, compared with short read sequencing where reads are about 150 bp in length. Oxford Nanopore has a pretty complete offering of notebook tutorials for handling long read data to do a variety of things including variant calling, RNAseq, Sars-Cov-2 analysis and much more. You can find a list and description of notebooks [here](https://labs.epi2me.io/nbindex/), or clone the [GitHub repo](https://github.com/epi2me-labs/tutorials/tree/master/tutorials). Note that these notebooks expect you are running locally and accessing the epi2me notebook server. To run them in Cloud Lab, skip the first cell that connects to the server and then the rest of the notebook should run correctly, with a few tweaks. If you are just looking to try out notebooks, don't start with these. If you are interested in long read sequence analysis, then some troubleshooting may be needed to adapt these to the Cloud Lab environment. You may even need to rewrite them in a fresh notebook by adapting the commands.
