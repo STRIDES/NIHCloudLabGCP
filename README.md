@@ -128,3 +128,4 @@ As part of your participation in Cloud Lab you will be added to the Cloud Lab Te
 ## **Additional Training** <a name="TR"></a>
 This repo only scratches the surface of what can be done in the cloud. If you are interested in additional cloud training opportunities, please visit the [STRIDES Training page](cloud.nih.gov/training/). For more information on the STRIDES Initiative at the NIH, visit [our website](cloud.nih.gov) or contact the NIH STRIDES team at STRIDES@nih.gov for more information.
 
+There are a few live trainings happening Summer 2022, including this [Intro to Big Query](https://events.withgoogle.com/introduction-to-bigquery-vilt-amer-cdt-29jun/#content) on June 29th, [Big Data and Machine Learning Course](https://events.withgoogle.com/fun-big-data-machine-learning-vilt-amer-cdt-30jun/) on June 30th, and this [Core Infrastructure Course](https://events.withgoogle.com/fun-core-infrastructure-vilt-amer-cdt-1jul/) on July 1.
