@@ -29,7 +29,7 @@ You can find a nice tutorial for using managed notebooks [here](https://codelabs
 - Most of the notebooks below require just a few CPUs. Start small (maybe 4 CPUs), then scale up as needed. Likewise, when you need a GPU, start with an older GPU (e.g. T4) for testing, then switch to a newer GPU (A100/V100) once you know things will work. 
 
 ## **Download Data From the Sequence Read Archive (SRA)** <a name="SRA"></a>
-Next Generatin genetic sequence data is housed in the NCBI Sequence Read Archive (SRA). You can access these data using the SRA Toolkit. We walk you through this using [this notebook](/tutorials/notebooks/SRADownload). You can also use BigQuery to create a list of accessions for download using [this guide](https://www.ncbi.nlm.nih.gov/sra/docs/sra-bigquery/).
+Next Generatin genetic sequence data is housed in the NCBI Sequence Read Archive (SRA). You can access these data using the SRA Toolkit. We walk you through this using [this notebook](/tutorials/notebooks/SRADownload). You can also use BigQuery to create a list of accessions for download using [this setup guide](https://www.ncbi.nlm.nih.gov/sra/docs/sra-bigquery/) amd this [query guide](https://www.ncbi.nlm.nih.gov/sra/docs/sra-bigquery-examples/).
 
 ## **Variant Calling** <a name="VC"></a>
 Variation in our DNA sequence to large extent determines a person's traits. Genomic variant calling is the quantification of this DNA sequence variation for a given individual.
