@@ -16,6 +16,8 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [BLAST](#bl)
 + [Long Read Sequencing Analysis](#Long)
 + [Public Data Sets](#Pub)
++ [Using the Life Sciences API](#LSAPI)
+
 
 ## **Biomedical Workflows on GCP** <a name="VC"></a>
 
@@ -74,3 +76,6 @@ Long read DNA sequence analysis involves analyzing sequencing reads typically lo
 
 ## **Public Data Sets** <a name="Pub"></a>
 Google has a lot of public datasets available that you can use for your testing. These can be viewed [here](https://cloud.google.com/life-sciences/docs/resources/public-datasets) and can be accessed via [BigQuery](https://cloud.google.com/bigquery/public-data) or directly from the cloud bucket. For example, to view Phase 3 1000 Genomes at the command line type `gsutil ls gs://genomics-public-data/1000-genomes-phase-3`. 
+
+## **Using the Life Sciences API** <a name="LSAPI"></a>
+You can interact with the the Life Sciences API directly to submit commands, or more commonly you can interact with it through orchestration engines like [Snakemake](https://snakemake.readthedocs.io/en/stable/executing/cloud.html), [Nextflow](https://www.nextflow.io/docs/latest/google.html), [Cromwell](https://cromwell.readthedocs.io/en/stable/backends/Google/) etc. We wrote a [tutorial](/tutorials/notebooks/LifeSciencesAPI) using Snakemake, where we walk you through submitting one of the RNAseq tutorials to the Life Sciences API. 
