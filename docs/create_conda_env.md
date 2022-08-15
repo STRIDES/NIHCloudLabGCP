@@ -33,8 +33,10 @@ python -m ipykernel install --user --name=vcftools
 ### Open the kernel 
 
 Now you can switch to the kernel either from the launcher
+
 <img src="/images/launcher_env.png" width="350" height="200">
 
 
 Or, from the top right from within the notebook.
+
 <img src="/images/kernel.png" width="350" height="200">
