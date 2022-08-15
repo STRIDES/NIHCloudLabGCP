@@ -80,35 +80,7 @@ It is also worth noting that when you run a cell, sometimes it doesn't produce a
 ## **Creating a Conda Environment** <a name="CO"></a>
 Virtual environments allow you to manage package versions without having package conflicts. For example, if you needed Python 3 for one analysis, but Python 2.7 for another, you could create separate environments to use the two versions of Python. One of the most popular package managers used for creating virtual environments is the [conda package manager](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html#:~:text=A%20conda%20environment%20is%20a,NumPy%201.6%20for%20legacy%20testing). 
 
-Mamba is a reimplementation of conda written in C++ and runs much faster than legacy conda. Conda environments are created using configuration files in yaml format (yaml is a type of configuration file), where you specify the name of the environment, the conda channels to search, and then the programs to install. You can optionally specify a version for each program, or just list the name and have the default version installed. For example, `- bwa` or `- bwa ==0.7.17` with both install version `0.7.17`, but you could list a different version as needed. Further, some programs you may need do not play well with conda or are simply not available. If you run into lots of errors while trying to install something, consider installing via pip (python package manager) or downloading a binary (precompiled version of software). Make sure if you install anything in addition to the conda environment, you do it after activating the environment. If you are within a notebook, adding mamba to your path can act up sometimes. Either use the full path to the mamba executable or do all the environment creation/activation steps in the terminal (access from the launcher window).
-
-
-To create the conda environment, first install mamba:
-```
-curl -L -O https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh
-bash Mambaforge-$(uname)-$(uname -m).sh -b -p $HOME/mambaforge
-```
-Now add mamba to your path.
-```
-export PATH="$HOME/mambaforge/bin:$PATH"
-```
-List your current conda environments.
-```
-conda info --envs 
-```
-Now create the conda environment with all of your desired packages. Note that the file name doesn't matter if you have the name designation at the top of the yaml file. If you don't name the environment in the yaml, then it will be named whatever your file is named. Or you can add a -n flag to name the environment (`mamba env create -f environment.yaml -n your_name_of_choice`).
-```
-mamba env create -f envs/environment.yaml
-```
-Now list your environments again to find the path of your new environment.
-```
-conda info --envs 
-```
-Now activate your environment using the path printed from the previous command. 
-```
-source activate $ENVPATH
-```
-Now test your environment by running one of the programs you just installed. For example, type `bwa` (if you installed bwa!).
+Mamba is a reimplementation of conda written in C++ and runs much faster than legacy conda. Conda environments are created using configuration files in yaml format (yaml is a type of configuration file), or by listing the programs to install after the initial conda command. To create a conda environment on a virtual machine, follow [this guide](/docs/conda_env.md).
 
 ## **Serverless Functionality** <a name="SER"></a>
 Serverless services are those that allow you to run things, an analysis, an app, a website etc., and not have to deal with servers (VMs). There are still servers running somewhere, you just don't have to manage them. All you have to do is call a command that runs your analysis in the background and copies the output files to a storage bucket. The most relevant serverless feature on GCP to Cloud Lab users (especially 'omics' analyses) is the [Google Cloud Life Sciences API](https://cloud.google.com/life-sciences/docs/reference/rest). You can walk through a tutorial of this service using this [notebook](/tutorials/notebooks/LifeSciencesAPI) Those doing health informatics should look into the [Google Cloud Healthcare Data Engine](https://cloud.google.com/healthcare). You can find a variety of other [tutorials](https://cloud.google.com/life-sciences/docs/tutorials) that leverage the Life Sciences API for life sciences applications, but we will point out that most of the examples are related to genomics. If you are doing other biomedical research related to imaging, NLP, or other fields, look at the [tutorials](/tutorials/) section of this repo for inspiration. Some of these also leverage the API from within the notebooks. Besides the Google-specific examples, you can use the Life Sciences API to run workflows using other workflow managers like [Snakemake](https://snakemake.readthedocs.io/en/stable/executing/cloud.html) or [Nextflow](https://cloud.google.com/life-sciences/docs/tutorials/nextflow). Google also just released a new service in preview called [Batch](https://cloud.google.com/blog/products/compute/new-batch-service-processes-batch-jobs-on-google-cloud) which is a scheduling service that should feel similar to submitting jobs to a cluster. 
