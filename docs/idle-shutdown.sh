@@ -6,10 +6,13 @@
 
 sudo apt-get install bc 
 
-threshold=0.1
+# This is the CPU usage threshold. If activity falls below 10% for the specified time below, the VM shutsdown.
+# If you want the shutdown to be more sensitive, you can set this higher, so that a smaller drop in CPU activity will cause shutdown.
+
+threshold=0.1 
 
 count=0
-wait_minutes=60
+wait_minutes=60 ##### This is where you change the number of idle minutes before you want the VM to shutdown ####
 while true
 do
 
