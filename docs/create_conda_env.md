@@ -30,6 +30,8 @@ source activate vcftools
 
 python -m ipykernel install --user --name=vcftools
 
+If you get a `no module named ipykernel`, then run `pip3 install ipykernel`.
+
 ### Open the kernel 
 
 Now you can switch to the kernel either from the launcher
