@@ -1,4 +1,4 @@
-name: rnaseq
+name: vcftools
 channels:
     - conda-forge
     - bioconda
@@ -11,3 +11,5 @@ dependencies:
     - fastqc ==0.11.9
     - multiqc ==1.10.1
     - salmon ==1.5.1
+    - vcftools == 0.1.16
+
