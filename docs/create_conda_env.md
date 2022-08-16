@@ -7,11 +7,13 @@ The instructions for creating conda environments on Compute Engine virtual machi
 ## 1. Create a conda environment
 
 ### Install mamba
+```
 curl -L -O https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh
 bash Mambaforge-$(uname)-$(uname -m).sh -b -p $HOME/mambaforge
+```
 
 ### Export to Path
-export PATH="$HOME/mambaforge/bin:$PATH"
+`export PATH="$HOME/mambaforge/bin:$PATH"`
 
 From within the notebook you can add Mamba to path with 
 ```
@@ -20,15 +22,17 @@ os.environ["PATH"] += os.pathsep + os.environ["HOME"]+"/Mambaforge/bin"
 ```
 
 ### Create and activate the environment
-mamba create -n vcftools -c bioconda vcftools ipykernel -y
+`mamba create -n vcftools -c bioconda vcftools ipykernel -y`
 
-source activate vcftools
+You can also create the environment using a yaml file like this: `mamba env create -f environment.yml`
+
+`source activate vcftools`
 
 ## 2. Create a custom kernel for your notebook instance
 
 ### Create the kernel using ipykernel
 
-python -m ipykernel install --user --name=vcftools
+`python -m ipykernel install --user --name=vcftools`
 
 If you get a `no module named ipykernel`, then run `pip3 install ipykernel`.
 
