@@ -15,3 +15,7 @@ Google has [great documentation](https://cloud.google.com/source-repositories/do
 3. Select *Create new repository* then click **Continue**
 
 <img src="/docs/images/3_new_repository.png" width="550" height="100">
+
+4. Name your repository and enter your project name.
+
+<img src="/docs/images/4_name_repo.png" width="550" height="100">
