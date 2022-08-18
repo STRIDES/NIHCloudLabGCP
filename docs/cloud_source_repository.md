@@ -10,19 +10,19 @@ Google has [great documentation](https://cloud.google.com/source-repositories/do
 
 2. Click **Add repository** in the upper right corner.
 
-<img src="/images/1_search_source.png" width="550" height="100">
+<img src="/images/2_create_repository.png" width="550" height="150">
 
 3. Select *Create new repository* then click **Continue**
 
-<img src="/images/3_new_repository.png" width="550" height="100">
+<img src="/images/3_new_repository.png" width="550" height="300">
 
 4. Name your repository and enter your project name. Click **Create**.
 
-<img src="/images/4_name_repo.png" width="550" height="100">
+<img src="/images/4_name_repo.png" width="550" height="300">
 
 5. Add code following the instructions on your screen. You only get this help the first time, so for adding code in the future, use our instructions in the next section. Note that here we are using gcloud, but you can also use SSH keys and traditional git commands.
 
-<img src="/images/5_add_code.png" width="550" height="100">
+<img src="/images/5_add_code.png" width="550" height="500">
 
 ## Clone and push to a Google Cloud Source Repository
 
