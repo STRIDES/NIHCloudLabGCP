@@ -27,7 +27,8 @@ Use this repository to learn about how to use GCP by exploring the linked resour
 ## **Getting Started** <a name="GS"></a>
 You can learn a lot of what is possible on GCP in the [GCP Getting Started Page](https://cloud.google.com/getting-started). There you can find links to [documentation](https://cloud.google.com/docs) for common GCP tools and resources, and short videos on various subjects called [cloud minute](https://www.youtube.com/playlist?list=PLIivdWyY5sqIij_cgINUHZDMnGjVx3rxi).
 
-1.	[Google Cloud Essentials Playlist](https://www.youtube.com/playlist?list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL) - This play list includes shorter videos, less than 10 minutes, for specific topics that would be useful to novice GCP users including:
+You can also view the following 'Essentials' playlists from Google to help you get started.
+1. [Google Cloud Essentials Playlist](https://www.youtube.com/playlist?list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL) - This play list includes shorter videos, less than 10 minutes, for specific topics that would be useful to novice GCP users including:
 - [Machine Learning on Google Cloud]( https://www.youtube.com/watch?v=f-Ly6qMETDY&list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL&index=1&t=187s) 
 - [How to Run Code on Google Cloud]( https://www.youtube.com/watch?v=jtPtSVSTb9Y&list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL&index=3)
 - [How to Store Data on Google Cloud]( https://www.youtube.com/watch?v=w2mL4sUOjVo&list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL&index=4)
