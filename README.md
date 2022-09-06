@@ -22,6 +22,7 @@ Use this repository to learn about how to use GCP by exploring the linked resour
 + [Serverless Functionality](#SER)
 + [Clusters](#CLU)
 + [Billing and Benchmarking](#BB)
++ [Cost Optimization](#COST)
 + [Getting Support](#SUP)
 + [Additional Training](#TR)
 
