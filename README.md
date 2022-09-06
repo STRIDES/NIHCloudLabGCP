@@ -26,23 +26,7 @@ Use this repository to learn about how to use GCP by exploring the linked resour
 + [Additional Training](#TR)
 
 ## **Getting Started** <a name="GS"></a>
-You can learn a lot of what is possible on GCP in the [GCP Getting Started Page](https://cloud.google.com/getting-started). There you can find links to [documentation](https://cloud.google.com/docs) for common GCP tools and resources, and short videos on various subjects called [cloud minute](https://www.youtube.com/playlist?list=PLIivdWyY5sqIij_cgINUHZDMnGjVx3rxi).
-
-You can also view the following 'Essentials' playlists from Google to help you get started.
-1. [Google Cloud Essentials Playlist](https://www.youtube.com/playlist?list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL) - This play list includes shorter videos, less than 10 minutes, for specific topics that would be useful to novice GCP users including:
-- [Machine Learning on Google Cloud]( https://www.youtube.com/watch?v=f-Ly6qMETDY&list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL&index=1&t=187s) 
-- [How to Run Code on Google Cloud]( https://www.youtube.com/watch?v=jtPtSVSTb9Y&list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL&index=3)
-- [How to Store Data on Google Cloud]( https://www.youtube.com/watch?v=w2mL4sUOjVo&list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL&index=4)
-- [How to use the Google Cloud Console]( https://www.youtube.com/watch?v=27Pb5g7bEAA&list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL&index=6)
-- [Error Reporting]( https://www.youtube.com/watch?v=GANi9eRxhHs&list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL&index=11) 
-- [Cloud Logging]( https://www.youtube.com/watch?v=gyDp-Cl_MdA&list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL&index=12)
-- [Platform overview - Code & build tools]( https://www.youtube.com/watch?v=TH_OuqZ1ZKU&list=PLIivdWyY5sqKh1gDR0WpP9iIOY00IE0xL&index=8)
-2. [Cloud Bytes Playlist]( https://www.youtube.com/playlist?list=PLIivdWyY5sqIQ4_5PwyyXZVdsXr3wYhip) - This play list consists of very short videos, less than 2 minutes, that give a quick overview of GCP products including:
-- [Google Kubernetes Engine in a minute]( https://www.youtube.com/watch?v=pQ87vVMZK-A&list=PLIivdWyY5sqIQ4_5PwyyXZVdsXr3wYhip&index=8)
-- [Compute Engine in a minute](https://www.youtube.com/watch?v=IuK4gQeHRcI&list=PLIivdWyY5sqIQ4_5PwyyXZVdsXr3wYhip&index=10)
-- [Cloud Storage in a minute]( https://www.youtube.com/watch?v=wNOs3LlsH6k&list=PLIivdWyY5sqIQ4_5PwyyXZVdsXr3wYhip&index=7)
-- [BigQuery ML in a minute]( https://www.youtube.com/watch?v=0RMT8uEplbM&list=PLIivdWyY5sqIQ4_5PwyyXZVdsXr3wYhip&index=19)
-- [Public Datasets in a minute]( https://www.youtube.com/watch?v=CmRfB3h5H2Q&list=PLIivdWyY5sqIQ4_5PwyyXZVdsXr3wYhip&index=21)
+You can learn a lot of what is possible on GCP in the [GCP Getting Started Page](https://cloud.google.com/getting-started). There you can find links to [documentation](https://cloud.google.com/docs) for common GCP tools and resources, and short videos on various subjects called [cloud minute](https://www.youtube.com/playlist?list=PLIivdWyY5sqIij_cgINUHZDMnGjVx3rxi). You can also view the following ['Essentials' playlists](/docs/video_links.md) from Google to help you get started.
 
 Even with a wealth of resources it can be difficult to know where to start on learning how to use the cloud. To help you, we thought through some of the most common tasks you will encounter doing cloud-enabled research and gathered tutorials and guides specific to those topics. We hope the following materials are helpful as you explore migrating your research to the cloud. Please feel free to submit [issues](/issues) or even contribute to the codebase directly.
 
