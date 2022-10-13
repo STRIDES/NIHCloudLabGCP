@@ -6,7 +6,7 @@ Google has [great documentation](https://cloud.google.com/source-repositories/do
 
 1. Search for Source Repositories at the top of your console. Click **Source Repositories**.
 
-<img src="/images/1_search_source.png" width="550" height="300">
+<img src="/images/1_search_source.png" width="550" height="200">
 
 2. Click **Add repository** in the upper right corner.
 
@@ -14,7 +14,7 @@ Google has [great documentation](https://cloud.google.com/source-repositories/do
 
 3. Select *Create new repository* then click **Continue**
 
-<img src="/images/3_new_repository.png" width="550" height="300">
+<img src="/images/3_new_repository.png" width="550" height="225">
 
 4. Name your repository and enter your project name. Click **Create**.
 
