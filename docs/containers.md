@@ -6,11 +6,11 @@ This doc outlines how to create a Docker container and how to push that containe
 
 1. Navigate to the Artifact Registry Page. It's easiest to just search at the top. 
 
-<img src="/images/1_search_artifact_reg.png" width="550" height="400">
+<img src="/images/1_search_artifact_reg.png" width="550" height="225">
 
 2. Click **CREATE REPOSITORY**
 
-<img src="/images/2_create_registry.png" width="550" height="400">
+<img src="/images/2_create_registry.png" width="550" height="200">
 
 3. Fill in the details and click create. Select the region where you typically work so that you aren't pulling your container across regions. Click **Create**.
 
