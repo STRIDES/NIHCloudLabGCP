@@ -23,6 +23,7 @@ Use this repository to learn about how to use GCP by exploring the linked resour
 + [Clusters](#CLU)
 + [Billing and Benchmarking](#BB)
 + [Cost Optimization](#COST)
++ [Managing Your Code](#CODE)
 + [Getting Support](#SUP)
 + [Additional Training](#TR)
 
@@ -75,6 +76,9 @@ To get a more precise estimate, you can use assign labels to your workflows, the
 
 ## **Cost Optimization** <a name="COST"></a>
 As you go through all the tutorials, you can keep costs down by stopping and/or deleting resources (e.g., VMs or Buckets) that you no longer need. Another strategy is to ensure that you are using all the compute resources you have provisioned. If you spin up a VM with 16 CPUs, you can see if they are all being utilized using [Cloud Monitoring](https://cloud.google.com/monitoring#section-1). If you are only really using 8 CPUs for example, then just change your machine size to fit the analysis. You can also play with [Spot](https://cloud.google.com/spot-vms) instances for running workflows and end up saving a lot of money. Finally, you can create [Budget Alerts](https://cloud.google.com/billing/docs/how-to/budgets) to help you track your budget. 
+
+## **Managing Your Code with the Google Source Repository** <a name="CODE"></a>
+You if want an alternative to GitHub built directly into your cloud console, you can try the Google Cloud Source Repository. It uses all the normal git commands and will feel very familiar if you are used to using GitHub. If you want more background, or want to try it out, view our [guide](/docs/cloud_source_repository.md) in the docs.
 
 ## **Getting Support** <a name="SUP"></a>
 As part of the NIH Cloud Lab sign-up process, you will be added to the Cloud Lab Teams channel. Feel free to message others in the group for support and our team will also chime in and help. For NIH users, you can also submit a support ticket to the NIH IT Service Desk. For all other users, you can reach out to the Cloud Lab email with questions at `CloudLab@nih.gov`. Please be sure that your tickets/emails have a clear subject line, such as "GCP help with the Life Sciences API". For issues that the NIH Cloud Lab Support Team is unable to resolve, you can reach out to GCP enterprise support directly by clicking the question mark in the top right part of the console and opening a support case.
