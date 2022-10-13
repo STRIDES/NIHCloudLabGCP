@@ -6,11 +6,11 @@ Configuring auto-shutdown on a Compute Engine VM is very simple. When you are sp
 
 If editing an existing VM, click Edit.
 
-<img src="/images/edit_vm.png" width="200" height="150">
+<img src="/images/edit_vm.png" width="550" height="600">
 
 Then add startup script as metadata.
 
-<img src="/images/edit_startup.png" width="200" height="150">
+<img src="/images/edit_startup.png" width="550" height="600">
 
 ## 2. Configure auto-shutdown on Vertex AI Notebook Instance
 To configure auto-shutdown on a notebook instance, you need to first spin up a [notebook instance](https://cloud.google.com/vertex-ai/docs/workbench/user-managed/create-user-managed-notebooks-instance-console-quickstart) in Vertex AI. Then, to add the startup script, navigate to Compute Engine, and edit the instance following the instructions shown above. You will need to restart the VM, navigate back to Vertex AI, and reopen the Jupyter Instance. You only need to do this once per instance. 
