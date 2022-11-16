@@ -2,7 +2,7 @@
 
 The instructions for creating conda environments on Compute Engine virtual machines are exactly the same as those for Vertex AI notebooks. The reason is that notebooks have conda pre-installed and so don't play well with changing the conda environment within the notebook. Thus, if you are using a notebook, follow all steps from within a terminal, which you can access from the launcher. 
 
-<img src="/images/launch_terminal.png" width="350" height="200">
+<img src="/images/launch_terminal.png" width="550" height="400">
 
 ## 1. Create a conda environment
 
@@ -40,9 +40,9 @@ If you get a `no module named ipykernel`, then run `pip3 install ipykernel`.
 
 Now you can switch to the kernel either from the launcher
 
-<img src="/images/launcher_env.png" width="350" height="200">
+<img src="/images/launcher_env.png" width="550" height="350">
 
 
 Or, from the top right from within the notebook.
 
-<img src="/images/kernel.png" width="350" height="200">
+<img src="/images/kernel.png" width="550" height="350">
