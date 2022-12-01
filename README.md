@@ -14,6 +14,7 @@ Use this repository to learn about how to use GCP by exploring the linked resour
 + [Getting Started](#GS)
 + [Overview](#OV)
 + [Command Line Tools](#CLI)
++ [Google Cloud Marketplace](#MARK)
 + [Ingest and Store Data](#STO)
 + [Virtual Machines](#VM)
 + [Disk Images](#IM)
@@ -40,6 +41,9 @@ There are three primary ways you can run analyses using GCP: using virtual machi
 
 ## **Command Line Tools** <a name="CLI"></a>
 One other task that will enable all that comes below is installing and configuring the GCP SDK command line tools, which will allow you to interact with instances or Google Storage buckets from your local terminal. Command line interface (CLI) tools are those that you use directly in a terminal/shell as opposed to clicking within a graphical user interface (UI). Instructions for installing the CLI can be found [here](https://cloud.google.com/sdk/docs/install). Along the same lines, it is important to familiarize yourself with the two main CLI commands: [gcloud](https://cloud.google.com/sdk/docs/cheatsheet) and [gsutil](https://cloud.google.com/storage/docs/quickstart-gsutil). There are also other commands you may come across in some circumstances like [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/). If you have trouble installing the CLI on your local computer, you can still use the same commands from a virtual machine or from [Cloud Shell](https://cloud.google.com/shell), which is a terminal environment available to users on the GCP console.
+
+## **Google Cloud Marketplace** <a name="MARK"></a>
+The [GCP Marketplace](https://console.cloud.google.com/marketplace?_ga=2.218253598.688556330.1669914945-1153994297.1666892959) is a platform similar to Amazon.com where you can search for and launch pre-configured solutions such as Machine Images. Examples of images you may launch would be those with [enhanced security](https://console.cloud.google.com/marketplace/product/cis-public/cis-centos-linux-7-level-1) or ones opimized for various tasks like machine learning (https://console.cloud.google.com/marketplace/browse?_ga=2.218253598.688556330.1669914945-1153994297.1666892959&q=machine%20learning), or [accelerated genomics](https://console.cloud.google.com/marketplace/product/nvidia-ngc-public/nvidia-clara-parabricks-new-plan). 
 
 ## **Ingest and Store Data using Google Cloud Storage** <a name="STO"></a>
 Data can be stored in two places on the cloud, either in a cloud storage bucket, which on GCP is called Google Cloud Storage (GCS), or on an instance, which usually has Elastic Block Storage. In general, you want to keep your compute and storage separate, so you should aim to storage data in GCS for access, then only copy the data you need to a particular instance to run an analysis, then copy the results back to GCS. In addition, the data on an instance is only available when the instance is running, whereas the data in GCS is always available. [Here](https://cloud.google.com/storage/docs/quickstart-console) is a great tutorial on how to use GCS and is worth going through to learn how it all works.
