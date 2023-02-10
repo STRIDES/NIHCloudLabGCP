@@ -11,6 +11,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [GWAS](#gwas)
 + [Proteomics](#pro)
 + [Medical Imaging](#mi)
++ [Machine Learning](#ml)
 + [RNAseq](#rna)
 + [scRNAseq](#sc)
 + [BLAST](#bl)
@@ -57,6 +58,9 @@ Proteomics is the study of the proteome, which is the complement of a person's p
 Medical imaging analysis requires the analysis of large image files and often requires elastic storage and accelerated computing.
 - Most medical imaging analyses are done in notebooks, so we would recommend downloading the Jupyter Notebook from [here](/tutorials/notebooks/SpleenLiverSegmentation) and then importing or cloning it into VertexAI. The tutorial walks through image segmentation using the Monai framework.
 - You can also request early access to the new [Google Medical Imaging Suite](https://cloud.google.com/medical-imaging) to see if it would fit your use case.
+
+## **Machine Learning** <a name='ml'></a>
+Machine learning on GCP generally occurs within VertexAI. You can learn more about machine learning on GCP at this [Google Crash Course](https://developers.google.com/machine-learning/crash-course). 
 
 ## **RNAseq** <a name="rna"></a>
 RNAseq is a technique for quantifying gene levels of gene expression across the genome. Workflows are typically run using workflow managers, and final results can often be visualized in notebooks.
