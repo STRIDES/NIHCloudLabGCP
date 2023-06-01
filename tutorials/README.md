@@ -18,7 +18,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [ATACseq](#atac)
 + [Metagenomics](#meta)
 + [Multiomics and Biomarker Analysis](#mo)
-+ [BLAST](#bl)
++ [BLAST+](#bl)
 + [Long Read Sequencing Analysis](#long)
 + [Using the Life Sciences API](#lsapi)
 + [Public Data Sets](#pub)
@@ -102,7 +102,7 @@ Multiomic analysis involves integrating data across modalities (e. g. genomic, t
 Biomarker discovery is the process of identifying specific molecules or characteristics that can serve as indicators of biological processes, diseases, or treatment responses, aiding in diagnosis, prognosis, and personalized medicine. Biomarker discovery is typically conducted through comprehensive analysis of various types of data, such as genomics, proteomics, metabolomics, and clinical data, using advanced techniques including high-throughput screening, bioinformatics, and statistical analysis to identify patterns or signatures that differentiate between healthy and diseased individuals, or responders and non-responders to specific treatments.
 - [This module](https://github.com/NIGMS/BiomarkersURI), developed by the University of Rhode Island for the NIGMS Sandbox Project, walks you through conducting some common biomarker discovery analyses in R. 
 
-## **BLAST** <a name="bl"></a>
+## **BLAST+** <a name="bl"></a>
 - This [Common Data Fund](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction-to-GCP/gcp3/) tutorial explains how to use basic BLAST on GCP.
 - We also rewrote [this ElastBLAST tutorial](https://blast.ncbi.nlm.nih.gov/doc/elastic-blast/quickstart-gcp.html) as a [notebook](/tutorials/notebooks/elasticBLAST) that will work in VertexAI. 
 
