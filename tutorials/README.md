@@ -14,6 +14,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [Proteomics](#pro)
 + [RNAseq](#rna)
 + [scRNAseq](#sc)
++ [MultiOmics](#mo)
 + [BLAST](#bl)
 + [Long Read Sequencing Analysis](#long)
 + [Using the Life Sciences API](#lsapi)
@@ -68,12 +69,17 @@ Proteomics is the study of the proteome, which is the complement of a person's p
 RNAseq is a technique for quantifying gene levels of gene expression across the genome. Workflows are typically run using workflow managers, and final results can often be visualized in notebooks.
 - You can run this [Nextflow tutorial](https://nf-co.re/rnaseq/3.7) for RNAseq a variety of ways on GCP. Following the instructions outlined above, you could use Compute Engine, [Life Sciences API](https://cloud.google.com/life-sciences/docs/tutorials/nextflow), or in Vertex AI notebook.
 - For a notebook version of a complete RNAseq pipeline from Fastq to Salmon quantification go through these tutorials from the [NIGMS Sandbox Project](https://github.com/NIGMS/RNAseqUM) developed by The University of Maine INBRE.
+- Likewise, [This multi-omics module](https://github.com/NIGMS/MultiomicsUND) from the University of North Dakota has an RNAseq workflow. 
 
 ## **Single Cell RNAseq** <a name="sc"></a>
 Single Cell RNAseq (scRNAseq) analyses allow for gene expression profiling at the single cell level.
 -  This [NVIDIA blog](https://developer.nvidia.com/blog/accelerating-single-cell-genomic-analysis-using-rapids/) details how to run an accelerated scRNAseq pipeline using RAPIDS. You can find a link to the GitHub repository that has lots of example notebooks [here](https://github.com/clara-parabricks/rapids-single-cell-examples). For each example use case they show some nice benchmarking data with time and cost for each machine type. You will see that most runs cost less than $1.00 with GPU machines. Pay careful attention to the environment setup as there are a lot of dependencies for these notebooks and it can be challenging to get set up. 
 -  The [Scanpy tutorials](https://scanpy.readthedocs.io/en/stable/tutorials.html) page has a lot of good CPU-based examples you could run in Vertex AI. Clone this [GitHub repo](https://github.com/scverse/scanpy-tutorials) to get the notebooks directly.
 -  Alternatively, here is a [GitHub repository](https://github.com/mdozmorov/scRNA-seq_notes) with a curated list of scRNAseq resources and tutorials. We did not test these in cloud lab, but wanted to make them available in case you needed additional resources. 
+
+## **Multiomic Analysis** <a name="mo"></a>
+Multiomic analysis involves integrating data across modalities (e. g. genomic, transcriptomic, phenotypic) to generate additional insights. 
+- [This set of notebooks](https://github.com/NIGMS/MultiomicsUND) gives you an example of conducting multiomic analysis in Jupyter Notebooks and was developed by the University of North Dakota as part of the NIGMS Sandbox Project.
 
 ## **BLAST** <a name="bl"></a>
 - This [Common Data Fund](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction-to-GCP/gcp3/) tutorial explains how to use basic BLAST on GCP.
