@@ -14,6 +14,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [Proteomics](#pro)
 + [RNAseq](#rna)
 + [scRNAseq](#sc)
++ [ATACseq and scATACseq](#atac)
 + [BLAST](#bl)
 + [Long Read Sequencing Analysis](#long)
 + [Using the Life Sciences API](#lsapi)
@@ -71,6 +72,10 @@ Single Cell RNAseq (scRNAseq) analyses allow for gene expression profiling at th
 -  This [NVIDIA blog](https://developer.nvidia.com/blog/accelerating-single-cell-genomic-analysis-using-rapids/) details how to run an accelerated scRNAseq pipeline using RAPIDS. You can find a link to the GitHub repository that has lots of example notebooks [here](https://github.com/clara-parabricks/rapids-single-cell-examples). For each example use case they show some nice benchmarking data with time and cost for each machine type. You will see that most runs cost less than $1.00 with GPU machines. Pay careful attention to the environment setup as there are a lot of dependencies for these notebooks and it can be challenging to get set up. 
 -  The [Scanpy tutorials](https://scanpy.readthedocs.io/en/stable/tutorials.html) page has a lot of good CPU-based examples you could run in Vertex AI. Clone this [GitHub repo](https://github.com/scverse/scanpy-tutorials) to get the notebooks directly.
 -  Alternatively, here is a [GitHub repository](https://github.com/mdozmorov/scRNA-seq_notes) with a curated list of scRNAseq resources and tutorials. We did not test these in cloud lab, but wanted to make them available in case you needed additional resources. 
+
+## **ATACseq and Single Cell ATACseq** <a name="atac"></a>
+ATAC-seq is a technique that allows scientists to understand how DNA is packaged in cells by identifying the regions of DNA that are accessible and potentially involved in gene regulation.
+-[This module](https://github.com/NIGMS/atacseqUNMC) walks you through how to work through an ATACseq and single-cell ATACseq workflow on Google Cloud. The module was developed by the University of Nebraska Medical Center for the NIGMS Sandbox Project. 
 
 ## **BLAST** <a name="bl"></a>
 - This [Common Data Fund](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction-to-GCP/gcp3/) tutorial explains how to use basic BLAST on GCP.
