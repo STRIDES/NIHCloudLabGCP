@@ -16,6 +16,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [scRNAseq](#sc)
 + [Methylseq](#ms)
 + [ATACseq](#atac)
++ [Metagenomics](#meta)
 + [Multiomics and Biomarker Analysis](#mo)
 + [BLAST](#bl)
 + [Long Read Sequencing Analysis](#long)
@@ -89,6 +90,11 @@ As one of the most abundant and well-studied epigenetic modifications, DNA methy
 ATAC-seq is a technique that allows scientists to understand how DNA is packaged in cells by identifying the regions of DNA that are accessible and potentially involved in gene regulation.
 -[This module](https://github.com/NIGMS/atacseqUNMC) walks you through how to conduct an ATACseq and single cell ATACseq analysis on Google Cloud. 
 
+## **Metagenomics** <a name="meta"></a>
+Metagenomics is the study of genetic material collected directly from environmental samples, enabling the exploration of microbial communities, their diversity, and their functional potential, without the need for laboratory culturing.
+-[This module](https://github.com/NIGMS/MetagenomicsUSD) walks you through conducting a metagenomic analysis using command line and nextflow. The module was developed by the University of South Dakota as part of the NIGMS Sandbox Project.
+
+https://github.com/NIGMS/MetagenomicsUSD
 ## **Multiomic Analysis and Biomarker Discovery** <a name="mo"></a>
 Multiomic analysis involves integrating data across modalities (e. g. genomic, transcriptomic, phenotypic) to generate additional insights. 
 - [This set of notebooks](https://github.com/NIGMS/MultiomicsUND) gives you an example of conducting multiomic analysis in Jupyter Notebooks and was developed by the University of North Dakota as part of the NIGMS Sandbox Project.
