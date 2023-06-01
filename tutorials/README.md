@@ -12,7 +12,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [VCF Query](#vcf)
 + [GWAS](#gwas)
 + [Proteomics](#pro)
-+ [RNAseq](#rna)
++ [RNAseq and Transcriptome Assembly](#rna)
 + [scRNAseq](#sc)
 + [Methylseq](#ms)
 + [ATACseq](#atac)
@@ -23,7 +23,6 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [Public Data Sets](#pub)
 
 ## **Biomedical Workflows on GCP** <a name="bds"></a>
-
 There are a lot of ways to run workflows on GCP. Here we list a few possibilities each of which may work for different research aims. As you walk through the various tutorials below, think about how you could possibly run that workflow more efficiently using one of the other methods listed here.
 
 - The simplest method is probably to spin up a Compute Engine instance, and run your command interactively, or using `screen` or, as a [startup script](https://cloud.google.com/compute/docs/instances/startup-scripts/linux) attached as metadata.
@@ -67,11 +66,14 @@ Proteomics is the study of the proteome, which is the complement of a person's p
 - Run AlphaFold in Vertex AI using [this notebook](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/community-content/alphafold_on_workbench/AlphaFold.ipynb). Make sure you have a GPU for your notebook instance, and follow [these instructures](https://cloud.google.com/blog/products/ai-machine-learning/running-alphafold-on-vertexai) for setting up your environment. Namely, under Environment, select `Custom container`, and then for `Docker container image` paste in the following: `west1-docker.pkg.dev/cloud-devrel-public-resources/alphafold/alphafold-on-gcp:latest`.
 - Conduct secondary analysis of Proteomic data using this [NIGMS Sandbox notebook](https://github.com/NIGMS/ProteomicsUAMS), developed by the University of Arkansas for Medical Sciences.
 
-## **RNAseq** <a name="rna"></a>
+## **RNAseq and Transcriptome Assembly** <a name="rna"></a>
 RNAseq is a technique for quantifying gene levels of gene expression across the genome. Workflows are typically run using workflow managers, and final results can often be visualized in notebooks.
 - You can run this [Nextflow tutorial](https://nf-co.re/rnaseq/3.7) for RNAseq a variety of ways on GCP. Following the instructions outlined above, you could use Compute Engine, [Life Sciences API](https://cloud.google.com/life-sciences/docs/tutorials/nextflow), or in Vertex AI notebook.
 - For a notebook version of a complete RNAseq pipeline from Fastq to Salmon quantification go through these tutorials from the [NIGMS Sandbox Project](https://github.com/NIGMS/RNAseqUM) developed by The University of Maine INBRE.
 - Likewise, [This multi-omics module](https://github.com/NIGMS/MultiomicsUND) from the University of North Dakota has an RNAseq workflow. 
+
+Transcriptome assembly is the process of reconstructing the complete set of RNA transcripts in a cell or tissue from fragmented sequencing data, providing valuable insights into gene expression and functional analysis.
+-[This module](https://github.com/NIGMS/rnaAssemblyMDI) developed by the MDI Biological Laboratory for the NIGMS Sandbox Project walks you through transcriptome assembly using nextflow. 
 
 ## **Single Cell RNAseq** <a name="sc"></a>
 Single Cell RNAseq (scRNAseq) analyses allow for gene expression profiling at the single cell level.
