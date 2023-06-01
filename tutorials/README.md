@@ -34,12 +34,12 @@ You can find a nice tutorial for using managed notebooks [here](https://codelabs
 - Most of the notebooks below require just a few CPUs. Start small (maybe 4 CPUs), then scale up as needed. Likewise, when you need a GPU, start with a smaller or older generation GPU (e.g. T4) for testing, then switch to a newer GPU (A100/V100) once you know things will work or you need more horsepower. 
 
 ## **Medical Image Segmentation** <a name="mi"></a>
-Medical imaging analysis requires the analysis of large image files and often requires elastic storage and accelerated computing.
+Medical image analysis is the application of computational algorithms and techniques to extract meaningful information from medical images for diagnosis, treatment planning, and research purposes. Medical image analysis requires large image files and often elastic storage and accelerated computing.
 - Most medical imaging analyses are done in notebooks, so we would recommend downloading the Jupyter Notebook from [here](/tutorials/notebooks/SpleenLiverSegmentation) and then importing or cloning it into VertexAI. The tutorial walks through image segmentation using the Monai framework.
 - You can also request early access to the new [Google Medical Imaging Suite](https://cloud.google.com/medical-imaging) to see if it would fit your use case.
 
 ## **Machine Learning** <a name='ml'></a>
-Machine learning on GCP generally occurs within VertexAI. You can learn more about machine learning on GCP at this [Google Crash Course](https://developers.google.com/machine-learning/crash-course). 
+Machine learning is a subfield of artificial intelligence that focuses on the development of algorithms and models that enable computers to learn from and make predictions or decisions based on data, without being explicitly programmed. Machine learning on GCP generally occurs within VertexAI. You can learn more about machine learning on GCP at this [Google Crash Course](https://developers.google.com/machine-learning/crash-course). 
 
 For hands-on examples, try out [this module](https://github.com/NIGMS/COVIDMachineLearningSFSU) developed by San Francisco State University or [this one from the University of Arkasas](https://github.com/NIGMS/MachineLearningUA) developed for the NIGMS Sandbox Project.
 
@@ -47,28 +47,28 @@ For hands-on examples, try out [this module](https://github.com/NIGMS/COVIDMachi
 Next Generation genetic sequence data is housed in the NCBI Sequence Read Archive (SRA). You can access these data using the SRA Toolkit. We walk you through this using [this notebook](/tutorials/notebooks/SRADownload), including how to use BigQuery to generate your list of Accessions. You can also use BigQuery to create a list of accessions for download using [this setup guide](https://www.ncbi.nlm.nih.gov/sra/docs/sra-bigquery/) and this [query guide](https://www.ncbi.nlm.nih.gov/sra/docs/sra-bigquery-examples/). Additional example notebooks can be found at this [NCBI repo](https://github.com/ncbi/ASHG-Workshop-2021). In particular, we recommend this notebook(https://github.com/ncbi/ASHG-Workshop-2021/blob/main/1_Basic_BigQuery_Examples.ipynb), which goes into more detail on using BigQuery to access the results of the SRA Taxonomic Analysis Tool, which often differ from the user input species name due to contamination, error, or due to samples being metagenomic in nature. Further, [this notebook](https://github.com/ncbi/ASHG-Workshop-2021/blob/main/2_Array_Examples.ipynb) does a deep dive on parsing the BigQuery results and may give you some good ideas on how to best search for samples from SRA. The SRA metadata and taxonomy analyses are in separate BigQuery tables, you can learn how to join those two tables using SQL from [this Powerpoint](https://github.com/NCBI-Codeathons/NCGAS-cloud-workshop/blob/main/5_BigQuery.pptx). Finally, NCBI released [this workshop](https://github.com/ncbi/workshop-asm-ngs-2022/wiki) in 2022 that walks through a wide variety of BigQuery applications with NCBI datasets, we highly recommend you take a look.
 
 ## **Variant Calling** <a name="vc"></a>
-Variation in our DNA sequence to large extent determines a person's traits, propensity for disease, etc. Genomic variant calling is the identification of this DNA sequence variation for a given individual.
+Genomic variant calling is the process of identifying and characterizing genetic variations from DNA sequencing data to understand differences in an individual's genetic makeup. 
 - This [Google tutorial](https://cloud.google.com/life-sciences/docs/tutorials/gatk) shows you how to run the GATK Best Practices pipeline for genomic variant calling using the Life Sciences API. There is a section about increasing your account quotas, you can skip that. You could also run GATK using any of the workflow managers and submitting to the Life Sciences API.
 - One tutorial specific to somatic variant calling comes from the Sheffield Bioinformatics Core [here](https://sbc.shef.ac.uk/somatic-variants/index.nb.html). It runs on Galaxy, but can be adapted to run in GCP. At the very least, the [data](https://drive.google.com/drive/folders/1RhrmfW3vMhPwAiBGdFIKfINWMsdvIG6E) may prove useful to you.
 
 ## **Query a VCF file in Big Query** <a name="vcf"></a>
-The output of genomic variant calling workflows is a file in the variant call format (VCF). These are often large, structured data files that can be searched using database query tools.
+The output of genomic variant calling workflows is a file in the variant call format (VCF). These are often large, structured data files that can be searched using database query tools such as Big Query
 - Learn how to use Big Query to run queries against large VCF files from Gnomad data using [this notebook](https://github.com/GoogleCloudPlatform/rad-lab/blob/main/modules/data_science/scripts/build/notebooks/Exploring_gnomad_on_BigQuery.ipynb). If any cells give you errors, try running that cell again and it should work, there seems to be some lag time between cells.
 
 ## **Genome Wide Association Studies** <a name="gwas"></a>
-Genome wide association studies, or GWAS, are statistical analyses that estimate associations between genomic variants and phenotypic traits.
+Genome-wide association studies (GWAS) are large-scale investigations that analyze the genomes of many individuals to identify common genetic variants associated with traits, diseases, or other phenotypes.
 - This [NIH CFDE written tutorial](https://training.nih-cfde.org/en/latest/Bioinformatic-Analyses/GWAS-in-the-cloud
 ) walks you through running a simple GWAS using AWS, thus we have rewritten it as a notebook to work on GCP [here](/tutorials/notebooks/GWASCoatColor). Make sure you select R as your kernel when you spin up your notebook so that you can switch between R and Python (this only applies to 'User Managed Notebooks') but note that our team experienced conda permission issues with the new Managed Notebooks for this tutorial, so we recommend using the 'User Managed Notebooks'. Also, if the imported notebook has cells already printed out, just go to Kernel > Restart Kernel and Clear all Outputs.
 - [This tutorial](https://github.com/david-thrower-nih/DL-gwas-gcp-example) from NIH NIEHS (credit to David Thrower) builds on a published deep learning method for GWAS of soybeans and users Kubeflow and AutoML on a Kubernetes instance. 
 
 ## **Proteomics** <a name="pro"></a>
-Proteomics is the study of the proteome, which is the complement of a person's proteins. Although most primary proteomic analyses occur in proprietary software platforms, a lot of secondary analysis happens in Jupyter or R notebooks, which is what we demo here.
+Proteomics is the study of the entire set of proteins in a cell, tissue, or organism, aiming to understand their structure, function, and interactions to uncover insights into biological processes and diseases. Although most primary proteomic analyses occur in proprietary software platforms, a lot of secondary analysis happens in Jupyter or R notebooks, we give several examples here:
 - Use Big Query to run a Kruskal Wallis Test on Proteomics data using [these notebooks](https://github.com/isb-cgc/Community-Notebooks/tree/master/FeaturedNotebooks). Clone the repo into Vertex AI, or just drag the notebooks into a Vertex AI Workbench instance. In the notebook titled 'ACM_BCB_2020_POSTER_KruskalWallisTest_ProteinGeneExpression_vs_ClinicalFeatures.ipyng', the first BigQuery cell may throw an error, but ignore this and keep going, the rest of the notebook should run fine. Also, in that first big cell, make sure you add your Project ID. See this [doc](/docs/protein_setup.md) for environment setup instructions.
 - Run AlphaFold in Vertex AI using [this notebook](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/community-content/alphafold_on_workbench/AlphaFold.ipynb). Make sure you have a GPU for your notebook instance, and follow [these instructures](https://cloud.google.com/blog/products/ai-machine-learning/running-alphafold-on-vertexai) for setting up your environment. Namely, under Environment, select `Custom container`, and then for `Docker container image` paste in the following: `west1-docker.pkg.dev/cloud-devrel-public-resources/alphafold/alphafold-on-gcp:latest`.
 - Conduct secondary analysis of Proteomic data using this [NIGMS Sandbox notebook](https://github.com/NIGMS/ProteomicsUAMS), developed by the University of Arkansas for Medical Sciences.
 
 ## **RNAseq and Transcriptome Assembly** <a name="rna"></a>
-RNAseq is a technique for quantifying gene levels of gene expression across the genome. Workflows are typically run using workflow managers, and final results can often be visualized in notebooks.
+RNA-seq analysis is a high-throughput sequencing method that allows the measurement and characterization of gene expression levels and transcriptome dynamics. Workflows are typically run using workflow managers, and final results can often be visualized in notebooks.
 - You can run this [Nextflow tutorial](https://nf-co.re/rnaseq/3.7) for RNAseq a variety of ways on GCP. Following the instructions outlined above, you could use Compute Engine, [Life Sciences API](https://cloud.google.com/life-sciences/docs/tutorials/nextflow), or in Vertex AI notebook.
 - For a notebook version of a complete RNAseq pipeline from Fastq to Salmon quantification go through these tutorials from the [NIGMS Sandbox Project](https://github.com/NIGMS/RNAseqUM) developed by The University of Maine INBRE.
 - Likewise, [This multi-omics module](https://github.com/NIGMS/MultiomicsUND) from the University of North Dakota has an RNAseq workflow. 
@@ -77,13 +77,13 @@ Transcriptome assembly is the process of reconstructing the complete set of RNA 
 -[This module](https://github.com/NIGMS/rnaAssemblyMDI) developed by the MDI Biological Laboratory for the NIGMS Sandbox Project walks you through transcriptome assembly using nextflow. 
 
 ## **Single Cell RNAseq** <a name="sc"></a>
-Single Cell RNAseq (scRNAseq) analyses allow for gene expression profiling at the single cell level.
+Single-cell RNA sequencing (scRNA-seq) is a technique that enables the analysis of gene expression at the individual cell level, providing insights into cellular heterogeneity, identifying rare cell types, and revealing cellular dynamics and functional states within complex biological systems.
 -  This [NVIDIA blog](https://developer.nvidia.com/blog/accelerating-single-cell-genomic-analysis-using-rapids/) details how to run an accelerated scRNAseq pipeline using RAPIDS. You can find a link to the GitHub repository that has lots of example notebooks [here](https://github.com/clara-parabricks/rapids-single-cell-examples). For each example use case they show some nice benchmarking data with time and cost for each machine type. You will see that most runs cost less than $1.00 with GPU machines. Pay careful attention to the environment setup as there are a lot of dependencies for these notebooks and it can be challenging to get set up. 
 -  The [Scanpy tutorials](https://scanpy.readthedocs.io/en/stable/tutorials.html) page has a lot of good CPU-based examples you could run in Vertex AI. Clone this [GitHub repo](https://github.com/scverse/scanpy-tutorials) to get the notebooks directly.
 -  Alternatively, here is a [GitHub repository](https://github.com/mdozmorov/scRNA-seq_notes) with a curated list of scRNAseq resources and tutorials. We did not test these in cloud lab, but wanted to make them available in case you needed additional resources. 
 
 ## **Methylseq** <a name="ms"></a>
-As one of the most abundant and well-studied epigenetic modifications, DNA methylation plays an essential role in normal cell development and has various effects on transcription, genome stability, and DNA packaging within cells.
+As one of the most abundant and well-studied epigenetic modifications, DNA methylation plays an essential role in normal cell development and has various effects on transcription, genome stability, and DNA packaging within cells. Methylseq is a technique to identify methylated regions of the genome. 
 - The University of Hawai'i at Manoa developed [this set of notebooks](https://github.com/NIGMS/MethylSeqUH) that walk you through a Methylseq analysis as part of the NIGMS Sandbox Program.
 
 ## **ATACseq** <a name="atac"></a>
@@ -94,15 +94,15 @@ ATAC-seq is a technique that allows scientists to understand how DNA is packaged
 Metagenomics is the study of genetic material collected directly from environmental samples, enabling the exploration of microbial communities, their diversity, and their functional potential, without the need for laboratory culturing.
 -[This module](https://github.com/NIGMS/MetagenomicsUSD) walks you through conducting a metagenomic analysis using command line and nextflow. The module was developed by the University of South Dakota as part of the NIGMS Sandbox Project.
 
-https://github.com/NIGMS/MetagenomicsUSD
 ## **Multiomic Analysis and Biomarker Discovery** <a name="mo"></a>
-Multiomic analysis involves integrating data across modalities (e. g. genomic, transcriptomic, phenotypic) to generate additional insights. 
+Multiomic analysis involves integrating data across modalities (e. g. genomic, transcriptomic, phenotypic) to generate additive insights. 
 - [This set of notebooks](https://github.com/NIGMS/MultiomicsUND) gives you an example of conducting multiomic analysis in Jupyter Notebooks and was developed by the University of North Dakota as part of the NIGMS Sandbox Project.
 
 Biomarker discovery is the process of identifying specific molecules or characteristics that can serve as indicators of biological processes, diseases, or treatment responses, aiding in diagnosis, prognosis, and personalized medicine. Biomarker discovery is typically conducted through comprehensive analysis of various types of data, such as genomics, proteomics, metabolomics, and clinical data, using advanced techniques including high-throughput screening, bioinformatics, and statistical analysis to identify patterns or signatures that differentiate between healthy and diseased individuals, or responders and non-responders to specific treatments.
 - [This module](https://github.com/NIGMS/BiomarkersURI), developed by the University of Rhode Island for the NIGMS Sandbox Project, walks you through conducting some common biomarker discovery analyses in R. 
 
 ## **BLAST+** <a name="bl"></a>
+NCBI BLAST (Basic Local Alignment Search Tool) is a widely used bioinformatics program provided by the National Center for Biotechnology Information (NCBI) that compares nucleotide or protein sequences against a large database to identify similar sequences and infer evolutionary relationships, functional annotations, and structural information.
 - This [Common Data Fund](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction-to-GCP/gcp3/) tutorial explains how to use basic BLAST on GCP.
 - We also rewrote [this ElastBLAST tutorial](https://blast.ncbi.nlm.nih.gov/doc/elastic-blast/quickstart-gcp.html) as a [notebook](/tutorials/notebooks/elasticBLAST) that will work in VertexAI. 
 
