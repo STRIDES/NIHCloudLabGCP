@@ -15,6 +15,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [RNAseq](#rna)
 + [scRNAseq](#sc)
 + [Methylseq](#ms)
++ [ATACseq](#atac)
 + [MultiOmics](#mo)
 + [BLAST](#bl)
 + [Long Read Sequencing Analysis](#long)
@@ -81,6 +82,10 @@ Single Cell RNAseq (scRNAseq) analyses allow for gene expression profiling at th
 ## **Methylseq** <a name="ms"></a>
 As one of the most abundant and well-studied epigenetic modifications, DNA methylation plays an essential role in normal cell development and has various effects on transcription, genome stability, and DNA packaging within cells.
 - The University of Hawai'i at Manoa developed [this set of notebooks](https://github.com/NIGMS/MethylSeqUH) that walk you through a Methylseq analysis as part of the NIGMS Sandbox Program.
+
+## **ATACseq** <a name="atac"></a>
+ATAC-seq is a technique that allows scientists to understand how DNA is packaged in cells by identifying the regions of DNA that are accessible and potentially involved in gene regulation.
+-[This module](https://github.com/NIGMS/atacseqUNMC) walks you through how to conduct an ATACseq and single cell ATACseq analysis on Google Cloud. 
 
 ## **Multiomic Analysis** <a name="mo"></a>
 Multiomic analysis involves integrating data across modalities (e. g. genomic, transcriptomic, phenotypic) to generate additional insights. 
