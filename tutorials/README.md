@@ -16,7 +16,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [scRNAseq](#sc)
 + [Methylseq](#ms)
 + [ATACseq](#atac)
-+ [MultiOmics](#mo)
++ [Multiomics and Biomarker Analysis](#mo)
 + [BLAST](#bl)
 + [Long Read Sequencing Analysis](#long)
 + [Using the Life Sciences API](#lsapi)
@@ -87,9 +87,12 @@ As one of the most abundant and well-studied epigenetic modifications, DNA methy
 ATAC-seq is a technique that allows scientists to understand how DNA is packaged in cells by identifying the regions of DNA that are accessible and potentially involved in gene regulation.
 -[This module](https://github.com/NIGMS/atacseqUNMC) walks you through how to conduct an ATACseq and single cell ATACseq analysis on Google Cloud. 
 
-## **Multiomic Analysis** <a name="mo"></a>
+## **Multiomic Analysis and Biomarker Discovery** <a name="mo"></a>
 Multiomic analysis involves integrating data across modalities (e. g. genomic, transcriptomic, phenotypic) to generate additional insights. 
 - [This set of notebooks](https://github.com/NIGMS/MultiomicsUND) gives you an example of conducting multiomic analysis in Jupyter Notebooks and was developed by the University of North Dakota as part of the NIGMS Sandbox Project.
+
+Biomarker discovery is the process of identifying specific molecules or characteristics that can serve as indicators of biological processes, diseases, or treatment responses, aiding in diagnosis, prognosis, and personalized medicine. Biomarker discovery is typically conducted through comprehensive analysis of various types of data, such as genomics, proteomics, metabolomics, and clinical data, using advanced techniques including high-throughput screening, bioinformatics, and statistical analysis to identify patterns or signatures that differentiate between healthy and diseased individuals, or responders and non-responders to specific treatments.
+- [This module](https://github.com/NIGMS/BiomarkersURI), developed by the University of Rhode Island for the NIGMS Sandbox Project, walks you through conducting some common biomarker discovery analyses in R. 
 
 ## **BLAST** <a name="bl"></a>
 - This [Common Data Fund](https://training.nih-cfde.org/en/latest/Cloud-Platforms/Introduction-to-GCP/gcp3/) tutorial explains how to use basic BLAST on GCP.
