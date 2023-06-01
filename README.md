@@ -63,6 +63,8 @@ Jupyter notebooks are web based interactive code platforms. On GCP, notebooks ar
 
 To spin up a Notebook instance and import an example training notebook, follow our [guide here](/docs/vertexai.md).
 
+If you want to practice using the terminal or review BASH commands in Jupyter, look at [this module](https://github.com/NIGMS/IntroBioinformaticsDartmouth) from Dartmouth developed for the NIGMS Sandbox. 
+
 ## **Creating a Conda Environment** <a name="co"></a>
 Virtual environments allow you to manage package versions without having package conflicts. For example, if you needed Python 3 for one analysis, but Python 2.7 for another, you could create separate environments to use the two versions of Python. One of the most popular package managers used for creating virtual environments is the [conda package manager](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html#:~:text=A%20conda%20environment%20is%20a,NumPy%201.6%20for%20legacy%20testing). 
 
