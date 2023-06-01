@@ -14,6 +14,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [Proteomics](#pro)
 + [RNAseq](#rna)
 + [scRNAseq](#sc)
++ [Methylseq](#ms)
 + [MultiOmics](#mo)
 + [BLAST](#bl)
 + [Long Read Sequencing Analysis](#long)
@@ -76,6 +77,10 @@ Single Cell RNAseq (scRNAseq) analyses allow for gene expression profiling at th
 -  This [NVIDIA blog](https://developer.nvidia.com/blog/accelerating-single-cell-genomic-analysis-using-rapids/) details how to run an accelerated scRNAseq pipeline using RAPIDS. You can find a link to the GitHub repository that has lots of example notebooks [here](https://github.com/clara-parabricks/rapids-single-cell-examples). For each example use case they show some nice benchmarking data with time and cost for each machine type. You will see that most runs cost less than $1.00 with GPU machines. Pay careful attention to the environment setup as there are a lot of dependencies for these notebooks and it can be challenging to get set up. 
 -  The [Scanpy tutorials](https://scanpy.readthedocs.io/en/stable/tutorials.html) page has a lot of good CPU-based examples you could run in Vertex AI. Clone this [GitHub repo](https://github.com/scverse/scanpy-tutorials) to get the notebooks directly.
 -  Alternatively, here is a [GitHub repository](https://github.com/mdozmorov/scRNA-seq_notes) with a curated list of scRNAseq resources and tutorials. We did not test these in cloud lab, but wanted to make them available in case you needed additional resources. 
+
+## **Methylseq** <a name="ms"></a>
+As one of the most abundant and well-studied epigenetic modifications, DNA methylation plays an essential role in normal cell development and has various effects on transcription, genome stability, and DNA packaging within cells.
+- The University of Hawai'i at Manoa developed [this set of notebooks](https://github.com/NIGMS/MethylSeqUH) that walk you through a Methylseq analysis as part of the NIGMS Sandbox Program.
 
 ## **Multiomic Analysis** <a name="mo"></a>
 Multiomic analysis involves integrating data across modalities (e. g. genomic, transcriptomic, phenotypic) to generate additional insights. 
