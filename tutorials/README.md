@@ -23,6 +23,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [Using the Life Sciences API (depreciated)](#lsapi)
 + [Using Google Batch](#gbatch)
 + [Public Data Sets](#pub)
++ [Generative AI on GCP](#genai1)
 
 ## **Biomedical Workflows on GCP** <a name="bds"></a>
 There are a lot of ways to run workflows on GCP. Here we list a few possibilities each of which may work for different research aims. As you walk through the various tutorials below, think about how you could possibly run that workflow more efficiently using one of the other methods listed here.
@@ -123,3 +124,10 @@ You can interact with Google Batch directly to submit commands, or more commonly
 ## **Public Data Sets** <a name="pub"></a>
 Google has a lot of public datasets available that you can use for your testing. These can be viewed [here](https://cloud.google.com/life-sciences/docs/resources/public-datasets) and can be accessed via [BigQuery](https://cloud.google.com/bigquery/public-data) or directly from the cloud bucket. For example, to view Phase 3 1000 Genomes at the command line type `gsutil ls gs://genomics-public-data/1000-genomes-phase-3`. 
 
+## **Generative AI on GCP** <a name="genai1"></a>
+Google has created two ways to work with generative models one is through the Vertex AI's [Generative AI Studio](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/generative-ai-studio) console allowing the user to rapidly create, test, and train generative AI models on the cloud in a safe and secure setting. The other method is creating the models or uploading them directly to Vertex AI.  Many models from the studio also have ready to use models all contained with in the [Model Garden](https://cloud.google.com/vertex-ai/docs/start/explore-models), these models range from foundation models, fine-tunable models, and task-specific solutions.
+
+
+```python
+
+```
