@@ -20,8 +20,8 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [Multiomics and Biomarker Analysis](#mo)
 + [BLAST+](#bl)
 + [Long Read Sequencing Analysis](#long)
-+ [Using the Life Sciences API (depreciated)](#lsapi)
 + [Using Google Batch](#gbatch)
++ [Using the Life Sciences API (depreciated)](#lsapi)
 + [Public Data Sets](#pub)
 + [Generative AI on GCP](#genai1)
 
