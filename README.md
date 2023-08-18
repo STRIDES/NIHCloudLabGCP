@@ -19,7 +19,6 @@ Use this repository to learn about how to use GCP by exploring the linked resour
 + [Virtual Machines](#vm)
 + [Disk Images](#im)
 + [Jupyter Notebooks](#jup)
-+ [Generative AI in Vertex AI](#genai)
 + [Creating Conda Environments](#co)
 + [Managing Containers](#dock)
 + [Serverless Functionality](#ser)
@@ -65,9 +64,6 @@ Jupyter notebooks are web based interactive code platforms. On GCP, notebooks ar
 To spin up a Notebook instance and import an example training notebook, follow our [guide here](/docs/vertexai.md).
 
 If you want to practice using the terminal or review BASH commands in Jupyter, look at [this module](https://github.com/NIGMS/IntroBioinformaticsDartmouth) from Dartmouth developed for the NIGMS Sandbox. 
-
-## **Generative AI in Vertex AI** <a name="genai"></a>
-Vertex AI not only has the capabilities to create Jupyter notebooks but also generative AI models. Some examples of what generative AI models are capabile of are extracting wanted information from text, transforming speech into text, generating images from describtions and vice versa, and so much more. Vertex AI's [Generative AI Studio](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/generative-ai-studio) console allows the user to rapidly create, test, and train generative AI models on the cloud in a safe and secure setting. The studio also has ready to use models all contained with in the [Model Garden](https://cloud.google.com/vertex-ai/docs/start/explore-models), these models range from foundation models, fine-tunable models, and task-specific solutions.
 
 ## **Creating a Conda Environment** <a name="co"></a>
 Virtual environments allow you to manage package versions without having package conflicts. For example, if you needed Python 3 for one analysis, but Python 2.7 for another, you could create separate environments to use the two versions of Python. One of the most popular package managers used for creating virtual environments is the [conda package manager](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html#:~:text=A%20conda%20environment%20is%20a,NumPy%201.6%20for%20legacy%20testing). 
