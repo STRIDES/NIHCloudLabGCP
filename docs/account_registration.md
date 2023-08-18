@@ -1,4 +1,4 @@
-# How to register for an NIGMS Sandbox Google Cloud Project
+# How to register for a NIH-affilated research Cloud Lab account
 
 1. Navigate to [this link](https://nih-cloudlab.firebaseapp.com/) and wait for a login page to load.
 
