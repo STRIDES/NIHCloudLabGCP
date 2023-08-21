@@ -20,6 +20,7 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [Multiomics and Biomarker Analysis](#mo)
 + [BLAST+](#bl)
 + [Long Read Sequencing Analysis](#long)
++ [Drug Discovery](#atom)
 + [Using the Life Sciences API](#lsapi)
 + [Public Data Sets](#pub)
 
@@ -112,6 +113,11 @@ NCBI BLAST (Basic Local Alignment Search Tool) is a widely used bioinformatics p
 
 ## **Long Read Sequence Analysis** <a name="long"></a>
 Long read DNA sequence analysis involves analyzing sequencing reads typically longer than 10 thousand base pairs (bp) in length, compared with short read sequencing where reads are about 150 bp in length. Oxford Nanopore has a pretty complete offering of notebook tutorials for handling long read data to do a variety of things including variant calling, RNAseq, Sars-Cov-2 analysis and much more. You can find a list and description of notebooks [here](https://labs.epi2me.io/nbindex/), or clone the [GitHub repo](https://github.com/epi2me-labs/tutorials/tree/master/tutorials). Note that these notebooks expect you are running locally and accessing the epi2me notebook server. To run them in Cloud Lab, skip the first cell that connects to the server and then the rest of the notebook should run correctly, with a few tweaks. If you are just looking to try out notebooks, don't start with these. If you are interested in long read sequence analysis, then some troubleshooting may be needed to adapt these to the Cloud Lab environment. You may even need to rewrite them in a fresh notebook by adapting the commands.
+
+## **Drug Discovery** <a name="atom"></a>
+The [Accelerating Therapeutics for Opportunities in Medicine (ATOM) Consortium](https://atomscience.org/) created a series of [Jupyter notebooks](https://github.com/ATOMScience-org/AMPL/tree/master/atomsci/ddm/examples/tutorials) that walk you through the ATOM approach to Drug Discovery. 
+
+These notebooks were created to run in Google Colab, so if you run them in Google Cloud, you will need to make a few modification. First, we recommend you use a [Google Managed Notebook](https://cloud.google.com/vertex-ai/docs/workbench/managed/introduction) rather than a User-Managed notebook simply because the Google Managed notebooks already have Tensorflow and other dependencies installed. Be sure to attach a GPU to your instance (T4 is fine). Also, you will need to comment out `%tensorflow_version 2.x` since that is a Colab-specific command. You will also need to `pip install` a few packages as needed. If you get errors with `deepchem`, try running `pip install --pre deepchem[tensorflow]` and/or `pip install --pre deepchem[torch]`. Also, some notebooks will require a Tensorflow kernel, while others require Pytorch. You may also run into a Pandas error, reach out to the ATOM GitHub developers for the best solution to this issue.
 
 ## **Using the Life Sciences API** <a name="lsapi"></a>
 You can interact with the the Life Sciences API directly to submit commands, or more commonly you can interact with it through orchestration engines like [Snakemake](https://snakemake.readthedocs.io/en/stable/executing/cloud.html), [Nextflow](https://www.nextflow.io/docs/latest/google.html), [Cromwell](https://cromwell.readthedocs.io/en/stable/backends/Google/) etc. We several tutorials using the LS API using [Snakemake](/tutorials/notebooks/LifeSciencesAPI/snakemake/) which runs the University of Maine RNAseq workflow, and [Nextflow](/tutorials/notebooks/LifeSciencesAPI/nextflow) where we run the nf-core Methylseq pipeline, as well as several from the NIGMS Sandbox including [transcriptome assembly](https://github.com/NIGMS/rnaAssemblyMDI), [multiomics](https://github.com/NIGMS/MultiomicsUND), [methylseq](https://github.com/NIGMS/MethylSeqUH), and [metagenomics](https://github.com/NIGMS/MetagenomicsUSD).
