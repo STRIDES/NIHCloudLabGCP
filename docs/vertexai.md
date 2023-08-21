@@ -1,6 +1,8 @@
 # Using VertexAI Notebooks
 
-### Spin up a User-Managed VertexAI Notebook Instance
+_Google Cloud offers three flavors of Notebook instances: User-Managed, Google Managed, and Instances. User-Managed instances offer the most flexibility in terms of installing local software via conda/mamba or launching from custom containers. [Google Managed][(https://cloud.google.com/vertex-ai/docs/workbench/managed/introduction) and [Instances](https://cloud.google.com/vertex-ai/docs/workbench/instances/introduction) allow for 'on the fly' machine resizing and notebook scheduling, but they run in a tenant project (rather than your project) and offer less flexibility for installing custom software. Most machine-learning related software are pre-installed, but these can be hard to use for a lot of bioinformatic tasks where you need to install CLI tools with conda.
+
+### Spin up a User-Managed Notebook Instance
 1. Start by clicking the `hamburger menu` (the three horizontal lines in the top left of your console). Go to `Artificial Intelligence > Vertex AI > Workbench`. 
 
   ![selectvertexai](/images/1_select_vertexAI.png)
@@ -29,9 +31,17 @@
 
   ![launch notebook](/images/5_launch_notebooks.png)
 
+9. You can edit your instance by clicking on the instance name.
 
-### (Bonus) Using the new Managed Notebooks feature
-At the time of writing, Google had just rolled out a new feature in Vertex AI called `Managed Notebooks`, which now differ from the `User Managed Notebooks`. You can use either one for this tutorial, but the nice thing about the new `Managed Notebooks` is that you can schedule them, or just execute them similar to submitting a job to a slurm cluster. Read the documentation for [scheduling a notebook](https://cloud.google.com/vertex-ai/docs/workbench/managed/schedule-managed-notebooks-run-quickstart). Note that scheduled notebooks will be run on remote compute resources, so you need to treat them like a fresh install, copy your data in, install all packages, etc. Don't expect that because you have data/dependencies copied to your current environment they will be present when your scheduled notebook is run. Also, when you spin up the Managed Notebook, make sure you select `Single User` rather than Service Account to avoid permission conflicts. You can also resize the machine on the fly (without shutting down), and there are some extra compute environments available. However, we have observed that conda is tightly controlled on these machines, so if you decide to try them and have issues with conda, switch back to the User Managed Notebooks.
+  ![click_instance_name](/images/6_select_instance_vertexai.png)
+
+10. Now you can modify any of the instance settings, like resizing your machine or attaching additional disk storage.
+
+    ![resize image](/images/7_resizevertexaiimage.png)
+
+
+### Spin up a Google-Managed VertexAI Notebook Instance
+The way of spinning up a notebook is the same as above. The main differences you will observe with Google Managed and Instances Notebooks is the resizing on the fly, a nice BigQuery integration, and the inability to install anything via conda/mamba.
 
 ### Import custom notebook and data
 
