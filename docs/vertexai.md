@@ -1,25 +1,33 @@
 # Using VertexAI Notebooks
 
-### Spin up a VertexAI Virtual Machine
+### Spin up a User-Managed VertexAI Notebook Instance
 1. Start by clicking the `hamburger menu` (the three horizontal lines in the top left of your console). Go to `Artificial Intelligence > Vertex AI > Workbench`. 
 
-<img src="/images/1_select_vertexAI.png" width="550" height="350">
+  ![selectvertexai](/images/1_select_vertexAI.png)
 
-2. Click `New Notebook` and select `R 4.1` for the kernel, although note that you can use a variety of environments including Python, R, PyTorch, TensorFlow, and others. This can also be changed later. 
+2. Click **Create New**
 
-<img src="/images/2_select_kernel_R.png" width="550" height="600">
+  ![1_create_new_notebook](/images/1_create_new_notebook.png)
 
-3. Name your notebook a globally unique name. Note that in GCP you can only use dash, not underscore. For region select the region closest to where you live, or else the region where your cloud storage bucket is located. Now click the pencil icon next to `Notebook properties`.
+3. Select **Advanced Options** at the bottom of the window that pops up.
 
-<img src="/images/3_name_notebook.png" width="550" height="500">
+   ![advanced options](/images/2_select_advanced_options.png)
+  
+4. Name your notebook a globally unique name. Note that in GCP you can only use dash, not underscore. For region select the region closest to where you live, or else the region where your data is stored. If you plan to use a managed service that is only available in a particular region, go ahead and select `us-central` as your region. Click **Continue**.
 
-4. When the new window opens, you can modify the rest of the settings. For operating system select 'Debian 10', for 'Environment' select your desired Environment. This where you can change this if you selected something different before. Under `Machine configuration > Machine type` select your machine type. For this tutorial you can get away with using `e2-standard-4`, but you will likely want a more powerful machine for other workflows. Read more about machine families on GCP [here](https://cloud.google.com/compute/docs/machine-types), about the specifics of general purpose machine types within machine families [here](https://cloud.google.com/compute/docs/general-purpose-machines). You can follow the links in those doc pages for Compute, Memory, or Accelerator optimized machine types as well. You can figure out the cost of your selected machine [here](https://cloud.google.com/compute/all-pricing). _Remember that as long as your notebook is running (and not stopped) you will be charged per second of use. This is especially important to remember for GPU machines as these will consume your budget quickly. Consider installing an [auto-shutdown script](/docs/compute-engine-idle-shutdown.md) to prevent this._ Leave all other settings as default and click **Create**.
+  ![2_select_notebook_name](/images/3_select_notebook_name.png)
 
-<img src="/images/4_select_environment.png" width="550" height="400">
+5. On the _Environment_ tab, select `Debian 11` and select your desired Environment. Many of the tutorials specify a recommended environment. Don't worry about a startup script or metadata. Click **Continue**.
+   
+6. Under _Machine type_ select your desired number of CPUs/GPUs. This is usually specified by the tutorial you are completing.
+   
+7. On the same page, click **Enable Idle Shutdown** and specify the idle minutes for shutdown. This means, if you close your browser and walk away without stopping your instance, it will shutdown automatically after this many minutes. We recommend 30 minutes.
 
-5. It will take a minute or two for your new notebook environment to spin up so go brew some coffee and come back. Once the status changes from a blue spinning ball to `Open JUPYTERLAB` then your VM is ready. You may need to click `Refresh` at the top of the page to see the status change. That is a good rule of thumb on GCP; if you are waiting on something to spin up, try clicking refresh and it may already be done. 
+  ![autoshutdown](/images/4_enable_auto_shutdown_mins.png)
 
-<img src="/images/5_launch_notebooks.png" width="550" height="150">
+8. It will take a few minutes for your new notebook environment to spin up. Once the status changes from a blue spinning ball to `Open JUPYTERLAB` then your VM is ready. You may need to click `Refresh` at the top of the page to see the status change. That is a good rule of thumb on GCP; if you are waiting on something to spin up, try clicking refresh and it may already be done. 
+
+  ![launch notebook](/images/5_launch_notebooks.png)
 
 
 ### (Bonus) Using the new Managed Notebooks feature
