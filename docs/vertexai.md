@@ -1,6 +1,6 @@
 # Using VertexAI Notebooks
 
-_Google Cloud offers three flavors of Notebook instances: User-Managed, Google Managed, and Instances. User-Managed instances offer the most flexibility in terms of installing local software via conda/mamba or launching from custom containers. [Google Managed][(https://cloud.google.com/vertex-ai/docs/workbench/managed/introduction) and [Instances](https://cloud.google.com/vertex-ai/docs/workbench/instances/introduction) allow for 'on the fly' machine resizing and notebook scheduling, but they run in a tenant project (rather than your project) and offer less flexibility for installing custom software. Most machine-learning related software are pre-installed, but these can be hard to use for a lot of bioinformatic tasks where you need to install CLI tools with conda.
+_Google Cloud offers three flavors of Notebook instances: User-Managed, Google Managed, and Instances. User-Managed instances offer the most flexibility in terms of installing local software via conda/mamba or launching from custom containers. [Google Managed](https://cloud.google.com/vertex-ai/docs/workbench/managed/introduction) and [Instances](https://cloud.google.com/vertex-ai/docs/workbench/instances/introduction) allow for 'on the fly' machine resizing and notebook scheduling, as well as not worrying about resource availability, but they run in a tenant project (rather than your project) and offer less flexibility for installing custom software. Most machine-learning related software are pre-installed, but these can be hard to use for a lot of bioinformatic tasks where you need to install CLI tools with conda.
 
 ### Spin up a User-Managed Notebook Instance
 1. Start by clicking the `hamburger menu` (the three horizontal lines in the top left of your console). Go to `Artificial Intelligence > Vertex AI > Workbench`. 
@@ -27,7 +27,7 @@ _Google Cloud offers three flavors of Notebook instances: User-Managed, Google M
 
   ![autoshutdown](/images/4_enable_auto_shutdown_mins.png)
 
-8. It will take a few minutes for your new notebook environment to spin up. Once the status changes from a blue spinning ball to `Open JUPYTERLAB` then your VM is ready. You may need to click `Refresh` at the top of the page to see the status change. That is a good rule of thumb on GCP; if you are waiting on something to spin up, try clicking refresh and it may already be done. 
+8. It will take a few minutes for your new notebook environment to spin up. Once the status changes from a blue spinning ball to `Open JUPYTERLAB` then your VM is ready. You may need to click `Refresh` at the top of the page to see the status change. If you get the following error, `The zone XYZ does not have enough resources available to fulfill the request` then try launching from a different zone.
 
   ![launch notebook](/images/5_launch_notebooks.png)
 
