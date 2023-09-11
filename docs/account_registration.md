@@ -1,8 +1,8 @@
 # How to register for a NIH-affilated research Cloud Lab account
 
-1. Navigate to [this link](https://nih-cloudlab.firebaseapp.com/) and wait for a login page to load.
+1. From an incognito or private browsing window, navigate to [this link](https://nih-cloudlab.firebaseapp.com/) and wait for a login page to load.
 
-2. Scroll down to 'Research Organization'
+2. Scroll down and click **Research Organization**. If you select another login option your registration will not work.
 
   ![initial nih login page](/images/1_NIH_login.png)
 
@@ -18,4 +18,4 @@
 
 6. Fill out the final form. Enter your name, email, and select `GCP`. Enter a description of the module or research you plan to use your account for. Click `Submit` and you are finished.
 
-   ![Final Form](/images/4_final_form.png)
+   ![Final Form](/images/4_final_formv2.png)
