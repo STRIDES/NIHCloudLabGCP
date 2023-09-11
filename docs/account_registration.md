@@ -18,7 +18,7 @@
 
 6. Fill out the final form. Enter your name, email, and a description of the module or research you plan to use your account for, as well as your program officer. Click **Submit** and you are finished.
 
-   ![Final Form](/images/4_final_form.png)
+   ![Final Form](/images/4_final_formv2.png)
    
 # 2. How to register for an NIH-affiliated researcher Cloud Lab account using Login.gov or National Science Foundation credentials
 
@@ -42,4 +42,4 @@
 
 7. Fill out the final form. You won't be able to enter your name, and your email will be pre-populated. Enter a description of the module or research you plan to use your account for, as well as your program officer. Click **Submit** and you are finished.
 
-   ![Final Form](/images/4_final_form.png)
+   ![Final Form](/images/4_final_formv2.png)
