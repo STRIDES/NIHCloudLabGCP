@@ -8,7 +8,7 @@
 
 3. Search for and select your University. If you University is listed, continue to `Registering with your University Account`. If your University is not listed, skip ahead to `Login with Login.gov`.
    
-### Option 1 – Registering with a University Account
+Option 1 – Registering with a University Account
 
 _If your university is listed in the dropdown, you can use your university username and password to complete the registration process. Follow these steps:_
 
@@ -26,7 +26,7 @@ _If your university is listed in the dropdown, you can use your university usern
 
    ![Final Form](/images/4_final_formv2.png)
    
-### Option 2 – Registering with Login.gov
+# Option 2 – Registering with Login.gov
 A Login.gov account is a free account that members of the public can create to access a variety of government resources. If your university is not listed in the dropdown, you can use a Login.gov account to complete the registration process. Follow these steps:
 
 1. From an incognito or private browsing window, navigate to [this link](https://nih-cloudlab.firebaseapp.com) and wait for a login page to load.
