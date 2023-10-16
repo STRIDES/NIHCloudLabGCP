@@ -92,10 +92,6 @@ ATAC-seq is a technique that allows scientists to understand how DNA is packaged
 As one of the most abundant and well-studied epigenetic modifications, DNA methylation plays an essential role in normal cell development and has various effects on transcription, genome stability, and DNA packaging within cells. Methylseq is a technique to identify methylated regions of the genome. 
 - The University of Hawai'i at Manoa developed [this set of notebooks](https://github.com/NIGMS/MethylSeqUH) that walk you through a Methylseq analysis as part of the NIGMS Sandbox Program.
 
-## **ATACseq** <a name="atac"></a>
-ATAC-seq is a technique that allows scientists to understand how DNA is packaged in cells by identifying the regions of DNA that are accessible and potentially involved in gene regulation.
--[This module](https://github.com/NIGMS/atacseqUNMC) walks you through how to conduct an ATACseq and single cell ATACseq analysis on Google Cloud. 
-
 ## **Metagenomics** <a name="meta"></a>
 Metagenomics is the study of genetic material collected directly from environmental samples, enabling the exploration of microbial communities, their diversity, and their functional potential, without the need for laboratory culturing.
 -[This module](https://github.com/NIGMS/MetagenomicsUSD) walks you through conducting a metagenomic analysis using command line and nextflow. The module was developed by the University of South Dakota as part of the NIGMS Sandbox Project.
