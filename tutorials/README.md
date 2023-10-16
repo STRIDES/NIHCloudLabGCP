@@ -76,7 +76,7 @@ RNA-seq analysis is a high-throughput sequencing method that allows the measurem
 - Likewise, [This multi-omics module](https://github.com/NIGMS/MultiomicsUND) from the University of North Dakota has an RNAseq workflow. 
 
 Transcriptome assembly is the process of reconstructing the complete set of RNA transcripts in a cell or tissue from fragmented sequencing data, providing valuable insights into gene expression and functional analysis.
--[This module](https://github.com/NIGMS/rnaAssemblyMDI) developed by the MDI Biological Laboratory for the NIGMS Sandbox Project walks you through transcriptome assembly using nextflow. 
+- [This module](https://github.com/NIGMS/rnaAssemblyMDI) developed by the MDI Biological Laboratory for the NIGMS Sandbox Project walks you through transcriptome assembly using nextflow. 
 
 ## **Single Cell RNAseq** <a name="sc"></a>
 Single-cell RNA sequencing (scRNA-seq) is a technique that enables the analysis of gene expression at the individual cell level, providing insights into cellular heterogeneity, identifying rare cell types, and revealing cellular dynamics and functional states within complex biological systems.
