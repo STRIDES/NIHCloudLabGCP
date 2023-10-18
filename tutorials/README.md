@@ -31,7 +31,7 @@ There are a lot of ways to run workflows on GCP. Here we list a few possibilitie
 - The simplest method is probably to spin up a Compute Engine instance, and run your command interactively, or using `screen` or, as a [startup script](https://cloud.google.com/compute/docs/instances/startup-scripts/linux) attached as metadata.
 - You could also run your pipeline via a Vertex AI notebook, either by splitting out each command as a different block, or by running a workflow manager (Nextflow etc.). [Schedule notebooks](https://codelabs.developers.google.com/vertex_notebook_executor#0) to let them run longer.
 You can find a nice tutorial for using managed notebooks [here](https://codelabs.developers.google.com/vertex_notebook_executor#0). Note that there is now a difference between `managed notebooks` and `user managed notebooks`. The `managed notebooks` have more features and can be scheduled, but give you less control about conda environments/install. 
-- You can interact with `Google Life Sciences API` using a workflow manager like [Nextflow](https://cloud.google.com/life-sciences/docs/tutorials/nextflow), [Snakemake](https://snakemake.readthedocs.io/en/stable/executing/cloud.html), or [Cromwell](https://github.com/GoogleCloudPlatform/rad-lab/tree/main/modules/genomics_cromwell). If you are running the Nextflow tutorial, please first reference our [docs](/docs/nextflow.md) for how to get Nextflow running in Cloud Lab. We currently have [example notebooks](/tutorials/notebooks/LifeSciencesAPI/) for both Nextflow and Snakemake that use the Life Sciences API.
+- You can interact with [Google Batch](https://cloud.google.com/batch/docs/get-started), or the [Google Life Sciences API](https://cloud.google.com/life-sciences/docs/reference/rest) using a workflow manager like [Nextflow](https://cloud.google.com/life-sciences/docs/tutorials/nextflow), [Snakemake](https://snakemake.readthedocs.io/en/stable/executing/cloud.html), or [Cromwell](https://github.com/GoogleCloudPlatform/rad-lab/tree/main/modules/genomics_cromwell). We currently have example notebooks for both [Nextflow and Snakemake that use the Life Sciences API](/tutorials/notebooks/LifeSciencesAPI/), as well as [Google Batch with Nextflow](/tutorials/notebooks/GooogleBatch/nextflow) as well as a [local version of Snakemake run via Pangolin](/tutorials/notebooks/pangolin).
 - You may find other APIs better suite your needs such as the [Google Cloud Healthcare Data Engine](https://cloud.google.com/healthcare).
 - Most of the notebooks below require just a few CPUs. Start small (maybe 4 CPUs), then scale up as needed. Likewise, when you need a GPU, start with a smaller or older generation GPU (e.g. T4) for testing, then switch to a newer GPU (A100/V100) once you know things will work or you need more horsepower. 
 
@@ -76,7 +76,7 @@ RNA-seq analysis is a high-throughput sequencing method that allows the measurem
 - Likewise, [This multi-omics module](https://github.com/NIGMS/MultiomicsUND) from the University of North Dakota has an RNAseq workflow. 
 
 Transcriptome assembly is the process of reconstructing the complete set of RNA transcripts in a cell or tissue from fragmented sequencing data, providing valuable insights into gene expression and functional analysis.
--[This module](https://github.com/NIGMS/rnaAssemblyMDI) developed by the MDI Biological Laboratory for the NIGMS Sandbox Project walks you through transcriptome assembly using nextflow. 
+- [This module](https://github.com/NIGMS/rnaAssemblyMDI) developed by the MDI Biological Laboratory for the NIGMS Sandbox Project walks you through transcriptome assembly using nextflow. 
 
 ## **Single Cell RNAseq** <a name="sc"></a>
 Single-cell RNA sequencing (scRNA-seq) is a technique that enables the analysis of gene expression at the individual cell level, providing insights into cellular heterogeneity, identifying rare cell types, and revealing cellular dynamics and functional states within complex biological systems.
@@ -91,10 +91,6 @@ ATAC-seq is a technique that allows scientists to understand how DNA is packaged
 ## **Methylseq** <a name="ms"></a>
 As one of the most abundant and well-studied epigenetic modifications, DNA methylation plays an essential role in normal cell development and has various effects on transcription, genome stability, and DNA packaging within cells. Methylseq is a technique to identify methylated regions of the genome. 
 - The University of Hawai'i at Manoa developed [this set of notebooks](https://github.com/NIGMS/MethylSeqUH) that walk you through a Methylseq analysis as part of the NIGMS Sandbox Program.
-
-## **ATACseq** <a name="atac"></a>
-ATAC-seq is a technique that allows scientists to understand how DNA is packaged in cells by identifying the regions of DNA that are accessible and potentially involved in gene regulation.
--[This module](https://github.com/NIGMS/atacseqUNMC) walks you through how to conduct an ATACseq and single cell ATACseq analysis on Google Cloud. 
 
 ## **Metagenomics** <a name="meta"></a>
 Metagenomics is the study of genetic material collected directly from environmental samples, enabling the exploration of microbial communities, their diversity, and their functional potential, without the need for laboratory culturing.
