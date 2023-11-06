@@ -20,8 +20,20 @@ Google Cloud offers three flavors of Notebook instances: User-Managed, Google Ma
   ![2_select_notebook_name](/images/3_select_notebook_name.png)
 
 5. On the _Environment_ tab, select `Debian 11` and select your desired Environment. Many of the tutorials specify a recommended environment. Don't worry about a startup script or metadata. Click **Continue**.
+    - The following environments are configured for **GPU use**.
+
+    ![GPU environments](/images/GPU_environments.png)
    
-6. Under _Machine type_ select your desired number of CPUs/GPUs. This is usually specified by the tutorial you are completing.
+6. Under _Machine type_ select your desired number of CPUs/GPUs. This is usually specified by the tutorial you are completing. 
+
+- **Follow the steps below if you are utilizing GPUs:** 
+    - Click on the GPU dropdown menu and select your GPU processor
+
+    ![GPU processors](/images/GPU_processor.png)
+    - Then check mark where it says **'Install NVIDIA GPU driver automatically for me'** to have your notebook automatically install GPU drivers.
+    - Finally select the number of GPUs you wish to utilize. The number of GPUs varies from machine type and GPU processor selected.
+    
+    ![Number of GPUs](/images/GPU_numbers.png)
    
 7. On the same page, click **Enable Idle Shutdown** and specify the idle minutes for shutdown. This means, if you close your browser and walk away without stopping your instance, it will shutdown automatically after this many minutes. We recommend 30 minutes.
 
@@ -69,3 +81,7 @@ Another thing worth noting is that when you run a cell, sometimes it doesn't pro
 
 <img src="/images/3_busy_cell.png" width="550" height="550">
 
+
+```python
+
+```
