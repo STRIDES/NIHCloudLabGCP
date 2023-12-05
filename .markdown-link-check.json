@@ -8,6 +8,9 @@
     },
     {
       "pattern": "^https://github.com/conda-forge/miniforge/releases/"
+    },
+    {
+      "pattern": "^https://github.com/david-thrower-nih/DL-gwas-gcp-example"
     }
   ],
   "replacementPatterns": [
