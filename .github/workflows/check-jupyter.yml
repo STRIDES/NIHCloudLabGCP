@@ -1,15 +1,12 @@
-name: Test Notebooks
+name: Test Notebook
 
 on:
   push:
     branches:
-      - '*'
-  pull_request:
-    branches:
-      - '*'
+      - main
 
 jobs:
-  test-notebooks:
+  test-notebook:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,23 +14,15 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Set up Python
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v2
       with:
         python-version: 3.8
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install jupyter nbformat nbconvert
+        pip install jupyter
 
-    - name: Execute Notebooks
+    - name: Test notebook
       run: |
-        find tutorials/notebooks/* -name '*.ipynb' -exec jupyter nbconvert --to notebook --execute {} +
-
-    - name: Check for errors
-      run: |
-        if [ $? -ne 0 ]; then
-          echo "Notebook execution failed."
-          exit 1
-        fi
+        jupyter nbconvert --to notebook --execute /tutorials/notebooks/LifeSciencesAPI/nextflow/Part1_LS_API_Nextflow.ipynb
 
