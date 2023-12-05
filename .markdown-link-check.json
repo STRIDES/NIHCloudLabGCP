@@ -19,6 +19,14 @@
     {
       "pattern": "^/images",
       "replacement": "https://github.com/STRIDES/NIHCloudLabGCP/tree/main/images"
+    },
+    {
+      "pattern": "^/issues",
+      "replacement": "https://github.com/STRIDES/NIHCloudLabGCP/issues"
+    },
+    {
+      "pattern": "^/assets",
+      "replacement": "https://github.com/STRIDES/NIHCloudLabGCP/tree/main/tutorials/notebooks/DL-gwas-gcp-example/assets"
     }
   ],
   "timeout": "20s",
