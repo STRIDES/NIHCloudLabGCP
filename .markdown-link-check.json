@@ -15,8 +15,11 @@
     {
       "pattern": "^/tutorials",
       "replacement": "https://github.com/STRIDES/NIHCloudLabGCP/tree/main/tutorials"
+    },
+    {
+      "pattern": "^/images",
+      "replacement": "https://github.com/STRIDES/NIHCloudLabGCP/tree/main/images"
     }
-
   ],
   "timeout": "20s",
   "retryOn429": true,
