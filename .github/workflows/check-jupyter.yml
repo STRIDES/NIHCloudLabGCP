@@ -1,0 +1,39 @@
+name: Test Notebooks
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  test-notebooks:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install jupyter nbformat nbconvert
+
+    - name: Execute Notebooks
+      run: |
+        find tutorials/notebooks/* -name '*.ipynb' -exec jupyter nbconvert --to notebook --execute {} +
+
+    - name: Check for errors
+      run: |
+        if [ $? -ne 0 ]; then
+          echo "Notebook execution failed."
+          exit 1
+        fi
+
