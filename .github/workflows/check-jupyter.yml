@@ -27,5 +27,4 @@ jobs:
 
     - name: Test notebook
       run: |
-        jupyter nbconvert --to notebook --execute /tutorials/notebooks/LifeSciencesAPI/nextflow/Part1_LS_API_Nextflow.ipynb
-
+        jupyter nbconvert --to notebook --execute /tutorials/notebooks/LifeSciencesAPI/nextflow/*.ipynb
