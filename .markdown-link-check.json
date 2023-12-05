@@ -5,6 +5,9 @@
     },
     {
       "pattern": "^https://iam.nih.gov"
+    },
+    {
+      "pattern": "^https://github.com/conda-forge/miniforge/releases/"
     }
   ],
   "replacementPatterns": [
