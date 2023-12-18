@@ -1,0 +1,28 @@
+name: Check Links
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - name: Install dependencies
+      run: |
+        npm install -g markdown-link-check
+
+    - name: Check links in Markdown files
+      run: find . -name '*.md' -print0 | xargs -0 -n1 markdown-link-check -q -c .markdown-link-check.json

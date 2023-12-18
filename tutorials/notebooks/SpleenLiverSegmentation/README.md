@@ -1,14 +1,16 @@
 # Spleen Segmentation with Liver Example using NVIDIA Models and MONAI
 _We have put together a training example that segments the Spleen in 3D CT Images. At the end is an example of combining both the Spleen model and the Liver model._
 
+*Nvidia has changed some of the models used in this tutorial and it may crash, if you have issues, try commenting out the liver model, we are working on a patch*
+
 ## Introduction
 Two pre-trained models from NVIDIA are used in this training, a Spleen model and Liver. 
 The Spleen model is additionally retrained on the medical decathlon spleen dataset: [http://medicaldecathlon.com/](http://medicaldecathlon.com/)
 Data is not necessary to be downloaded to run the notebook. The notebook downloads the data during it's run.
 The notebook uses the Python package [MONAI](https://monai.io/), the Medical Open Network for Artificial Intelligence. 
 
-- Spleen Model - [clara_pt_spleen_ct_segmentation_V2](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/med/models/clara_pt_spleen_ct_segmentation)
-- Liver Model - [clara_pt_liver_and_tumor_ct_segmentation_V1](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/med/models/clara_pt_liver_and_tumor_ct_segmentation)
+- Spleen Model - [clara_pt_spleen_ct_segmentation_V2](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/monaitoolkit/models/monai_spleen_ct_segmentation)
+- Liver Model - [clara_pt_liver_and_tumor_ct_segmentation_V1]()
 
 ## Outcomes
 After following along with this notebook the user will be familiar with:

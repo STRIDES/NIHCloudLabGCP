@@ -1,0 +1,43 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^#"
+    },
+    {
+      "pattern": "^https://iam.nih.gov"
+    },
+    {
+      "pattern": "^https://github.com/conda-forge/miniforge/releases/"
+    },
+    {
+      "pattern": "^https://github.com/david-thrower-nih/DL-gwas-gcp-example"
+    }
+  ],
+  "replacementPatterns": [
+    {
+      "pattern": "^/docs",
+      "replacement": "https://github.com/STRIDES/NIHCloudLabGCP/tree/main/docs"
+    },
+    {
+      "pattern": "^/tutorials",
+      "replacement": "https://github.com/STRIDES/NIHCloudLabGCP/tree/main/tutorials"
+    },
+    {
+      "pattern": "^/images",
+      "replacement": "https://github.com/STRIDES/NIHCloudLabGCP/tree/main/images"
+    },
+    {
+      "pattern": "^/issues",
+      "replacement": "https://github.com/STRIDES/NIHCloudLabGCP/issues"
+    },
+    {
+      "pattern": "^/assets",
+      "replacement": "https://github.com/STRIDES/NIHCloudLabGCP/tree/main/tutorials/notebooks/DL-gwas-gcp-example/assets"
+    }
+  ],
+  "timeout": "20s",
+  "retryOn429": true,
+  "retryCount": 5,
+  "fallbackRetryDelay": "30s",
+  "aliveStatusCodes": [200, 206]
+}
