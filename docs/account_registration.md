@@ -6,7 +6,7 @@
 
   ![initial nih login page](/images/1_NIH_login.png)
 
-3. Search for and select your University. If you University is listed, continue to `Registering with your University Account`. If your University is not listed, skip ahead to `Login with Login.gov`.
+3. Search for and select your University. If you University is listed, continue to `Registering with your University Account`. If your University is not listed, skip ahead to [Login with Login.gov](#Option-2–Registering-with-Login.gov).
    
 Option 1 – Registering with a University Account
 
