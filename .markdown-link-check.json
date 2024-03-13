@@ -19,8 +19,8 @@
       "replacement": "https://github.com/STRIDES/NIHCloudLabGCP/tree/main/docs"
     },
     {
-      "pattern": "^/tutorials",
-      "replacement": "https://github.com/STRIDES/NIHCloudLabGCP/tree/main/tutorials"
+      "pattern": "^/notebooks",
+      "replacement": "https://github.com/STRIDES/NIHCloudLabGCP/tree/main/notebooks"
     },
     {
       "pattern": "^/images",
