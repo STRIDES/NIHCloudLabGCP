@@ -1,8 +1,8 @@
-from langchain.retrievers import PubMedRetriever
+from langchain_community.retrievers import PubMedRetriever
 from langchain.chains import ConversationalRetrievalChain
 from langchain.prompts import PromptTemplate
 #from langchain.llms import VertexAIModelGarden
-from langchain.llms import VertexAI
+from langchain_google_vertexai import ChatVertexAI
 import sys
 import json
 import os
@@ -30,7 +30,7 @@ def build_chain():
     #llm = VertexAIModelGarden(project=PROJECT_ID, endpoint_id=ENDPOINT_ID, location=LOCATION_ID)
     
     llm = VertexAI(
-    model_name="text-bison@001",
+    model_name="chat-bison@002",
     max_output_tokens=1024,
     temperature=0.2,
     top_p=0.8,
