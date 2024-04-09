@@ -1,9 +1,9 @@
 from langchain.chains import ConversationalRetrievalChain
 from langchain.prompts import PromptTemplate
-#from langchain.llms import VertexAIModelGarden
-from langchain.embeddings import VertexAIEmbeddings
-from langchain.vectorstores import MatchingEngine
-from langchain.llms import VertexAI
+#from langchain_google_vertexai import VertexAIModelGarden
+from langchain_google_vertexai import VertexAIEmbeddings
+from langchain_google_vertexai import VectorSearchVectorStore
+from langchain_google_vertexai import ChatVertexAI
 import sys
 import json
 import os
@@ -35,16 +35,16 @@ def build_chain():
     
     #llm = VertexAIModelGarden(project=PROJECT_ID, endpoint_id=ENDPOINT_ID, location=LOCATION_ID)
     llm = VertexAI(
-    model_name="text-bison@001",
+    model_name="chat-bison@002",
     max_output_tokens=1024,
     temperature=0.2,
     top_p=0.8,
     top_k=40,
     verbose=True,
 )
-    embeddings = VertexAIEmbeddings()
+    embeddings = VertexAIEmbeddings(model_name="textembedding-gecko@003")
 
-    vector_store = MatchingEngine.from_components(
+    vector_store = VectorSearchVectorStore.from_components(
         project_id=PROJECT_ID,
         region=LOCATION_ID,
         gcs_bucket_name=BUCKET,
@@ -52,6 +52,7 @@ def build_chain():
         index_id=VC_INDEX_ID,
         endpoint_id=VC_ENDPOINT_ID
     )
+    
 
     retriever = vector_store.as_retriever(
         search_type="similarity",
