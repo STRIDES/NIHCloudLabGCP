@@ -18,7 +18,7 @@ To access your Cloud Lab credits, you need to be working in the correct Google C
  
     ![select project3](/images/3_intramural_access.png)
 
-5.	Switch from the “Recent” tab to the “All” tab and select the project that starts with “[your IC]-cl-odss-[your NIH username]-.” Click “Open” in the bottom right of the window.
+5.	Switch from the `Recent` tab to the `All` tab and select the project that starts with `[your IC]-cl-odss-[your NIH username]-.` Click `Open` in the bottom right of the window.
  
     ![select project4](/images/4_intramural_access.png)
 
