@@ -20,7 +20,7 @@ To access your Cloud Lab credits, you need to be working in the correct Google C
 
 5.	Switch from the `Recent` tab to the `All` tab and select the project that starts with `[your IC]-cl-odss-[your NIH username]-.` Click `Open` in the bottom right of the window.
  
-    ![select project4](/images/4_intramural_access.png)
+    ![select project4](/images/4_intramural_request.png)
 
 6.	Check to make sure the correct project name appears at the top of your screen. If it does, you are all set and ready to use your $500 of Cloud Lab credits. Check out our Google Cloud Jumpstart page for ideas on what to do next!
 
