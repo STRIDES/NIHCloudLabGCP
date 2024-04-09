@@ -8,11 +8,11 @@ To access your Cloud Lab credits, you need to be working in the correct Google C
 
 *Note: If you see a different email address, you are not in the correct account. You should be able to resolve this issue by signing out and then back in from a private or incognito browser using the instructions you received from CloudLab@nih.gov.*
 
-    ![select project3](/images/1_intramural_access.png)
+![select project1](/images/1_intramural_access.png)
 
 3.	Once you’ve confirmed that you’re in the right account, find the project selection tool at the top of your screen. If the project listed starts with, “[your IC]-cl-odss-[your NIH username]-” (e.g., nci-cl-odss-doej-1234), you’re in the correct project and can begin using your Cloud Lab credits. If you see a different project name or a prompt to “Select a project,” click the tool to open it.
  
-    ![select project3](/images/2_intramural_access.png)
+    ![select project2](/images/2_intramural_access.png)
 
 4.	In the project selection window, make sure your organization is set to “nih.gov.”
  
@@ -20,8 +20,8 @@ To access your Cloud Lab credits, you need to be working in the correct Google C
 
 5.	Switch from the “Recent” tab to the “All” tab and select the project that starts with “[your IC]-cl-odss-[your NIH username]-.” Click “Open” in the bottom right of the window.
  
-    ![select project3](/images/4_intramural_access.png)
+    ![select project4](/images/4_intramural_access.png)
 
 6.	Check to make sure the correct project name appears at the top of your screen. If it does, you are all set and ready to use your $500 of Cloud Lab credits. Check out our Google Cloud Jumpstart page for ideas on what to do next!
 
-    ![select project3](/images/5_intramural_access.png)
+    ![select project5](/images/5_intramural_access.png)
