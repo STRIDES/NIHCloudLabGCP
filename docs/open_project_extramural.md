@@ -6,7 +6,7 @@ In order to access your Cloud Lab credits, you need to be working in the correct
 
 2.	After logging in, you should land on the console homepage. Hover over the profile icon in the top right corner. Your account name and email address will appear. If the account name starts with “Extramural Cloud Lab,” you are in the correct account. **Write down or make a mental note of the seven-digit number at the end of your account name.** You will use this number in the next few steps to find your project.
 
-*Note: If your account name does not start with “Extramural Cloud Lab,” you are not in the correct account. You should be able to resolve this issue by signing out and then back in from a private or incognito browser using the personalized link and instructions you received from CloudLab@nih.gov. Make sure you are following the instructions exactly as written.*
+  	*Note: If your account name does not start with “Extramural Cloud Lab,” you are not in the correct account. You should be able to resolve this issue by signing out and then back in from a private or incognito browser using the personalized link and instructions you received from CloudLab@nih.gov. Make sure you are following the instructions exactly as written.*
 
   ![select project1](/images/1_extramural_access2.png)
 
@@ -29,6 +29,6 @@ In order to access your Cloud Lab credits, you need to be working in the correct
 
 6.	Hover over your profile icon and double-check that the last seven digits of your account name match the last seven digits of the name in the project selection tool. If they match, you are all set and ready to use your Cloud Lab credits. Check out our [Google Cloud Jumpstart](https://cloud.nih.gov/resources/cloudlab/google-cloud-jumpstart/) page for ideas on what to do next!
 
-*Note: If the digits don’t match, you are not in the correct project. Hover over your profile icon to double-check the last seven digits of your account name. Then, repeat steps 4 and 5 to open the right project from the project selection tool.*
+    *Note: If the digits don’t match, you are not in the correct project. Hover over your profile icon to double-check the last seven digits of your account name. Then, repeat steps 4 and 5 to open the right project from the project selection tool.*
 
 ![select project5](/images/5_extramural_access2.png)
