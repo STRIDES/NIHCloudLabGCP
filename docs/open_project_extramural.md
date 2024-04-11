@@ -8,13 +8,12 @@ In order to access your Cloud Lab credits, you need to be working in the correct
 
 *Note: If your account name does not start with “Extramural Cloud Lab,” you are not in the correct account. You should be able to resolve this issue by signing out and then back in from a private or incognito browser using the personalized link and instructions you received from CloudLab@nih.gov. Make sure you are following the instructions exactly as written.*
 
-
   ![select project1](/images/1_extramural_access2.png)
 
+3.	Once you’ve confirmed that you’re in the right account and have made a note of the seven-digit code at the end of your account name, find the project selection tool at the top of your screen. If the project listed starts with “nih-extramural-cl-” and ends with the seven digits you noted in the previous step, you’re already in the correct project and can begin using your Cloud Lab credits.
 
-3.	Once you’ve confirmed that you’re in the right account, find the project selection tool at the top of your screen. If the project listed starts with “nih-extramural-cl-0000” and the last digits match the digits in your account name, you’re in the correct project and can begin using your Cloud Lab credits. You can find your account name by clicking your profile icon in the top right corner. 
+    If you see a different project name or a prompt to “Select a project,” click the tool to open it.
 
-If you see a different project name or a prompt to “Select a project,” click the tool to open it.
  
    ![select project2](/images/2_extramural_access.png)
 
@@ -24,11 +23,11 @@ If you see a different project name or a prompt to “Select a project,” click
 
 5.	Click into the search bar and enter “nih-extramural-cl-######-#,” replacing the number signs with the last seven digits of your account name, which you noted in Step 2. 
 
-Select the corresponding project and then click “Open” in the bottom right of the window.
+    Select the corresponding project and then click “Open” in the bottom right of the window.
 
 ![select project4](/images/4_extramural_access2.png)
 
-6.	6.	Hover over your profile icon and double-check that the last seven digits of your account name match the last seven digits of the name in the project selection tool. If they match, you are all set and ready to use your Cloud Lab credits. Check out our Google Cloud Jumpstart page for ideas on what to do next!
+6.	Hover over your profile icon and double-check that the last seven digits of your account name match the last seven digits of the name in the project selection tool. If they match, you are all set and ready to use your Cloud Lab credits. Check out our [Google Cloud Jumpstart](https://cloud.nih.gov/resources/cloudlab/google-cloud-jumpstart/) page for ideas on what to do next!
 
 *Note: If the digits don’t match, you are not in the correct project. Hover over your profile icon to double-check the last seven digits of your account name. Then, repeat steps 4 and 5 to open the right project from the project selection tool.*
 
