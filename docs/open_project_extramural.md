@@ -26,12 +26,10 @@ If you see a different project name or a prompt to “Select a project,” click
 
 Select the corresponding project and then click “Open” in the bottom right of the window.
 
- 
-    ![select project4](/images/4_extramural_access2.png)
+![select project4](/images/4_extramural_access2.png)
 
 6.	6.	Hover over your profile icon and double-check that the last seven digits of your account name match the last seven digits of the name in the project selection tool. If they match, you are all set and ready to use your Cloud Lab credits. Check out our Google Cloud Jumpstart page for ideas on what to do next!
 
 *Note: If the digits don’t match, you are not in the correct project. Hover over your profile icon to double-check the last seven digits of your account name. Then, repeat steps 4 and 5 to open the right project from the project selection tool.*
 
- 
-    ![select project5](/images/5_extramural_access2.png)
+![select project5](/images/5_extramural_access2.png)
