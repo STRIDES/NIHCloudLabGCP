@@ -2,43 +2,6 @@
 
 - David Thrower, NIEHS Office of Scientific Computing, Kelly Goverment Solutions
 
-## Acknowledgements:
-
-1. God for writing the laws of science we can all spend a lifetime trying to decipher and never fully understand.
-2. Jennifer, my better half and my stepkids staying around thought the storm we have all weathered because of my career in science.
-2. Yang Liu at University of Missouri and his colleagues, who developed the study which we are "partially" reproducing as an abbreviated version of the study in order to make a minimum viable demonstration. Below is the original paper and the original author's source code. Those who are subject matter experts, I encourage you to extend and complete this, and to adapt this to your own work. That is what this is here for.
-    - https://www.frontiersin.org/articles/10.3389/fgene.2019.01091/full
-    - https://github.com/kateyliu/DL_gwas
-3. NIEHS Office of Scientific Computing
-    - Frank Day
-    - Kennith Grantham
-    - Greg Stamper
-    - Chris Stone
-    - Elizabeth Black
-    - Adam Burkholder
-    - Jason Baucom
-4. The NIH CIT GCP support community
-    - Danny Chester
-    - Thad Carlson
-    - Kyle O'Connell
-    - Hil Liao
-    - Teja Peddi
-5. GCP support community.
-    - Jeremiah Jenkins
-    - Cheryl Corman
-    - Alex, GCP Mexico City support team
-    - Diego, GCP Mexico City support team
-6. The KF open source community:
-    - Too many to mention
-    - https://www.kubeflow.org/docs/about/community
-7. Arrikto for the easy - to - deploy Kubeflow deployment and the low licensing fee for using this.
-    - Bogdan Kowalczyk
-    - Patrick Gryzan
-    - Constantinos Venetsanopoulos
-    - Amber Graner
-    - Chase Christensen
-    - Jimmy Guerrero
-
 ## Summary:
 
 1. This task will deploy a deep learning (1D Convolutional Neural Network - MLP) GWAS experiment using the Kubeflow pipelines machine learning framework. For a tutorial on exactly how Convolutional 1D neural networks work, this is one of many recommended reads [0]. This specific algorithm is not the focus of this tutorial, as our focus is how to use Kubeflow to run any machine learning experiment in your research. My intent is to introduce you to the basic operation of the features that Kubeflow provides that are most relevant in a basic research analysis workflow and empower you to make meaningful use of them, these are tools that when used correctly, are user friendly and are in my humble opinion, underutilized by the life sciences community. This framework is used by CERN in some of their research [1], and CERN is also part of the KF open source community. This experiment will leave you with a template and the skills to build your own workflow relevant to your research.
