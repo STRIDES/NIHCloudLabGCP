@@ -4,7 +4,7 @@ In order to access your Cloud Lab credits, you need to be working in the correct
 
 1. Log in to Google Cloud using the personalized link and instructions in the “How to Access Your NIH Cloud Lab Account” email you received from CloudLab@nih.gov. Be sure to use a private or incognito browser, and remember that you cannot log in to your Cloud Lab account from the Google Cloud homepage.
 
-2.	After logging in, you should land on the console homepage. Hover over the profile icon in the top right corner. An account name will appear followed by your cloud lab email address. If the account name starts with “Extramural Cloud Lab,” you are in the correct account. 
+2.	After logging in, you should land on the console homepage. Hover over the profile icon in the top right corner. An account name will appear followed by an email address. If the account name starts with “Extramural Cloud Lab,” you are in the correct account. 
 
     *Note: If your account name does not start with “Extramural Cloud Lab,” you are not in the correct account. You should be able to     resolve this issue by signing out and then back in from a private or incognito browser using the personalized link and instructions   you received from CloudLab@nih.gov. Make sure you are following the instructions exactly as written.*
 
@@ -19,7 +19,7 @@ In order to access your Cloud Lab credits, you need to be working in the correct
 
 4.	When the project selection window opens (first image below), make sure your organization is set to “nih.gov” and switch from the “Recent” tab to the “All” tab (second image below).
 
-    ![select project3](/images/3_extramural_access3.png)
+   ![select project3](/images/3_extramural_access4.png)
 
 5.	Click into the search bar and enter the portion of your institutional/organizational email address that comes before the @ symbol (e.g., if your email is doej@uni.edu, search for “doej”).
 
@@ -27,10 +27,8 @@ In order to access your Cloud Lab credits, you need to be working in the correct
 
     *Note: If more than one project appears in your search results, your email address is similar to another Cloud Lab participant. To determine which project belongs to you, refer back to the “How to Access Your NIH Cloud Lab Account” email that you received from CloudLab@nih.gov. Within the email, hover over your personalized Cloud Lab access link and make note of the last four characters of the URL. Return to the Google Cloud console and select the project in the search results that ends with those same characters (e.g, nih-cl-doej-a123, where “a123” are the last four characters of your personalized URL). Click “Open” in the bottom right of the window.*
 
-![select project4](/images/4_extramural_access3.png)
+   ![select project4](/images/4_extramural_access4.png)
 
-6.	Hover over your profile icon and double-check that the last seven digits of your account name match the last seven digits of the name in the project selection tool. If they match, you are all set and ready to use your Cloud Lab credits. Check out our [Google Cloud Jumpstart](https://cloud.nih.gov/resources/cloudlab/google-cloud-jumpstart/) page for ideas on what to do next!
-
-    *Note: If the digits don’t match, you are not in the correct project. Hover over your profile icon to double-check the last seven digits of your account name. Then, repeat steps 4 and 5 to open the right project from the project selection tool.*
+6.	Check to make sure the correct project name appears at the top of your screen. If it does, you are all set and ready to use your Cloud Lab credits. Check out our [Google Cloud Jumpstart Page](https://cloud.nih.gov/resources/cloudlab/google-cloud-jumpstart/)for ideas on what to do next!
 
 ![select project5](/images/5_extramural_access3.png)
