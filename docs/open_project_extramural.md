@@ -29,6 +29,6 @@ In order to access your Cloud Lab credits, you need to be working in the correct
 
    ![select project4](/images/4_extramural_access4.png)
 
-6.	Check to make sure the correct project name appears at the top of your screen. If it does, you are all set and ready to use your Cloud Lab credits. Check out our [Google Cloud Jumpstart Page](https://cloud.nih.gov/resources/cloudlab/google-cloud-jumpstart/)for ideas on what to do next!
+6.	Check to make sure the correct project name appears at the top of your screen. If it does, you are all set and ready to use your Cloud Lab credits. Check out our [Google Cloud Jumpstart Page](https://cloud.nih.gov/resources/cloudlab/google-cloud-jumpstart/) for ideas on what to do next!
 
 ![select project5](/images/5_extramural_access3.png)
