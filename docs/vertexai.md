@@ -3,7 +3,7 @@
 ### 1. Spin up an Instance
 1. Start by clicking the `hamburger menu` (the three horizontal lines in the top left of your console). Go to `Artificial Intelligence > Vertex AI > Workbench`. 
 
-![screenshot showing how to select Vertex AI workbench](/images/1_select_vertexAI.png)
+![screenshot showing how to select Vertex AI workbench](/images/images_for_creating_GCP_instances/1_select_vertexAI.png)
 
 2. If not already selected, click **Instances**, then **Instances**
 3. Click **+ Create New**
@@ -32,19 +32,19 @@
 ### 2. Spin up a User-Managed Notebook Instance
 1. Start by clicking the `hamburger menu` (the three horizontal lines in the top left of your console). Go to `Artificial Intelligence > Vertex AI > Workbench`. 
 
-![screenshot showing how to select Vertex AI workbench](/images/1_select_vertexAI.png)
+![screenshot showing how to select Vertex AI workbench](/images/images_for_creating_GCP_instances/1_select_vertexAI.png)
 
 2. Click `New Notebook` and select your desired kernel. You can use a variety of environments including Python, R, PyTorch, TensorFlow, and others. This can also be changed later. Check out the [required environments](https://github.com/NIGMS/NIGMS-Sandbox/tree/main#cloud-module-prerequisites) for your module of interest to confirm which kernel you should choose.
 
-![screenshot showing how to select an R kernel from Vertex AI workbench](/images/2_select_kernel_R.png)
+![screenshot showing how to select an R kernel from Vertex AI workbench](/images/images_for_creating_GCP_instances/2_select_kernel_R.png)
 
 3. Name your notebook a globally unique name. Note that in GCP you can only use dash, not underscore. For region select the region closest to where you live, or else the region where your cloud storage bucket is located. Now click the pencil icon next to `Notebook properties`.
 
-![screenshot showing how to name a notebook](/images/3_name_notebook.png)
+![screenshot showing how to name a notebook](/images/images_for_creating_GCP_instances/3_name_notebook.png)
 
 4. When the new window opens, you can modify the rest of the settings. For operating system select 'Debian 10', for 'Environment' select your desired Environment. This where you can change this if you selected something different before. Under `Machine configuration > Machine type` select your machine type. For this tutorial you can get away with using `e2-standard-4`, but you will likely want a more powerful machine for other workflows. Read more about machine families on GCP [here](https://cloud.google.com/compute/docs/machine-types), about the specifics of general purpose machine types within machine families [here](https://cloud.google.com/compute/docs/general-purpose-machines). You can follow the links in those doc pages for Compute, Memory, or Accelerator optimized machine types as well. You can figure out the cost of your selected machine [here](https://cloud.google.com/compute/all-pricing). _Remember that as long as your notebook is running (and not stopped) you will be charged per second of use. This is especially important to remember for GPU machines as these will consume your budget quickly. Consider installing an [auto-shutdown script](/docs/compute-engine-idle-shutdown.md) to prevent this._ Leave all other settings as default and click **Create**.
 
-![screenshot showing how to setup the environment when creating a virtual machine](/images/4_select_environment.png)
+![screenshot showing how to setup the environment when creating a virtual machine](/images/images_for_creating_GCP_instances/4_select_environment.png)
 
 5. It will take a minute or two for your new notebook environment to spin up so go brew some coffee and come back. Once the status changes from a blue spinning ball to `OPEN JUPYTERLAB` then your VM is ready. You may need to click `Refresh` at the top of the page to see the status change. That is a good rule of thumb on GCP; if you are waiting on something to spin up, try clicking refresh and it may already be done. 
 
@@ -59,7 +59,7 @@
 git clone https://github.com/NIGMS/NIGMS-Sandbox.git
 ```
 
-![screenshot showing how to clone a github repository by using the git button](/images/1_clone_repo_gcp.png)
+![screenshot showing how to clone a github repository by using the git button](/images/images_for_creating_GCP_instances/1_clone_repo_gcp.png)
 
 2. After you clone a training module, you can explore the notebooks and see how data moves into and out of the Vertex AI environment. You can also manually add files, whether notebooks or data using the up arrow in the top left navigation menu. You can easily switch between different kernels in the top right. If you had selected Python3 when starting the instance, you would only have access to Python, but would need a different instance to open or create an R notebook for example. However, if you start with R, then you can switch between R and Python.
 
