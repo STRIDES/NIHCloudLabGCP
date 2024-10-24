@@ -1,75 +1,67 @@
 # Using VertexAI Notebooks
 
-Google Cloud offers three flavors of Notebook instances: User-Managed, Google Managed, and Instances. User-Managed instances offer the most flexibility in terms of installing local software via conda/mamba or launching from custom containers. [Google Managed](https://cloud.google.com/vertex-ai/docs/workbench/managed/introduction) and [Instances](https://cloud.google.com/vertex-ai/docs/workbench/instances/introduction) allow for 'on the fly' machine resizing and notebook scheduling, as well as not worrying about resource availability, but they run in a tenant project (rather than your project) and offer less flexibility for installing custom software. Most machine-learning related software are pre-installed, but these can be hard to use for a lot of bioinformatic tasks where you need to install CLI tools with conda.
-
-### Spin up a User-Managed Notebook Instance
+### 1. Spin up an Instance
 1. Start by clicking the `hamburger menu` (the three horizontal lines in the top left of your console). Go to `Artificial Intelligence > Vertex AI > Workbench`. 
 
-  ![selectvertexai](/images/1_select_vertexAI.png)
+![screenshot showing how to select Vertex AI workbench](/images/images_for_creating_GCP_instances/1_select_vertexAI.png)
 
-2. Click **Create New**
+2. If not already selected, click **Instances**, then **Instances**
+3. Click **+ Create New**
 
-  ![1_create_new_notebook](/images/1_create_new_notebook.png)
+![image showing how to select instance](/images/images_for_creating_GCP_instances/2_select_workbench_instance.png)
 
-3. Select **Advanced Options** at the bottom of the window that pops up.
+4. Select **Advanced Options** at the bottom of the **New Instance** pop-up window
+5. Provide a name for your new instance using letters, numbers, and hyphens (-). Select a region and zone for the new instance. For best network performance, select the region that is geographically closest to you.  Click **Continue**
 
-   ![advanced options](/images/2_select_advanced_options.png)
-  
-4. Name your notebook a globally unique name. Note that in GCP you can only use dash, not underscore. For region select the region closest to where you live, or else the region where your data is stored. If you plan to use a managed service that is only available in a particular region, go ahead and select `us-central` as your region. Click **Continue**.
+![image showing to select advanced options](/images/images_for_creating_GCP_instances/3_select_advanced_options.png)
 
-  ![2_select_notebook_name](/images/3_select_notebook_name.png)
+6. On the Environment screen, select "Use the latest version" if not already selected. Skip the other sections. Click **Continue**.
 
-5. On the _Environment_ tab, select `Debian 11` and select your desired Environment. Many of the tutorials specify a recommended environment. Don't worry about a startup script or metadata. Click **Continue**.
-    - The following environments are configured for **GPU use**.
+![image showing to select environment](/images/images_for_creating_GCP_instances/4_instance_environment.png) 
 
-    ![GPU environments](/images/GPU_environments.png)
-   
-6. Under _Machine type_ select your desired number of CPUs/GPUs. This is usually specified by the tutorial you are completing. 
+7. On the Machine type screen, select the desired number of CPUs/GPUs. This is usually specified by the tutorial you are completing.
 
-- **Follow the steps below if you are utilizing GPUs:** 
-    - Click on the GPU dropdown menu and select your GPU processor
+![image showing machine type selection](/images/images_for_creating_GCP_instances/5_instance_machine_type.png)
 
-    ![GPU processors](/images/GPU_processor.png)
-    - Then check mark where it says **'Install NVIDIA GPU driver automatically for me'** to have your notebook automatically install GPU drivers.
-    - Finally select the number of GPUs you wish to utilize. The number of GPUs varies from machine type and GPU processor selected.
-    
-    ![Number of GPUs](/images/GPU_numbers.png)
-   
-7. On the same page, click **Enable Idle Shutdown** and specify the idle minutes for shutdown. This means, if you close your browser and walk away without stopping your instance, it will shutdown automatically after this many minutes. We recommend 30 minutes.
+8. On the same screen, verify that **Enable Idle Shutdown** is selected and specify the idle minutes for shutdown. This means it will shutdown automatically after this many minutes. We recommend 30 minutes. Click **Create**.  It will take a few minutes for your instance to spin up.
 
-  ![autoshutdown](/images/4_enable_auto_shutdown_mins.png)
+![image showing idle shutdown selection](/images/images_for_creating_GCP_instances/6_instance_idle_shutdown.png) 
 
-8. It will take a few minutes for your new notebook environment to spin up. Once the status changes from a blue spinning ball to `Open JUPYTERLAB` then your VM is ready. You may need to click `Refresh` at the top of the page to see the status change. If you get the following error, `The zone XYZ does not have enough resources available to fulfill the request` then try launching from a different zone.
+9. The remaining sections can be left as default for our purposes.  Further details can be found in the official documentation: [Vertex AI Documentation](https://cloud.google.com/vertex-ai/docs/workbench/instances/create)
 
-  ![launch notebook](/images/5_launch_notebooks.png)
+### 2. Spin up a User-Managed Notebook Instance
+1. Start by clicking the `hamburger menu` (the three horizontal lines in the top left of your console). Go to `Artificial Intelligence > Vertex AI > Workbench`. 
 
-9. You can edit your instance by clicking on the instance name.
+![screenshot showing how to select Vertex AI workbench](/images/images_for_creating_GCP_instances/1_select_vertexAI.png)
 
-  ![click_instance_name](/images/6_select_instance_vertexai.png)
+2. Click `New Notebook` and select your desired kernel. You can use a variety of environments including Python, R, PyTorch, TensorFlow, and others. This can also be changed later. Check out the [required environments](https://github.com/NIGMS/NIGMS-Sandbox/tree/main#cloud-module-prerequisites) for your module of interest to confirm which kernel you should choose.
 
-10. Now you can modify any of the instance settings, like resizing your machine or attaching additional disk storage.
+![screenshot showing how to select an R kernel from Vertex AI workbench](/images/images_for_creating_GCP_instances/2_select_kernel_R.png)
 
-    ![resize image](/images/7_resizevertexaiimage.png)
+3. Name your notebook a globally unique name. Note that in GCP you can only use dash, not underscore. For region select the region closest to where you live, or else the region where your cloud storage bucket is located. Now click the pencil icon next to `Notebook properties`.
+
+![screenshot showing how to name a notebook](/images/images_for_creating_GCP_instances/3_name_notebook.png)
+
+4. When the new window opens, you can modify the rest of the settings. For operating system select 'Debian 10', for 'Environment' select your desired Environment. This where you can change this if you selected something different before. Under `Machine configuration > Machine type` select your machine type. For this tutorial you can get away with using `e2-standard-4`, but you will likely want a more powerful machine for other workflows. Read more about machine families on GCP [here](https://cloud.google.com/compute/docs/machine-types), about the specifics of general purpose machine types within machine families [here](https://cloud.google.com/compute/docs/general-purpose-machines). You can follow the links in those doc pages for Compute, Memory, or Accelerator optimized machine types as well. You can figure out the cost of your selected machine [here](https://cloud.google.com/compute/all-pricing). _Remember that as long as your notebook is running (and not stopped) you will be charged per second of use. This is especially important to remember for GPU machines as these will consume your budget quickly. Consider installing an [auto-shutdown script](/docs/compute-engine-idle-shutdown.md) to prevent this._ Leave all other settings as default and click **Create**.
+
+![screenshot showing how to setup the environment when creating a virtual machine](/images/images_for_creating_GCP_instances/4_select_environment.png)
+
+5. It will take a minute or two for your new notebook environment to spin up so go brew some coffee and come back. Once the status changes from a blue spinning ball to `OPEN JUPYTERLAB` then your VM is ready. You may need to click `Refresh` at the top of the page to see the status change. That is a good rule of thumb on GCP; if you are waiting on something to spin up, try clicking refresh and it may already be done. 
+
+![screenshot showing how to start the notebook by clicking OPEN JUPYTERLAB](/images/5_launch_notebooks.png)
 
 
-### Spin up a Google-Managed VertexAI Notebook Instance
-The way of spinning up a notebook is the same as above. The main differences you will observe with Google Managed and Instances Notebooks is the resizing on the fly, a nice BigQuery integration, and the inability to install anything via conda/mamba.
+### 3. Import custom notebook and data
 
-### Import custom notebook and data
-
-1. Now click the git icon on the middle left bar (it kind of looks like the letter 'T' with a tilt). Click `Clone a Repository`, and then paste `https://github.com/STRIDES/NIHCloudLabGCP.git` into the box. You can also open a terminal and paste in the following:
+1. Now click the git icon on the middle left bar (it kind of looks like the letter 'T' with a tilt). Click `Clone a Repository`, and then paste `https://github.com/NIGMS/NIGMS-Sandbox.git` into the box. From here you can explore the different modules that are available and clone them into your notebook. You can also clone this repository by opening a terminal and pasting in the following:
 
 ```
-git clone https://github.com/STRIDES/NIHCloudLabGCP.git
+git clone https://github.com/NIGMS/NIGMS-Sandbox.git
 ```
 
-<img src="/images/1_clone_repo_gcp.png" width="550" height="400">
+![screenshot showing how to clone a github repository by using the git button](/images/images_for_creating_GCP_instances/1_clone_repo_gcp.png)
 
-2. Now you have the NIHCloudLabGCP directory available. Navigate to NIHCloudLabGCP > tutorials > notebooks > GWASCoatColor > GWAS_coat_color.ipynb.
-Explore this notebook and see how data moves into and out of the Vertex AI environment. You can also manually add files, whether notebooks or data using the up arrow in the top left navigation menu. You can easily switch between different kernels in the top right. If you had selected Python3 when starting the instance, you would only have access to Python, but would need a different instance to open or create an R notebook for example. However, if you start with R, then can switch between R and Python. After finishing this notebook, move onto the SRA_and_BigQuery notebook to learn about some key GCP skills, 
-like importing (SRA) data, making a cloud storage bucket and moving data in and out of the bucket, and finally how to query VCF files with BigQuery.
-
-<img src="/images/2_GWAS_notebook.png" width="550" height="350">
+2. After you clone a training module, you can explore the notebooks and see how data moves into and out of the Vertex AI environment. You can also manually add files, whether notebooks or data using the up arrow in the top left navigation menu. You can easily switch between different kernels in the top right. If you had selected Python3 when starting the instance, you would only have access to Python, but would need a different instance to open or create an R notebook for example. However, if you start with R, then you can switch between R and Python.
 
 Here are a few tips if you are new to notebooks: The navigation menu in the top left controls the control panel that is the equivalent to your directory structure. The panel above the notebook itself controls the notebook options. Most of these are obvious, but a few you will use often are:
 + the plus sign to add a cell
@@ -79,9 +71,5 @@ Here are a few tips if you are new to notebooks: The navigation menu in the top 
 
 Another thing worth noting is that when you run a cell, sometimes it doesn't produce any output; however, processes are running in the background. If the brackets next to a cell have an * then it is still running. You can also look at the bottom where the kernel is listed (e.g., Python 3 | status) and it will show either Idle or Busy depending on whether anything is running or not. 
 
-<img src="/images/3_busy_cell.png" width="550" height="550">
+![screenshot showing an asterisk in the cell indicating that the cell is running](/images/3_busy_cell.png)
 
-
-```python
-
-```
