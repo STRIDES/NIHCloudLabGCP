@@ -1,12 +1,13 @@
-name: Test Notebook
+name: Test run with nbconvert
 
 on:
-  push:
-    branches:
-      - "*"
-  pull_request:
-    branches:
-      - "*"
+  workflow_dispatch: 
+  #push:
+  #  branches:
+  #    - "*"
+  #pull_request:
+  #  branches:
+  #    - "*"
 
 jobs:
   test-notebook:
@@ -27,4 +28,4 @@ jobs:
 
     - name: Test notebook
       run: |
-        jupyter nbconvert --to notebook --execute /tutorials/notebooks/LifeSciencesAPI/nextflow/*.ipynb
+        jupyter nbconvert --to notebook --execute /notebooks/DL-gwas-gcp-example/*.ipynb
