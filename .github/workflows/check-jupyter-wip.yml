@@ -28,4 +28,5 @@ jobs:
 
     - name: Test notebook
       run: |
-        jupyter nbconvert --to notebook --execute /notebooks/DL-gwas-gcp-example/*.ipynb
+        pwd
+        jupyter nbconvert --to notebook --execute notebooks/GenAI/Gemini_Intro.ipynb
