@@ -29,17 +29,19 @@ jobs:
         ## Later move the above to a requrements.txt and run the below
         ## pip install -r requirements.txt 
 
-    - name: Setup required variables
+    - name: Generate configuration file from secrets
       env:
         NOTEBOOK_GCP_PROJECT_ID: ${{ secrets.NOTEBOOK_GCP_PROJECT_ID }}
         NOTEBOOK_GCP_LOCATION: ${{ secrets.NOTEBOOK_GCP_LOCATION }}
       run: |
-        echo "NOTEBOOK_GCP_PROJECT_ID=${NOTEBOOK_PROJECT_ID}" >> $GITHUB_ENV
-        echo "NOTEBOOK_GCP_LOCATION=${NOTEBOOK_GCP_LOCATION}" >> $GITHUB_ENV
-        
-    - name: Test notebook
+        echo '{' > env.json
+        echo '  "NOTEBOOK_GCP_PROJECT_ID": "'${NOTEBOOK_GCP_PROJECT_ID}'",' >> env.json
+        echo '  "NOTEBOOK_GCP_LOCATION": "'${NOTEBOOK_GCP_LOCATION}'"' >> env.json
+        echo '}' >> env.json
+       
+    - name: Run tests with pytest
       run: |
         pwd
         #jupyter nbconvert --to notebook --execute notebooks/GenAI/Gemini_Intro.ipynb
-        pytest --nbmake notebooks/GenAI/Gemini_Intro.ipynb --variable-file=env.json
+        pytest testing/test_notebooks.py
         
