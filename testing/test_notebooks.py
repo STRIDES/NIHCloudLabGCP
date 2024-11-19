@@ -18,8 +18,8 @@ def load_configuration(config_file="env.json"):
 def test_notebook_execution(notebook_path):
     config = load_configuration()
     parameters = {
-        "API_KEY": config.get("NOTEBOOK_PROJECT_ID", ""),
-        "DB_URL": config.get("NOTEBOOK_GCP_LOCATION", ""),
+        "NOTEBOOK_GCP_PROJECT_ID": config.get("NOTEBOOK_GCP_PROJECT_ID", ""),
+        "NOTEBOOK_GCP_LOCATION": config.get("NOTEBOOK_GCP_LOCATION", ""),
     }
 
     with open(notebook_path) as f:
