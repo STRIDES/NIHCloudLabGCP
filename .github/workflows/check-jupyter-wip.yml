@@ -1,4 +1,4 @@
-name: Testing notebooks with nbmake
+name: Testing notebooks with pytest
 
 on:
   workflow_dispatch: 
