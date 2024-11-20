@@ -31,8 +31,8 @@ jobs:
 
     - name: Generate configuration file from secrets
       env:
-        NOTEBOOK_GCP_PROJECT_ID: ${{ secrets.NOTEBOOK_GCP_PROJECT_ID }}
-        NOTEBOOK_GCP_LOCATION: ${{ secrets.NOTEBOOK_GCP_LOCATION }}
+        NOTEBOOK_GCP_PROJECT_ID: ${{ NOTEBOOK_GCP_PROJECT_ID }}
+        NOTEBOOK_GCP_LOCATION: ${{ NOTEBOOK_GCP_LOCATION }}
       run: |
         echo '{' > env.json
         echo '  "NOTEBOOK_GCP_PROJECT_ID": "'${NOTEBOOK_GCP_PROJECT_ID}'",' >> env.json
