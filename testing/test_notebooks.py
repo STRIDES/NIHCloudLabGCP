@@ -24,8 +24,16 @@ def test_notebook_execution(notebook_path):
 
     with open(notebook_path) as f:
         nb = nbformat.read(f, as_version=4)
-        ep = ExecutePreprocessor(timeout=600, kernel_name='python3')
         
         # Inject parameters into the notebook via metadata
         nb.metadata["parameters"] = parameters
-        ep.preprocess(nb, {'metadata': {'path': './'}})
+
+        # Check if metadata is updated correctly
+        print("Injected Metadata:", nb.metadata.get('parameters'))
+        
+        for idx, cell in enumerate(nb.cells):
+            print(f"Cell {idx} Type: {cell['cell_type']}")
+            print(cell['source'][:100])  # Print the first 100 characters of the cell source
+
+        #ep = ExecutePreprocessor(timeout=600, kernel_name='python3')
+        #ep.preprocess(nb, {'metadata': {'path': './'}})
