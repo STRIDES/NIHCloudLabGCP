@@ -43,5 +43,5 @@ jobs:
       run: |
         pwd
         #jupyter nbconvert --to notebook --execute notebooks/GenAI/Gemini_Intro.ipynb
-        pytest testing/test_notebooks.py
+        pytest -s testing/test_notebooks.py
         
