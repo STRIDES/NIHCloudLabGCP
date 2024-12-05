@@ -30,10 +30,21 @@ def test_notebook_execution(notebook_path):
 
         # Check if metadata is updated correctly
         print("Injected Metadata:", nb.metadata.get('parameters'))
-        
+
+        exec_globals = {}
         for idx, cell in enumerate(nb.cells):
-            print(f"Cell {idx} Type: {cell['cell_type']}")
-            print(cell['source'][:100])  # Print the first 100 characters of the cell source
+            if cell.cell_type == "code":
+                print(f"Executing Cell {idx}:")
+                print(cell['source'][:100])  # Print the first 100 characters of the cell source
+                try:
+                    exec(cell.source, exec_globals)
+                except Exception as e:
+                    print(f"Error in Cell {idx}: {e}")
+
+
+        #for idx, cell in enumerate(nb.cells):
+        #    print(f"Cell {idx} Type: {cell['cell_type']}")
+        #    print(cell['source'][:100])  # Print the first 100 characters of the cell source
 
         #ep = ExecutePreprocessor(timeout=600, kernel_name='python3')
         #ep.preprocess(nb, {'metadata': {'path': './'}})
