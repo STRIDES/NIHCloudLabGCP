@@ -6,7 +6,7 @@ from nbconvert.preprocessors import ExecutePreprocessor
 from google.oauth2 import service_account
 
 # Access the service account key from the environment variable
-service_account_key = os.environ.get("GCP_SERVICE_ACCOUNT_KEY")
+service_account_key = os.environ.get("TKF_CHAVI")
 
 if service_account_key is None:
     raise ValueError("Service account key is not set in environment variables.")
