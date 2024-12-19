@@ -3,7 +3,12 @@ import json
 import pytest
 import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
+
+# For service account authentication
 from google.oauth2 import service_account
+
+# For API initialization
+from google.cloud import aiplatform
 
 # Access the service account key from the environment variable
 service_account_key = os.environ.get("TKF_CHAVI")
@@ -16,9 +21,6 @@ key_data = json.loads(service_account_key)
 
 # Authenticate with the service account key
 credentials = service_account.Credentials.from_service_account_info(key_data)
-
-# (Optional) Use the credentials for API initialization
-from google.cloud import aiplatform
 
 # Initialize Vertex AI Platform
 PROJECT_ID = os.environ.get("NOTEBOOK_GCP_PROJECT_ID")
