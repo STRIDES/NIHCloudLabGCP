@@ -29,11 +29,11 @@ jobs:
         ## Later move the above to a requrements.txt and run the below
         ## pip install -r requirements.txt 
 
-    - name: Generate configuration file from secrets
-      env:
-        TKF_CHAVI: ${{ secrets.TKF_PICHAI_BAADAL_CHAVI }}
-        NOTEBOOK_GCP_PROJECT_ID: ${{ secrets.NOTEBOOK_GCP_PROJECT_ID }}
-        NOTEBOOK_GCP_LOCATION: ${{ vars.NOTEBOOK_GCP_LOCATION }}
+    #- name: Generate configuration file from secrets
+    #  env:
+    #    #TKF_CHAVI: ${{ secrets.TKF_PICHAI_BAADAL_CHAVI }}
+    #    NOTEBOOK_GCP_PROJECT_ID: ${{ secrets.NOTEBOOK_GCP_PROJECT_ID }}
+    #    NOTEBOOK_GCP_LOCATION: ${{ vars.NOTEBOOK_GCP_LOCATION }}
       #run: |
       #  echo '{' > env.json
       #  echo '  "NOTEBOOK_GCP_PROJECT_ID": "'${NOTEBOOK_GCP_PROJECT_ID}'",' >> env.json
@@ -41,33 +41,12 @@ jobs:
       #  echo '}' >> env.json
        
     - name: Run tests with pytest
+      env:
+        TKF_CHAVI: ${{ secrets.TKF_PICHAI_BAADAL_CHAVI }}
+        NOTEBOOK_GCP_PROJECT_ID: ${{ secrets.NOTEBOOK_GCP_PROJECT_ID }}
+        NOTEBOOK_GCP_LOCATION: ${{ vars.NOTEBOOK_GCP_LOCATION }} 
       run: |
         pwd
-        import os
-        import json
-        from google.oauth2 import service_account
-
-        # Access the service account key from the environment variable
-        service_account_key = os.environ.get("GCP_SERVICE_ACCOUNT_KEY")
-
-        if service_account_key is None:
-          raise ValueError("Service account key is not set in environment variables.")
-
-        # Parse the JSON key
-        key_data = json.loads(service_account_key)
-
-        # Authenticate with the service account key
-        credentials = service_account.Credentials.from_service_account_info(key_data)
-
-        # (Optional) Use the credentials for API initialization
-        from google.cloud import aiplatform
-
-        # Initialize Vertex AI Platform
-        PROJECT_ID = os.environ.get("NOTEBOOK_GCP_PROJECT_ID")
-        REGION = os.environ.get("NOTEBOOK_GCP_LOCATION")
-
-        aiplatform.init(project=PROJECT_ID, location=REGION, credentials=credentials)
-        
-        jupyter nbconvert --to notebook --execute notebooks/GenAI/Gemini_Intro.ipynb
-        #pytest -s testing/test_notebooks.py
+        #jupyter nbconvert --to notebook --execute notebooks/GenAI/Gemini_Intro.ipynb
+        pytest -s testing/test_notebooks.py
         
