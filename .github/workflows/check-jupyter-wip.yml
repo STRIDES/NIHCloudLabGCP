@@ -26,7 +26,7 @@ jobs:
       run: |
         pip install jupyter
         pip install pytest nbmake nbformat
-        pip install google-auth google-auth-oauthlib google-cloud
+        pip install google-auth google-auth-oauthlib google-cloud google-cloud-aiplatform
 
         ## Later move the above to a requrements.txt and run the below
         ## pip install -r requirements.txt 
