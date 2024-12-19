@@ -3,7 +3,6 @@ import json
 import pytest
 import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
-import google.auth
 from google.oauth2 import service_account
 
 # Access the service account key from the environment variable
