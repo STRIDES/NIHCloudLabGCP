@@ -3,6 +3,29 @@ import json
 import pytest
 import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
+from google.oauth2 import service_account
+
+# Access the service account key from the environment variable
+service_account_key = os.environ.get("GCP_SERVICE_ACCOUNT_KEY")
+
+if service_account_key is None:
+    raise ValueError("Service account key is not set in environment variables.")
+
+# Parse the JSON key
+key_data = json.loads(service_account_key)
+
+# Authenticate with the service account key
+credentials = service_account.Credentials.from_service_account_info(key_data)
+
+# (Optional) Use the credentials for API initialization
+from google.cloud import aiplatform
+
+# Initialize Vertex AI Platform
+PROJECT_ID = os.environ.get("NOTEBOOK_GCP_PROJECT_ID")
+REGION = os.environ.get("NOTEBOOK_GCP_LOCATION")
+
+aiplatform.init(project=PROJECT_ID, location=REGION, credentials=credentials)
+
 
 # Read configuration from a JSON file (injected via workflow)
 def load_configuration(config_file="env.json"):
@@ -26,10 +49,10 @@ def test_notebook_execution(notebook_path):
         nb = nbformat.read(f, as_version=4)
         
         # Inject parameters into the notebook via metadata
-        nb.metadata["parameters"] = parameters
+        #nb.metadata["parameters"] = parameters
 
         # Check if metadata is updated correctly
-        print("Injected Metadata:", nb.metadata.get('parameters'))
+        #print("Injected Metadata:", nb.metadata.get('parameters'))
 
         exec_globals = {}
         for idx, cell in enumerate(nb.cells):
