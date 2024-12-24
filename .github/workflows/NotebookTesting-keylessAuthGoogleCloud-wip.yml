@@ -1,0 +1,47 @@
+name: NotebookTestingAutomation
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-notebook:
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          workload_identity_provider: 'projects/${{ secrets.TKF_PICHAI_BAADAL_PROJ_NUMBER }}/locations/global/workloadIdentityPools/<POOL_ID>/providers/<PROVIDER_ID>'
+          service_account: 'project-service-account@cit-cl-odss-furniturewala-d4b4.iam.gserviceaccount.com'
+
+      - name: Configure gcloud CLI
+        run: |
+          echo "Configuring gcloud CLI..."
+          gcloud config set project ${{ secrets.NOTEBOOK_GCP_PROJECT_ID }}
+          gcloud auth application-default login
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+          ## Later move the above to a requrements.txt and run the below
+          # pip install -r requirements.txt
+
+      - name: Run tests with pytest
+        env:
+          TKF_CHAVI: ${{ secrets.TKF_PICHAI_BAADAL_CHAVI }} 
+        run: |
+          #jupyter nbconvert --to notebook --execute notebooks/GenAI/Gemini_Intro.ipynb
+          pytest -s testing/test_notebooks.py
