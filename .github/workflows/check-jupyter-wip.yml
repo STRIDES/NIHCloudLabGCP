@@ -1,0 +1,49 @@
+name: Testing notebooks with pytest
+
+on:
+  workflow_dispatch: 
+  #push:
+  #  branches:
+  #    - "*"
+  #pull_request:
+  #  branches:
+  #    - "*"
+
+jobs:
+  test-notebook:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        ref: notebook-testing-taher
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        pip install jupyter
+        pip install pytest nbmake nbformat
+        ## Later move the above to a requrements.txt and run the below
+        ## pip install -r requirements.txt 
+
+    - name: Generate configuration file from secrets
+      env:
+        NOTEBOOK_GCP_PROJECT_ID: ${{ vars.NOTEBOOK_GCP_PROJECT_ID }}
+        NOTEBOOK_GCP_LOCATION: ${{ vars.NOTEBOOK_GCP_LOCATION }}
+      run: |
+        echo '{' > env.json
+        echo '  "NOTEBOOK_GCP_PROJECT_ID": "'${NOTEBOOK_GCP_PROJECT_ID}'",' >> env.json
+        echo '  "NOTEBOOK_GCP_LOCATION": "'${NOTEBOOK_GCP_LOCATION}'"' >> env.json
+        echo '}' >> env.json
+       
+    - name: Run tests with pytest
+      run: |
+        pwd
+        #jupyter nbconvert --to notebook --execute notebooks/GenAI/Gemini_Intro.ipynb
+        pytest testing/test_notebooks.py
+        
