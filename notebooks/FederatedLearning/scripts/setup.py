@@ -13,6 +13,5 @@ setup(
         "scikit-learn",
         "matplotlib",
         "ordereddict"  # Add any dependencies your package needs
-        
     ],
 )
