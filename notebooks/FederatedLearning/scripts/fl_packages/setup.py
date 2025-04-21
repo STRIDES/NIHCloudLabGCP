@@ -7,6 +7,7 @@ setup(
     name="fl_packages",
     version="0.1",
     packages=find_packages(),
+    py_modules='fl_packages.fl_class_functions',
     install_requires=[
         "torch",
         "pandas", 
