@@ -1,19 +1,17 @@
-from setuptools import find_packages
-from setuptools import setup
+from setuptools import find_packages, setup
+
+# File: setup.py
+from setuptools import setup, find_packages
 
 setup(
-    name='breast_cancer_federated_learning',
-    version='0.1',
-    install_requires=[
-        'torch',
-        'numpy',
-        'pandas',
-        'matplotlib',
-        'scikit-learn',
-        'google-cloud-storage',
-        'google-cloud-aiplatform',
-    ],
+    name="my_package",
+    version="0.1",
     packages=find_packages(),
-    include_package_data=True,
-    description='Breast Cancer Federated Learning Training Script',
+    install_requires=[
+        "torch",
+        "pandas", 
+        "scikit-learn",
+        "matplotlib",
+        "ordereddict"  # Add any dependencies your package needs
+    ],
 )
