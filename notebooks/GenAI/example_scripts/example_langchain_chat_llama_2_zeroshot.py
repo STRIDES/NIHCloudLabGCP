@@ -3,6 +3,7 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.prompts import PromptTemplate
 #from langchain.llms import VertexAIModelGarden
 from langchain_google_vertexai import ChatVertexAI
+from langchain_google_vertexai import VertexAI
 import sys
 import json
 import os
@@ -30,7 +31,7 @@ def build_chain():
     #llm = VertexAIModelGarden(project=PROJECT_ID, endpoint_id=ENDPOINT_ID, location=LOCATION_ID)
     
     llm = VertexAI(
-    model_name="chat-bison@002",
+    model_name="gemini-2.0-flash",
     max_output_tokens=1024,
     temperature=0.2,
     top_p=0.8,
