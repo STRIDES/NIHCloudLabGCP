@@ -4,7 +4,7 @@
 # NOTE: requires `bc`, eg, sudo apt-get install bc
 # Modified from https://stackoverflow.com/questions/30556920/how-can-i-automatically-kill-idle-gce-instances-based-on-cpu-usage
 
-sudo apt-get install bc 
+sudo apt-get install bc -y
 
 # This is the CPU usage threshold. If activity falls below 10% for the specified time below, the VM shutsdown.
 # If you want the shutdown to be more sensitive, you can set this higher, so that a smaller drop in CPU activity will cause shutdown.
