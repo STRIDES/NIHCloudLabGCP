@@ -11,4 +11,4 @@ jobs:
     name: 'Link Check'
     uses: STRIDES/NIHCloudLab/.github/workflows/check-links.yaml@main
     with:
-      repo_link_ignore_list: ""
+      repo_link_ignore_list: "https://drive.google.com/drive/d/folders/<FOLDER_ID,https://us-central1-aiplatform.googleapis.com/v1/projects/$project_id/locations/$location/publishers/google/models/medlm-medium:predict,https://pmc-oa-opendata.s3.amazonaws.com/{i}"
