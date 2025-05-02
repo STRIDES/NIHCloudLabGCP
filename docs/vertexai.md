@@ -1,9 +1,9 @@
 # Using VertexAI Notebooks
 
 ### 1. Spin up an Instance
-1. Start by clicking the `hamburger menu` (the three horizontal lines in the top left of your console). Go to `Artificial Intelligence > Vertex AI > Workbench`. 
+1. Start by clicking the `hamburger menu` (the three horizontal lines in the top left of your console). Go to `Vertex AI > Workbench`. 
 
-![screenshot showing how to select Vertex AI workbench](/images/images_for_creating_GCP_instances/1_select_vertexAI.png)
+![screenshot showing how to select Vertex AI workbench](../images/1_select_vertexAI.jpeg)
 
 2. If not already selected, click **Instances**, then **Instances**
 3. Click **+ Create New**

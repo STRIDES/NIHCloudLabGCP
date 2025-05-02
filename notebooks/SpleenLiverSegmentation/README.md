@@ -9,8 +9,7 @@ The Spleen model is additionally retrained on the medical decathlon spleen datas
 Data is not necessary to be downloaded to run the notebook. The notebook downloads the data during it's run.
 The notebook uses the Python package [MONAI](https://monai.io/), the Medical Open Network for Artificial Intelligence. 
 
-- Spleen Model - [clara_pt_spleen_ct_segmentation_V2](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/monaitoolkit/models/monai_spleen_ct_segmentation)
-- Liver Model - [clara_pt_liver_and_tumor_ct_segmentation_V1]()
+![model workflow](https://developer.download.nvidia.com/assets/Clara/Images/clara_pt_spleen_ct_segmentation_workflow.png)
 
 ## Outcomes
 After following along with this notebook the user will be familiar with:
