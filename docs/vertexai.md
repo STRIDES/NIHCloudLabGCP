@@ -34,7 +34,7 @@
 
 ![screenshot showing how to select Vertex AI workbench](/images/images_for_creating_GCP_instances/1_select_vertexAI.png)
 
-2. Click `New Notebook` and select your desired kernel. You can use a variety of environments including Python, R, PyTorch, TensorFlow, and others. This can also be changed later. Check out the [required environments](https://github.com/NIGMS/NIGMS-Sandbox/tree/main#cloud-module-prerequisites) for your module of interest to confirm which kernel you should choose.
+2. Click `New Notebook` and select your desired kernel. You can use a variety of environments including Python, R, PyTorch, TensorFlow, and others. This can also be changed later. Check out the [required environments](https://github.com/NIGMS/NIGMS-Sandbox/tree/main?tab=readme-ov-file#prerequisites-introduction-to-gcp) for your module of interest to confirm which kernel you should choose.
 
 ![screenshot showing how to select an R kernel from Vertex AI workbench](/images/images_for_creating_GCP_instances/2_select_kernel_R.png)
 
