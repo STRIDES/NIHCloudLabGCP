@@ -1,4 +1,4 @@
-# Step 4 – Set Up Vertex AI Workbench (Jupyter Notebook)
+# Step 3 – Set Up Vertex AI Workbench (Jupyter Notebook)
 
 **Goal:** Create a cloud-based Python environment where we will run our scRNA-seq analysis using Scanpy.
 
