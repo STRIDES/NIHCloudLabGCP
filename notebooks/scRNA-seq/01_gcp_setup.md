@@ -23,7 +23,10 @@ By the end of this section, you will have:
 
 1. Navigate to: https://console.cloud.google.com  
 2. Sign in with your Google account.  
-3. Click the **Cloud Shell** icon in the top-right corner.  
+3. Click the **Cloud Shell** icon in the top-right corner.
+
+
+![Cloud Shell icon location](/images/GCP_Cloud_Shell.png)
 
 A terminal will open at the bottom of the page. You should see:
 
