@@ -209,8 +209,8 @@ export PATH=$PATH:$HOME/cellranger-10.0.0
 cellranger count \
   --id=pbmc_1k_run \
   --create-bam=true \
-  --transcriptome=/home/YOURNAME/refdata-gex-GRCh38-2020-A \
-  --fastqs=/home/YOURNAME/test_fastqs/pbmc_1k/pbmc_1k_v3_fastqs/ \
+  --transcriptome=/home/YOURUSERNAME/refdata-gex-GRCh38-2020-A \
+  --fastqs=/home/YOURUSERNAME/test_fastqs/pbmc_1k/pbmc_1k_v3_fastqs/ \
   --sample=pbmc_1k_v3 \
   --localcores=16 \
   --localmem=100
