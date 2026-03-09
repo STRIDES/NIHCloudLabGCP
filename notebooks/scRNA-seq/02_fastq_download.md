@@ -26,9 +26,20 @@
 
 ---
 
+# STEP 1: Open Google Cloud Shell (skip if you just completed gcp_set.md and cloud shell is still open)
+
+1. Go to [https://console.cloud.google.com](https://console.cloud.google.com)
+2. Sign in with your Google account
+3. Click the **terminal icon** `>_` in the top-right corner of the page
+4. A black terminal window opens at the bottom of your screen
+
+> ✅ You'll know it worked when you see:
+> `YOURUSERNAME@cloudshell:~ (YOUR PROJECT ID)$`
+
+---
 
 
-# STEP 1: Set Your Bucket Name Variable
+# STEP 2: Set Your Bucket Name Variable
 
 ```bash
 # Replace YOUR_BUCKET_NAME with your actual bucket name
@@ -43,7 +54,7 @@ echo $BUCKET
 
 ---
 
-# STEP 2: Create the CellRanger VM
+# STEP 3: Create the CellRanger VM
 
 ```bash
 # Create a VM with 16 CPUs and ~104GB RAM
@@ -67,7 +78,7 @@ gcloud compute instances create cellranger-vm \
 
 ---
 
-# STEP 3: Log Into the VM
+# STEP 4: Log Into the VM
 
 ```bash
 gcloud compute ssh cellranger-vm --zone=us-central1-a
@@ -83,7 +94,7 @@ gcloud compute ssh cellranger-vm --zone=us-central1-a
 
 ---
 
-# STEP 4: Install CellRanger
+# STEP 5: Install CellRanger
 
 **First, get your download command:**
 1. Go to [https://www.10xgenomics.com/support/software/cell-ranger/downloads](https://www.10xgenomics.com/support/software/cell-ranger/downloads)
@@ -110,7 +121,7 @@ cellranger --version
 
 ---
 
-# STEP 5: Download the Human Reference Genome
+# STEP 6: Download the Human Reference Genome
 
 ```bash
 # Go to home directory
@@ -272,7 +283,7 @@ gs://YOUR_BUCKET_NAME/cellranger_output/pbmc_1k/outs/filtered_feature_bc_matrix/
 # Summary
 
 ```
-STEP 1  → Open Google Cloud Shell
+STEP 1  → Open Google Cloud Shell (if starting fresh)
 STEP 2  → Set bucket variable
 STEP 3  → Create CellRanger VM (ubuntu-2204-lts)
 STEP 4  → Log into VM (Y → Enter → Enter for SSH keys)
