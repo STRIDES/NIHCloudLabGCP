@@ -97,10 +97,10 @@ Choose a globally unique bucket name.
 Example:
 
 ```bash
-gsutil mb -l us-central1 gs://scrna_analysis_yourname
+gsutil mb -l us-central1 gs://scrna_analysis
 ```
 
-Replace `scrna_analysis_yourname` with your chosen bucket name.
+Replace `scrna_analysis` with your chosen bucket name.
 
 Verify the bucket exists:
 
@@ -114,10 +114,12 @@ You should see your new bucket listed.
 
 ## 5. Create Standard Folder Structure
 
+Replace `scrna_analysis` with your chosen bucket name.
+
 Set an environment variable for convenience:
 
 ```bash
-BUCKET="gs://scrna_analysis_yourname"
+BUCKET="gs://scrna_analysis"
 ```
 
 Create placeholder directories (empty `.keep` files so folders show up in GCS):
