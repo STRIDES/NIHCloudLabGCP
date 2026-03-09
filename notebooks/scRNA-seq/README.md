@@ -3,10 +3,9 @@
 This tutorial walks through a complete pipeline:
 
 1. Create a GCS bucket
-2. Download test FASTQ data
-3. Run CellRanger on a VM
-4. Create a Vertex AI Workbench instance
-5. Run the scRNA analysis notebook (Scanpy)
+2. Run CellRanger on a VM and Download test FASTQ data
+3. Create a Vertex AI Workbench instance
+4. Run the scRNA analysis notebook (Scanpy)
 
 ---
 
@@ -15,14 +14,11 @@ This tutorial walks through a complete pipeline:
 ### Step 1 – GCP Setup
 ➡️ See: `01_gcp_setup.md`
 
-### Step 2 – Download FASTQ Test Data
-➡️ See: `02_fastq_download.md`
+### Step 2 – Run CellRanger Alignment and Download FASTQ Test Data
+➡️ See: `02_cellranger_and_fastq_download.md`
 
-### Step 3 – Run CellRanger Alignment
-➡️ See: `03_cellranger_alignment.md`
+### Step 3 – Create Vertex AI Workbench
+➡️ See: `03_vertex_workbench.md`
 
-### Step 4 – Create Vertex AI Workbench
-➡️ See: `04_vertex_workbench.md`
-
-### Step 5 – Run the scRNA Analysis Notebook
-➡️ Open: `05_scrna_analysis.ipynb`
+### Step 4 – Run the scRNA Analysis Notebook
+➡️ Open: `04_scrna_analysis.ipynb`

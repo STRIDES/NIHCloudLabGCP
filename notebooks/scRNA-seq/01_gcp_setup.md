@@ -150,4 +150,4 @@ results/
 
 Your Google Cloud environment is now configured and ready for the next steps.
 
-Proceed to: ➡️ [02_fastq_download.md](02_fastq_download.md)
+Proceed to: ➡️ [02_cellranger_and_fastq_download.md](02_cellranger_and_fastq_download.md)
