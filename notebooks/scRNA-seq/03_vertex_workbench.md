@@ -128,9 +128,9 @@ NIHCloudLabGCP/
 Navigate into the notebooks directory:
 
 ```bash
-cd NIHCloudLabGCP/notebooks/scRNAseq
+cd NIHCloudLabGCP/notebooks/scRNA-seq
 ```
-
+This can also be done by closing the terminal. Clicking on the scRNA-seq notebook folder on the left-hand side and opening up a new terminal. You should now be in the scRNA-seq directory. 
 
 ## 3. Install Required Libraries
 
