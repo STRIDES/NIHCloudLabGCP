@@ -41,7 +41,7 @@ scrna_notebook
 ```
 
 ### Region / Zone
-- Region: `us-central1`
+- Region: `us-central1` (or your preferred region)
 - Zone: `us-central1-a` (or your preferred zone)
 
 ### Machine Type
@@ -88,23 +88,51 @@ You are now inside your notebook VM.
 
 # Part 3 – Install Required Python Packages
 
+In this section, you will open a terminal inside your JupyterLab environment, clone the course repository, and install the required Python packages.
+
+---
+
 ## 1. Open a Terminal in JupyterLab
 
-1. Click the **"+"** button (Launcher)
-2. Scroll to **Other**
-3. Click **Terminal**
+1. Click the **"+"** button (Launcher).
+2. Scroll down to the **Other** section.
+3. Click **Terminal**.
 
-You should see a prompt like:
+A new terminal window will open.
+
+You should see a prompt similar to:
 
 ```
 jupyter@instance:~$
 ```
 
-⚠️ This terminal is running inside your notebook VM (NOT Cloud Shell).
+⚠️ Make sure this terminal is running inside your **notebook VM**.  
+Do **not** use Cloud Shell for these steps.
 
 ---
 
-## 2. Install Required Libraries
+## 2. Clone the Course Repository
+
+In the JupyterLab terminal, run:
+
+```bash
+git clone https://github.com/STRIDES/NIHCloudLabGCP.git
+```
+
+This will create a directory called:
+
+```
+NIHCloudLabGCP/
+```
+
+Navigate into the notebooks directory:
+
+```bash
+cd NIHCloudLabGCP/notebooks/scRNAseq
+```
+
+
+## 3. Install Required Libraries
 
 Run:
 
