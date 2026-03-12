@@ -4,9 +4,9 @@
 ---
 
 > **How to read this guide:**
-> - Every line starting with `$` is a command you type in the terminal and press **Enter**
-> - Lines starting with `#` are comments — they explain what the next command does. You do NOT need to type them
+> - Lines starting with `#` are comments — they explain what the next code does. You do NOT need to type them into the command line
 > - Wherever you see `YOUR_BUCKET_NAME` replace it with your actual bucket name (e.g. `scrna_analysis`)
+> - Whereever you see `YOURUSERNAME` replace with your username associated with your Google cloud project
 > - Do steps **in order** — each step builds on the previous one
 
 ---
