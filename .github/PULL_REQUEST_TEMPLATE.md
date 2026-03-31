@@ -7,7 +7,7 @@
 ### Assignee
 <!-- Mention the GitHub username of the user you want to assign this PR to -->
 
-*Assignees: @kyleoconnell-NIH*
+*Assignees: @wingertkm-NIH*
 
 ## PR checklist
 *Please ensure the following:*
