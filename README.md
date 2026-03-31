@@ -22,7 +22,6 @@ _We have pulled together a variety of tutorials here from disparate sources. Som
 + [Long Read Sequencing Analysis](#long)
 + [Drug Discovery](#atom)
 + [Using Google Batch](#gbatch)
-+ [Using the Life Sciences API (deprecated)](#lsapi)
 + [Public Data Sets](#pub)
 
 ## **Biomedical Workflows on GCP** <a name="bds"></a>
@@ -118,8 +117,6 @@ These notebooks were created to run in Google Colab, so if you run them in Googl
 
 ## **Using Google Batch** <a name="gbatch"></a>
 You can interact with Google Batch directly to submit commands, or more commonly, you can interact with it through orchestration engines like [Nextflow](https://www.Nextflow.io/docs/latest/google.html) and [Cromwell](https://cromwell.readthedocs.io/en/latest/backends/GCPBatch/), etc. We have tutorials that utilize Google Batch using [Nextflow](/notebooks/GoogleBatch/nextflow) where we run the nf-core Methylseq pipeline, as well as several from the NIGMS Sandbox, including [transcriptome assembly](https://github.com/NIGMS/rnaAssemblyMDI), [multiomics](https://github.com/NIGMS/MultiomicsUND), [methylseq](https://github.com/NIGMS/MethylSeqUH), and [metagenomics](https://github.com/NIGMS/MetagenomicsUSD).
-
-
 
 ## **Public Data Sets** <a name="pub"></a>
 Google has a lot of public datasets available that you can use for your testing. These can be viewed [here](https://cloud.google.com/life-sciences/docs/resources/public-datasets) and can be accessed via [BigQuery](https://cloud.google.com/bigquery/public-data) or directly from the cloud bucket. For example, to view Phase 3 1k Genomes at the command line type `gsutil ls gs://genomics-public-data/1000-genomes-phase-3`. 
