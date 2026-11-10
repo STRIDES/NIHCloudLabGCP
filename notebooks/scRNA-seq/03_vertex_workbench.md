@@ -187,7 +187,7 @@ These three files are your processed gene count matrix.
 
 Now proceed to:
 
-➡️ `05_scrna_analysis.ipynb`
+➡️ `04_scrna_analysis.ipynb`
 
 You are ready to:
 

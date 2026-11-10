@@ -59,7 +59,7 @@ echo $BUCKET
 ```bash
 # Create a VM with 16 CPUs and ~104GB RAM
 gcloud compute instances create cellranger-vm \
-  --zone=us-central1-a \
+  --zone=us-east4-a \
   --machine-type=n1-highmem-16 \
   --boot-disk-size=500GB \
   --boot-disk-type=pd-ssd \
@@ -77,12 +77,21 @@ gcloud compute instances create cellranger-vm \
 > ❌ If you get a quota error, try `--machine-type=n1-highmem-8` instead
 
 ---
+gcloud compute firewall-rules create allow-ssh-ingress-from-iap \
+    --project=your_project_id \
+    --direction=INGRESS \
+    --action=allow \
+    --rules=tcp:22 \
+    --source-ranges=35.235.240.0/20
+
 
 # STEP 4: Log Into the VM
 
 ```bash
 gcloud compute ssh cellranger-vm --zone=us-central1-a
 ```
+gcloud compute ssh cellranger-vm --zone=us-east4-a \
+  --project=your_project_id --tunnel-through-iap
 
 > When prompted:
 > - **"Do you want to continue (Y/n)?"** → type `Y` and press Enter
@@ -109,10 +118,10 @@ curl -o cellranger-10.0.0.tar.gz "https://cf.10xgenomics.com/releases/cell-exp/c
 
 # Extract it (~828 MB, takes 1-2 minutes)
 tar -xzvf cellranger-10.0.0.tar.gz
-
+tar -xzvf cellranger-10.1.0.tar.gz
 # Add CellRanger to your PATH so the terminal can find it
 export PATH=$PATH:$HOME/cellranger-10.0.0
-
+export PATH=$PATH:$HOME/cellranger-10.1.0
 # Test the installation
 cellranger --version
 ```
